@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <title>CloudFoundry "scale" Command Documentation -- Auto-generated.</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../scripts/hover.js">
+    </script>
+  </head>
+  <body style="font-family:courier;">
+    <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
+"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+    </div>
+    <div style="margin-top:50px;">
+      <font color="green">
+|------------------------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up0" style="background-color:#CEFFCE;">
+ Cloud_Controller to Dea      </div>
+      <br/>
+Channel: <a href="nats-messages.html#dea.stop">dea.stop</a>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFCE;">
+{"droplet":2,"version":"3887e80424051723165fec9d5b0f32d168da043e-76","indices":[1]}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+|-------------------------------->(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up2" style="background-color:#CEFFCE;">
+ Cloud_Controller to Health_Manager      </div>
+      <br/>
+Channel: <a href="nats-messages.html#droplet.updated">droplet.updated</a>
+      <br/>
+MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
+      <div id="pop-up3" style="background-color:#CEFFCE;">
+{"droplet":2,"cc_partition":"default"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up4" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.unregister">router.unregister</a>
+      <br/>
+MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+      <div id="pop-up5" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":49328,"uris":["ss.vcap.me","ss2.vcap.me"]}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Health_Manager      </div>
+      <br/>
+Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFCE;">
+{"droplet":"2","version":"3887e80424051723165fec9d5b0f32d168da043e-76","instance":"4046ed110073049ba0ed44befc02766e","index":1,"reason":"STOPPED","cc_partition":"default"}
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </body>
+</html>

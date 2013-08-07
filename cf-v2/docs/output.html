@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <title>CF NATS Messages -- Auto-generated.</title>
+  </head>
+  <body>
+    <h2> LEGEND </h2>
+      <ul>
+        <li> <font color="green"> <b>GREEN</b> </font> means additions from CloudFoundry v.1.0 to CloudFoundry v2.0. </li>
+        <li> <font color="red"> <b>RED</b> </font> means deletions from CloudFoundry v.1.0 to CloudFoundry v2.0. </li>
+      </ul> 
+    <hr/>
+    <h2> NATS Message Comparisons: </h2>
+    <channels>
+      <a id="cloudcontroller.bulk.credentials.default">
+<h3 style="background-color:red;">cloudcontroller.bulk.credentials.default</h3>      <a id="cloudcontroller.bulk.credentials.ng">
+<h3 style="background-color:green;">cloudcontroller.bulk.credentials.ng</h3>      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Cloud_Controller</li>
+      </ul>
+      <hr/>
+      <a id="cloudcontrollers.hm.requests.default">
+<h3 style="background-color:red;">cloudcontrollers.hm.requests.default</h3>      <a id="cloudcontrollers.hm.requests.ng">
+<h3 style="background-color:green;">cloudcontrollers.hm.requests.ng</h3>      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+          <td>droplet</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>indices</td>
+          <td>Array</td>
+        </tr>
+        <tr>
+<td style="background-color:green;">instances</td><td style="background-color:green;">Array</td>        </tr>
+        <tr>
+          <td>last_updated</td>
+          <td>Fixnum</td>
+        </tr>
+        <tr>
+          <td>op</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>version</td>
+          <td>String</td>
+        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Cloud_Controller</li>
+      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Health_Manager</li>
+      </ul>
+      <hr/>
+      <a id="dea.aa77524144cf17305e392ea8ee292604.start">
+<h3 style="background-color:red;">dea.aa77524144cf17305e392ea8ee292604.start</h3>      <a id="dea.0-ab5b081c9b53496c0c9792a27db7786f.start">
+<h3 style="background-color:green;">dea.0-ab5b081c9b53496c0c9792a27db7786f.start</h3>      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+          <td>cc_partition</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>console</td>
+<td style="background-color:red;">NilClass</td><td style="background-color:green;">TrueClass</td>        </tr>
+        <tr>
+          <td>debug</td>
+          <td>NilClass</td>
+        </tr>
+        <tr>
+          <td>droplet</td>
+<td style="background-color:red;">Fixnum</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+          <td>env</td>
+          <td>Array</td>
+        </tr>
+        <tr>
+          <td>executableFile</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>executableUri</td>
+          <td>String</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">framework</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+          <td>index</td>
+          <td>Fixnum</td>
+        </tr>
+        <tr>
+          <td>limits</td>
+          <td>Hash</td>
+        </tr>
+        <tr>
+          <td>name</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>prod</td>
+          <td>FalseClass</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">runtime</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">runtime_info</td><td style="background-color:red;">Hash</td>        </tr>
+        <tr>
+          <td>services</td>
+          <td>Array</td>
+        </tr>
+        <tr>
+          <td>sha1</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>uris</td>
+          <td>Array</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">users</td><td style="background-color:red;">Array</td>        </tr>
+        <tr>
+          <td>version</td>
+          <td>String</td>
+        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Cloud_Controller</li>
+      </ul>
+      <hr/>
+      <a id="dea.advertise">
+        <h3>dea.advertise</h3>
+      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+<td style="background-color:green;">app_id_to_count</td><td style="background-color:green;">Hash</td>        </tr>
+        <tr>
+          <td>available_memory</td>
+          <td>Fixnum</td>
+        </tr>
+        <tr>
+          <td>id</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>prod</td>
+<td style="background-color:red;">NilClass</td><td style="background-color:green;">FalseClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">runtimes</td><td style="background-color:green;">stacks</td>          <td>Array</td>
+        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Cloud_Controller</li>
+      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <hr/>
+      <a id="dea.discover">
+        <h3>dea.discover</h3>
+      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <hr/>
+      <a id="dea.find.droplet">
+        <h3>dea.find.droplet</h3>
+      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <hr/>
+      <a id="dea.heartbeat">
+        <h3>dea.heartbeat</h3>
+      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+          <td>dea</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>droplets</td>
+          <td>Array</td>
+        </tr>
+        <tr>
+          <td>prod</td>
+<td style="background-color:red;">NilClass</td><td style="background-color:green;">FalseClass</td>        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Health_Manager</li>
+      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <hr/>
+      <a id="dea.locate">
+        <h3>dea.locate</h3>
+      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+<i style="background-color:red;">Publishers</i>      <ul>
+<li style="background-color:red;">Cloud_Controller</li>      </ul>
+      <hr/>
+      <a id="dea.status">
+        <h3>dea.status</h3>
+      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <hr/>
+      <a id="dea.stop">
+        <h3>dea.stop</h3>
+      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+          <td>droplet</td>
+<td style="background-color:red;">Fixnum</td>        </tr>
+        <tr>
+<td style="background-color:red;">indices</td><td style="background-color:red;">Array</td>        </tr>
+        <tr>
+<td style="background-color:red;">version</td>          <td>String</td>
+        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Cloud_Controller</li>
+      </ul>
+      <hr/>
+      <a id="dea.update">
+        <h3>dea.update</h3>
+      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+<td style="background-color:red;">cc_partition</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+          <td>droplet</td>
+<td style="background-color:red;">Fixnum</td>        </tr>
+        <tr>
+<td style="background-color:red;">env</td><td style="background-color:red;">Array</td>        </tr>
+        <tr>
+<td style="background-color:red;">executableFile</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">executableUri</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">framework</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">limits</td><td style="background-color:red;">Hash</td>        </tr>
+        <tr>
+<td style="background-color:red;">name</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">prod</td><td style="background-color:red;">FalseClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">runtime</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">runtime_info</td><td style="background-color:red;">Hash</td>        </tr>
+        <tr>
+<td style="background-color:red;">services</td><td style="background-color:red;">Array</td>        </tr>
+        <tr>
+<td style="background-color:red;">sha1</td>          <td>String</td>
+        </tr>
+        <tr>
+          <td>uris</td>
+          <td>Array</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">users</td><td style="background-color:red;">Array</td>        </tr>
+        <tr>
+<td style="background-color:red;">version</td><td style="background-color:red;">String</td>        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Cloud_Controller</li>
+      </ul>
+      <hr/>
+      <a id="droplet.exited">
+        <h3>droplet.exited</h3>
+      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+          <td>cc_partition</td>
+          <td>String</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">crash_timestamp</td><td style="background-color:red;">Fixnum</td><td style="background-color:green;">droplet</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">droplet</td><td style="background-color:green;">exit_description</td>          <td>String</td>
+        </tr>
+        <tr>
+<td style="background-color:green;">exit_status</td><td style="background-color:green;">Fixnum</td>        </tr>
+        <tr>
+          <td>index</td>
+          <td>Fixnum</td>
+        </tr>
+        <tr>
+          <td>instance</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>reason</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>version</td>
+          <td>String</td>
+        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+<li style="background-color:green;">Cloud_Controller</li>        <li>Health_Manager</li>
+      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <hr/>
+      <a id="droplet.status">
+        <h3>droplet.status</h3>
+      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <hr/>
+      <a id="droplet.updated">
+        <h3>droplet.updated</h3>
+      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+          <td>cc_partition</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>droplet</td>
+<td style="background-color:red;">Fixnum</td><td style="background-color:green;">String</td>        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Health_Manager</li>
+      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Cloud_Controller</li>
+      </ul>
+      <hr/>
+      <a id="healthmanager.droplet">
+<h3 style="background-color:green;">healthmanager.droplet</h3>      </a>
+<i style="background-color:green;">Subscribers:</i>      <ul>
+<li style="background-color:green;">Health_Manager</li>      </ul>
+      <hr/>
+      <a id="healthmanager.health">
+        <h3>healthmanager.health</h3>
+      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Health_Manager</li>
+      </ul>
+      <hr/>
+      <a id="healthmanager.start">
+        <h3>healthmanager.start</h3>
+      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+<i style="background-color:red;">Publishers</i>      <ul>
+<li style="background-color:red;">Health_Manager</li>      </ul>
+      <hr/>
+      <a id="healthmanager.status">
+        <h3>healthmanager.status</h3>
+      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Health_Manager</li>
+      </ul>
+      <hr/>
+      <a id="router.register">
+<h3 style="background-color:red;">router.register</h3>      <a id="router.start">
+<h3 style="background-color:green;">router.start</h3>      </a>
+<i style="background-color:green;">Subscribers:</i>      <ul>
+<li style="background-color:green;">Cloud_Controller</li><li style="background-color:green;">Dea</li>      </ul>
+      <hr/>
+      <a id="staging">
+<h3 style="background-color:green;">staging</h3>      </a>
+<i style="background-color:green;">Subscribers:</i>      <ul>
+<li style="background-color:green;">Dea</li>      </ul>
+      <hr/>
+      <a id="staging.0-ab5b081c9b53496c0c9792a27db7786f.start">
+<h3 style="background-color:green;">staging.0-ab5b081c9b53496c0c9792a27db7786f.start</h3>      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+<td style="background-color:red;">app</td><td style="background-color:green;">app_id</td>          <td>String</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">dea</td><td style="background-color:red;">String</td><td style="background-color:green;">async</td><td style="background-color:green;">FalseClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">host</td><td style="background-color:green;">buildpack_cache_download_uri</td>          <td>String</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">port</td><td style="background-color:red;">Fixnum</td><td style="background-color:green;">buildpack_cache_upload_uri</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">private_instance_id</td><td style="background-color:green;">download_uri</td>          <td>String</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">tags</td><td style="background-color:green;">properties</td>          <td>Hash</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">uris</td><td style="background-color:red;">Array</td><td style="background-color:green;">task_id</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:green;">upload_uri</td><td style="background-color:green;">String</td>        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+<li style="background-color:red;">Router</li><li style="background-color:green;">Dea</li>      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Cloud_Controller</li>
+<li style="background-color:red;">Dea</li>      </ul>
+      <hr/>
+      <a id="router.start">
+<h3 style="background-color:red;">router.start</h3>      <a id="staging.advertise">
+<h3 style="background-color:green;">staging.advertise</h3>      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+<td style="background-color:green;">available_memory</td><td style="background-color:green;">Fixnum</td>        </tr>
+        <tr>
+          <td>id</td>
+          <td>String</td>
+        </tr>
+        <tr>
+<td style="background-color:red;">version</td><td style="background-color:red;">Float</td><td style="background-color:green;">stacks</td><td style="background-color:green;">Array</td>        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Cloud_Controller</li>
+<li style="background-color:red;">Dea</li>      </ul>
+      <i>Publishers</i>
+      <ul>
+<li style="background-color:red;">Router</li><li style="background-color:green;">Dea</li>      </ul>
+      <hr/>
+      <a id="router.unregister">
+<h3 style="background-color:red;">router.unregister</h3>      <a id="staging.locate">
+<h3 style="background-color:green;">staging.locate</h3>      </a>
+<i style="background-color:red;">Content:</i>      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+<td style="background-color:red;">app</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">dea</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">host</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">port</td><td style="background-color:red;">Fixnum</td>        </tr>
+        <tr>
+<td style="background-color:red;">uris</td><td style="background-color:red;">Array</td>        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+<li style="background-color:red;">Router</li>      </ul>
+<i style="background-color:red;">Publishers</i>      <ul>
+        <li>Dea</li>
+      </ul>
+      <hr/>
+      <a id="staging">
+<h3 style="background-color:red;">staging</h3>      <a id="staging.stop">
+<h3 style="background-color:green;">staging.stop</h3>      </a>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+          <td>app_id</td>
+<td style="background-color:red;">Fixnum</td>        </tr>
+        <tr>
+<td style="background-color:red;">download_uri</td><td style="background-color:red;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">properties</td><td style="background-color:red;">Hash</td>        </tr>
+        <tr>
+<td style="background-color:red;">upload_uri</td>          <td>String</td>
+        </tr>
+      </table>
+      <br/>
+      <i>Subscribers:</i>
+      <ul>
+<li style="background-color:red;">Stager</li><li style="background-color:green;">Dea</li>      </ul>
+      <i>Publishers</i>
+      <ul>
+        <li>Cloud_Controller</li>
+      </ul>
+      <hr/>
+      <a id="vcap.component.discover">
+        <h3>vcap.component.discover</h3>
+      </a>
+      <i>Subscribers:</i>
+      <ul>
+        <li>Cloud_Controller</li>
+        <li>Dea</li>
+        <li>Health_Manager</li>
+<li style="background-color:red;">Router</li><li style="background-color:red;">Stager</li>      </ul>
+      <hr/>
+      <h3>dea.start</h3>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+          <td>id</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>ip</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>port</td>
+          <td>Fixnum</td>
+        </tr>
+        <tr>
+          <td>version</td>
+<td style="background-color:red;">Float</td><td style="background-color:green;">String</td>        </tr>
+      </table>
+      <br/>
+      <i>Publishers</i>
+      <ul>
+        <li>Dea</li>
+      </ul>
+      <hr/>
+<h3 style="background-color:red;">vcap.cc.events</h3><h3 style="background-color:green;">router.register</h3>      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:25:23-04:00</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">app</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:05-04:00</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">dea</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:06-04:00</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">host</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:11-04:00</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">port</td><td style="background-color:green;">Fixnum</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:29-04:00</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">private_instance_id</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:31-04:00</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">tags</td><td style="background-color:green;">Hash</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:33-04:00</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">uris</td><td style="background-color:green;">Array</td>        </tr>
+      </table>
+      <br/>
+<i style="background-color:green;">Publishers</i>      <ul>
+<li style="background-color:green;">Cloud_Controller</li><li style="background-color:green;">Dea</li>      </ul>
+      <hr/>
+<h3 style="background-color:green;">router.unregister</h3><i style="background-color:green;">Content:</i>      <table>
+        <table border="1"/>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:38-04:00</td><td style="background-color:red;">NilClass</td>          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:39-04:00</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">app</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:40-04:00</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">dea</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:42-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:43-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:45-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:46-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:47-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:48-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:50-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:51-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:53-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:54-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:55-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:58-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:26:59-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:00-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:01-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:02-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:03-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:04-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:06-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:09-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:10-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:13-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:14-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:15-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:16-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:18-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:19-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:21-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:23-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:24-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:25-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:28-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:29-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:30-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:31-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:32-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:33-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:34-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:36-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:37-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:39-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:41-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:42-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:43-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:45-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:47-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:50-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:52-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:56-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:57-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:58-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:27:59-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:28:02-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">2013-08-02T09:28:03-04:00</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">Application not found</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">Changing instances to 1</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">DELETE:/apps/help</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">FAILED</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/help</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/help/instances</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/shw</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/crashes</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/0/files/app</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/0/files/app/config.ru</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/0/files/logs</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/0/files/logs/staging.log</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/0/files/logs/stderr.log</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/0/files/logs/stdout.log</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/28522dcdfeaeceb8e87e5943d90bb558/files/logs</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/28522dcdfeaeceb8e87e5943d90bb558/files/logs/staging.log</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/28522dcdfeaeceb8e87e5943d90bb558/files/logs/stderr.log</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/instances/28522dcdfeaeceb8e87e5943d90bb558/files/logs/stdout.log</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/apps/ss/stats</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/info</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/info/runtimes</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/services</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/services/v1/offerings/blob-0.51/handles</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/services/v1/offerings/mongodb-1.8/handles</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/services/v1/offerings/mysql-5.1/handles</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/services/v1/offerings/postgresql-9.0/handles</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/services/v1/offerings/rabbitmq-2.4/handles</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/services/v1/offerings/redis-2.2/handles</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/staged_droplets/2/3887e80424051723165fec9d5b0f32d168da043e</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/staged_droplets/22/b50ffa2303a68e5f3c314bd6e0ac120e12d942c4</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/staged_droplets/3/d10f330a80c4a9730aed72fe3484fd3f46ac3827</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">GET:/staging/app/22</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">N/A</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">POST:/apps</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">POST:/apps/help/application</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">POST:/services/v1/offerings</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">POST:/staging/droplet/22/be546ca68a3b54323abcfe65aaf247a6</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">PUT:/apps/help</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">PUT:/apps/ss</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">SUCCEEDED</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">SYSTEM</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">Socket Limit:1024</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">Starting VCAP CloudController (0.999)</td><td style="background-color:red;">NilClass</td>        </tr>
+        <tr>
+<td style="background-color:red;">USER</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">host</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">help</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">port</td><td style="background-color:green;">Fixnum</td>        </tr>
+        <tr>
+<td style="background-color:red;">nkavian@us.ibm.com</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">private_instance_id</td><td style="background-color:green;">String</td>        </tr>
+        <tr>
+<td style="background-color:red;">shw</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">tags</td><td style="background-color:green;">Hash</td>        </tr>
+        <tr>
+<td style="background-color:red;">ss</td><td style="background-color:red;">NilClass</td><td style="background-color:green;">uris</td><td style="background-color:green;">Array</td>        </tr>
+      </table>
+      <br/>
+      <i>Publishers</i>
+      <ul>
+<li style="background-color:red;">Cloud_Controller</li><li style="background-color:green;">Dea</li>      </ul>
+      <hr/>
+      <h3>vcap.component.announce</h3>
+      <i>Content:</i>
+      <table>
+        <table border="1"/>
+        <tr>
+          <td>
+            <b>Name</b>
+          </td>
+          <td>
+            <b>Type</b>
+          </td>
+        </tr>
+        <tr>
+          <td>credentials</td>
+          <td>Array</td>
+        </tr>
+        <tr>
+          <td>host</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>index</td>
+<td style="background-color:red;">NilClass</td><td style="background-color:green;">Fixnum</td>        </tr>
+        <tr>
+          <td>start</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>type</td>
+          <td>String</td>
+        </tr>
+        <tr>
+          <td>uuid</td>
+          <td>String</td>
+        </tr>
+      </table>
+      <br/>
+      <i>Publishers</i>
+      <ul>
+        <li>Cloud_Controller</li>
+        <li>Dea</li>
+        <li>Health_Manager</li>
+<li style="background-color:red;">Router</li><li style="background-color:red;">Stager</li>      </ul>
+      <hr/>
+    </channels>
+  </body>
+</html>

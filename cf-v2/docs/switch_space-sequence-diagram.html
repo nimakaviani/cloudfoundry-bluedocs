@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <title>CloudFoundry "switch_space" Command Documentation -- Auto-generated.</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../scripts/hover.js">
+    </script>
+  </head>
+  <body style="font-family:courier;">
+    <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
+"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+    </div>
+    <div style="margin-top:50px;">
+      <font color="green">
+<--------------------------------|(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up0" style="background-color:#CEFFCE;">
+ Health_Manager to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#cloudcontrollers.hm.requests.ng">cloudcontrollers.hm.requests.ng</a>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFCE;">
+{"droplet":"dbaa3acd-844b-44f3-a2c0-e509d7c0cb98","op":"STOP","last_updated":1375454448,"instances":["e005120190076fbdd32967a6bba5822c"]}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+|------------------------------------->(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up2" style="background-color:#CEFFCE;">
+ Cloud_Controller to Dea      </div>
+      <br/>
+Channel: <a href="nats-messages.html#dea.stop">dea.stop</a>
+      <br/>
+MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
+      <div id="pop-up3" style="background-color:#CEFFCE;">
+{"droplet":"dbaa3acd-844b-44f3-a2c0-e509d7c0cb98"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+<--------------------------------|(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up4" style="background-color:#CEFFCE;">
+ Health_Manager to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#cloudcontrollers.hm.requests.ng">cloudcontrollers.hm.requests.ng</a>
+      <br/>
+MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+      <div id="pop-up5" style="background-color:#CEFFCE;">
+{"droplet":"0ecbc470-9d38-498b-9082-a558122515af","op":"START","last_updated":1375454644,"version":"bcb06c5d-0bca-4385-82bb-f57c44c0dca3","indices":[0]}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+<--------------------------------|(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFCE;">
+ Health_Manager to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#cloudcontrollers.hm.requests.ng">cloudcontrollers.hm.requests.ng</a>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFCE;">
+{"droplet":"0ecbc470-9d38-498b-9082-a558122515af","op":"START","last_updated":1375454644,"version":"bcb06c5d-0bca-4385-82bb-f57c44c0dca3","indices":[1]}
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </body>
+</html>

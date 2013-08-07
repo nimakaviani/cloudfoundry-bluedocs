@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <title>CloudFoundry "push" Command Documentation -- Auto-generated.</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../scripts/hover.js">
+    </script>
+  </head>
+  <body style="font-family:courier;">
+    <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
+"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+    </div>
+    <div style="margin-top:50px;">
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up0" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","app":"3","host":"9.2.227.42","port":42339,"uris":["shw.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"5dbcc07f9e1a8a3a6ace3f41ebe437f857f86f04bba2f05693784a78be998a15"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up2" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
+      <div id="pop-up3" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":49027,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"14909bd4b7a2cf5abdf74838fbe4e68de27f29c5032fc75b72f26558bf2e912d"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up4" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+      <div id="pop-up5" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":39915,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"6178bb60ca697f1c993aa89352429cf0fb02213c521074137e9367b8915eaae0"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+|--------------------------------------------->(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFCE;">
+ Cloud_Controller to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFCE;">
+{"host":"9.2.227.42","port":9022,"uris":["api.vcap.me"],"tags":{"component":"CloudController"}}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+|----------------------------------------------------->(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up8" style="background-color:#CEFFCE;">
+ Cloud_Controller to Stager      </div>
+      <br/>
+Channel: <a href="nats-messages.html#staging">staging</a>
+      <br/>
+MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
+      <div id="pop-up9" style="background-color:#CEFFCE;">
+{"app_id":22,"properties":{"services":[],"framework":"django","framework_info":{"name":"django","runtimes":[{"python2":{"default":true}}],"detection":[{"*.py":"."}]},"runtime":"python2","runtime_info":{"version":"2.6.5","description":"Python 2.6.5","executable":"python","version_output":"2.[5-7]","version_flag":"--version","environment":{"PATH":"/usr/bin:$PATH"},"status":{"name":"current"},"series":"python2","category":"python","name":"python2"},"resources":{"memory":128,"disk":2048,"fds":256},"environment":[],"meta":{"debug":null,"console":null}},"download_uri":"http://zxsfhgjg:ZNVfdase9@9.2.227.42:9022/staging/app/22","upload_uri":"http://zxsfhgjg:ZNVfdase9@9.2.227.42:9022/staging/droplet/22/be546ca68a3b54323abcfe65aaf247a6"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+<-----------------------------------------------------|(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up10" style="background-color:#CEFFCE;">
+ Stager to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.0bc44a567f8138c4ce70c5c445">_INBOX.0bc4... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
+      <div id="pop-up11" style="background-color:#CEFFCE;">
+{"task_id":"8d00c8ad5634e5672ca9133ea77923c6","task_log":"[2013-08-02 09:27:06] Setting up temporary directories\n[2013-08-02 09:27:06] Downloading application\n[2013-08-02 09:27:06] Unpacking application\n[2013-08-02 09:27:06] Staging application\n[2013-08-02 09:27:07] Creating droplet\n[2013-08-02 09:27:07] Uploading droplet\n[2013-08-02 09:27:09] Done!\n"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+|-------------------------------->(<a href="#" id="trigger12" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up12" style="background-color:#CEFFCE;">
+ Cloud_Controller to Health_Manager      </div>
+      <br/>
+Channel: <a href="nats-messages.html#droplet.updated">droplet.updated</a>
+      <br/>
+MSG: (<a href="#" id="trigger13" style="text-decoration: none;">+</a>)
+      <div id="pop-up13" style="background-color:#CEFFCE;">
+{"droplet":22,"cc_partition":"default"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+|------------------------------------->(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up14" style="background-color:#CEFFCE;">
+ Cloud_Controller to Dea      </div>
+      <br/>
+Channel: <a href="nats-messages.html#dea.aa77524144cf17305e392ea8ee292604.start">dea.aa77...start</a>
+      <br/>
+MSG: (<a href="#" id="trigger15" style="text-decoration: none;">+</a>)
+      <div id="pop-up15" style="background-color:#CEFFCE;">
+{"droplet":22,"name":"help","uris":["help.vcap.me"],"runtime":"python2","runtime_info":{"version":"2.6.5","description":"Python 2.6.5","executable":"python","version_output":"2.[5-7]","version_flag":"--version","environment":{"PATH":"/usr/bin:$PATH"},"status":{"name":"current"},"series":"python2","category":"python","name":"python2"},"framework":"django","prod":false,"sha1":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4","executableFile":"/var/vcap/shared/droplets/droplet_22","executableUri":"http://9.2.227.42:9022/staged_droplets/22/b50ffa2303a68e5f3c314bd6e0ac120e12d942c4","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","services":[],"limits":{"mem":128,"disk":2048,"fds":256},"env":[],"users":["nkavian@us.ibm.com"],"cc_partition":"default","debug":null,"console":null,"index":0}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+<-------------------------------------|(<a href="#" id="trigger16" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up16" style="background-color:#CEFFCE;">
+ Dea to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.b1562c1ad1ec5d9fe3d98c1a81">_INBOX.b156... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger17" style="text-decoration: none;">+</a>)
+      <div id="pop-up17" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","droplet":"22","instance":"28a97c30cf6d4cdba38c901e1b9ce093","index":0,"state":"STARTING","state_timestamp":1375450029,"file_uri":"http://9.2.227.42:12345/droplets/","credentials":["d5801151771c32020a02119843e2e79c","329d1e0926b17f7ab202cf12ab62ec4c"],"staged":"help-0-28a97c30cf6d4cdba38c901e1b9ce093","debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+<-------------------------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up18" style="background-color:#CEFFCE;">
+ Dea to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.565f83981c76cbc7929c76494b">_INBOX.565f... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger19" style="text-decoration: none;">+</a>)
+      <div id="pop-up19" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","droplet":"22","instance":"28a97c30cf6d4cdba38c901e1b9ce093","index":0,"state":"STARTING","state_timestamp":1375450029,"file_uri":"http://9.2.227.42:12345/droplets/","credentials":["d5801151771c32020a02119843e2e79c","329d1e0926b17f7ab202cf12ab62ec4c"],"staged":"help-0-28a97c30cf6d4cdba38c901e1b9ce093","debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+<-------------------------------------|(<a href="#" id="trigger20" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up20" style="background-color:#CEFFCE;">
+ Dea to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.820383f1e8e573c1606785b7f0">_INBOX.8203... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger21" style="text-decoration: none;">+</a>)
+      <div id="pop-up21" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","droplet":"22","instance":"28a97c30cf6d4cdba38c901e1b9ce093","index":0,"state":"STARTING","state_timestamp":1375450029,"file_uri":"http://9.2.227.42:12345/droplets/","credentials":["d5801151771c32020a02119843e2e79c","329d1e0926b17f7ab202cf12ab62ec4c"],"staged":"help-0-28a97c30cf6d4cdba38c901e1b9ce093","debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+<-------------------------------------|(<a href="#" id="trigger22" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up22" style="background-color:#CEFFCE;">
+ Dea to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.d6050466d71a96c8f9e1067777">_INBOX.d605... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger23" style="text-decoration: none;">+</a>)
+      <div id="pop-up23" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","droplet":"22","instance":"28a97c30cf6d4cdba38c901e1b9ce093","index":0,"state":"STARTING","state_timestamp":1375450029,"file_uri":"http://9.2.227.42:12345/droplets/","credentials":["d5801151771c32020a02119843e2e79c","329d1e0926b17f7ab202cf12ab62ec4c"],"staged":"help-0-28a97c30cf6d4cdba38c901e1b9ce093","debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </body>
+</html>

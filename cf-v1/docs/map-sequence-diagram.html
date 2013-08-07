@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <head>
+    <title>CloudFoundry "map" Command Documentation -- Auto-generated.</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../scripts/hover.js">
+    </script>
+  </head>
+  <body style="font-family:courier;">
+    <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
+"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+    </div>
+    <div style="margin-top:50px;">
+      <font color="green">
+|------------------------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up0" style="background-color:#CEFFCE;">
+ Cloud_Controller to Dea      </div>
+      <br/>
+Channel: <a href="nats-messages.html#dea.update">dea.update</a>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFCE;">
+{"droplet":2,"name":"ss","uris":["ss.vcap.me","ss2.vcap.me"],"runtime":"ruby193","runtime_info":{"version":"1.9.3p194","description":"Ruby 1.9.3","executable":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin/ruby","version_flag":"-e 'puts RUBY_VERSION'","additional_checks":"-e 'puts RUBY_PATCHLEVEL == 194'","version_output":"1.9.3","environment":{"PATH":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin:/home/nima/cloudfoundry/.deployments/devbox/deploy/nodes/node-0.8.2/bin:$PATH","BUNDLE_GEMFILE":null},"status":{"name":"current"},"series":"ruby193","category":"ruby","name":"ruby193"},"framework":"rack","prod":false,"sha1":"3887e80424051723165fec9d5b0f32d168da043e","executableFile":"/var/vcap/shared/droplets/droplet_2","executableUri":"/staged_droplets/2/3887e80424051723165fec9d5b0f32d168da043e","version":"3887e80424051723165fec9d5b0f32d168da043e-76","services":[],"limits":{"mem":64,"disk":2048,"fds":256},"env":[],"users":["nkavian@us.ibm.com"],"cc_partition":"default"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up2" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
+      <div id="pop-up3" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":45583,"uris":[],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"a60f91c6c09534d5756a020e8610814a7fc2617f7b36ed2d9fc5a98564be67fe"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up4" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.unregister">router.unregister</a>
+      <br/>
+MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+      <div id="pop-up5" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":45583,"uris":[]}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":49328,"uris":[],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"059bb28b6f56fbc3b45f53b713d83d192d2f2a4ba84bc4bad5f2288e1b1a4d79"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up8" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.unregister">router.unregister</a>
+      <br/>
+MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
+      <div id="pop-up9" style="background-color:#CEFFCE;">
+{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":49328,"uris":[]}
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </body>
+</html>

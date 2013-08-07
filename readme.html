@@ -1,0 +1,32 @@
+<div style="margin:20;">
+<h1>CloudFoundry Documentation for NATS Messages</h1>
+The documentation contains information on two sets of data for CloudFoundry v1.0 and CloudFoundry v2.0 as collected by our NATS message analysis tool:
+<ul>
+  <li> NATS message content / publishers / subscribers to different NATS channels</li>
+  <li> Sequence of NATS message exchanges for each <i>cf</i> or <i>vmc</i> command as perceived by our analyzer tool</li>
+</ul>
+
+<h2> NATS Message Content</h2>
+Message contents are captured by instrumenting the NATS client for each of the CloudFoundry components, intercepting in-going and out-going messages for each component, and analyzing the internals of the messages. <br/>
+
+The documentation contains the following information:
+<ul>
+  <li>The list of channels over which CloudFoundry components communicate</li>
+  <li>Content of messages exchanged over each channel, i.e., the list of keys in the message and their content types</li>
+  <li>List of publishers to each channel</li>
+  <li>List of subscribers to each channel</li>
+</ul>
+
+
+<h2> NATS Message Sequences</h2>
+NATS message sequences contain informatioin on the set of applicable commands for <i>cf</i> or <i>vmc</i> and the series of messages exchanged during execution of each of those messages. Each sequence diagram captures the following information:
+<ul>
+  <li>The source and the destination of a NATS message captured during execution of the CF command (shown with an arrow --&gt;)</li>
+  <li>The channel over which the message is sent</li>
+  <li>The content of the message communicated over the channel</li>
+</ul>
+
+For better readability the message content and the source and target of each message exchange are hidden in the initial view of the diagram. In order to get the detailed view, the mouse can be hovered over the (+) sign or the (+) sign can be clicked to see the extended information.
+
+</div>
+<a href="index.html">Back</a>
