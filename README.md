@@ -1,7 +1,7 @@
 CloudFoundry BlueDocs
 =====================
 
-*BlueDocs is an Automated Strategy to Introspect Internal Behavior of CloudFoundry for Performance and Documentation Analysis Purposes.*
+*BlueDocs is an Automated Strategy to Introspect Internal Behavior of CloudFoundry for Performance Analysis and Documentation Purposes.*
 
 As a first step, we have automatically generated information on message exchanges between CloudFoundry components. The plan is to extend the approach to include methods for software resiliency testing, bug injection, etc. into CloudFoundry.
 
