@@ -1,6 +1,5 @@
 CloudFoundry BlueDocs
 =====================
-![Swedish Blue Ducks](http://www.feathersite.com/Poultry/Ducks/Swedes/BlueSwedeHen.JPEG)
 
 *BlueDoc is an Automated Strategy to Introspect Internal Behavior of CloudFoundry*
 
