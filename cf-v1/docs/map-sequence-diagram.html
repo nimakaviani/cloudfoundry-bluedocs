@@ -1,84 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-  <head>
-    <title>CloudFoundry "map" Command Documentation -- Auto-generated.</title>
+  <header>
+    <title>CloudFoundry map Command Documentation -- Auto-generated.</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
     </script>
-    <script type="text/javascript" src="../scripts/hover.js">
+    <script type="text/javascript" src="../assets/hover.js">
     </script>
-  </head>
+  </header>
   <body style="font-family:courier;">
     <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
-"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+      <div style="float:right;color:black;padding:0 50 0 0">
+<a href="#" id="expand" style="color:black">expand</a>
+ | 
+<a href="#" id="collapse" style="color:black">collapse</a>
+ | 
+<a href="javascript:window.history.back()" id="back" style="color:black">back</a>
+      </div>
+"VMC"&nbsp;&nbsp;"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"DEA"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"UAA"
     </div>
     <div style="margin-top:50px;">
-      <font color="green">
-|------------------------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up0" style="background-color:#CEFFCE;">
- Cloud_Controller to Dea      </div>
+      <div id="pop-up0" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "apps/ss", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/ss", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:22:39 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"0ce4bbd3187ef8e9664154a26e9584e7\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"ss\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"uris\":[\"ss.vcap.me\",\"ss2.vcap.me\"],\"instances\":1,\"runningInstances\":1,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STARTED\",\"services\":[],\"version\":\"3887e80424051723165fec9d5b0f32d168da043e-168\",\"env\":[],\"meta\":{\"debug\":null,\"console\":null,\"version\":447,\"created\":1377181359}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up8" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
+      <div id="pop-up9" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["PUT", "apps/ss", {:content=>:json, :payload=>{:name=>"ss", :instances=>1, :state=>"STARTED", :staging=>{:model=>"rack", :stack=>"ruby193"}, :resources=>{:memory=>64, :disk=>2048, :fds=>256}, :env=>[], :uris=>["ss.vcap.me", "ss2.vcap.me", "ss2.vcap.me"], :services=>[], :console=>nil, :debug=>nil}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|------------------------------------->(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up10" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to DEA      </div>
       <br/>
 Channel: <a href="nats-messages.html#dea.update">dea.update</a>
       <br/>
-MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
-      <div id="pop-up1" style="background-color:#CEFFCE;">
-{"droplet":2,"name":"ss","uris":["ss.vcap.me","ss2.vcap.me"],"runtime":"ruby193","runtime_info":{"version":"1.9.3p194","description":"Ruby 1.9.3","executable":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin/ruby","version_flag":"-e 'puts RUBY_VERSION'","additional_checks":"-e 'puts RUBY_PATCHLEVEL == 194'","version_output":"1.9.3","environment":{"PATH":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin:/home/nima/cloudfoundry/.deployments/devbox/deploy/nodes/node-0.8.2/bin:$PATH","BUNDLE_GEMFILE":null},"status":{"name":"current"},"series":"ruby193","category":"ruby","name":"ruby193"},"framework":"rack","prod":false,"sha1":"3887e80424051723165fec9d5b0f32d168da043e","executableFile":"/var/vcap/shared/droplets/droplet_2","executableUri":"/staged_droplets/2/3887e80424051723165fec9d5b0f32d168da043e","version":"3887e80424051723165fec9d5b0f32d168da043e-76","services":[],"limits":{"mem":64,"disk":2048,"fds":256},"env":[],"users":["nkavian@us.ibm.com"],"cc_partition":"default"}
+MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
+      <div id="pop-up11" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"droplet":2,"name":"ss","uris":["ss.vcap.me","ss2.vcap.me"],"runtime":"ruby193","runtime_info":{"version":"1.9.3p194","description":"Ruby 1.9.3","executable":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin/ruby","version_flag":"-e 'puts RUBY_VERSION'","additional_checks":"-e 'puts RUBY_PATCHLEVEL == 194'","version_output":"1.9.3","environment":{"PATH":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin:/home/nima/cloudfoundry/.deployments/devbox/deploy/nodes/node-0.8.2/bin:$PATH","BUNDLE_GEMFILE":null},"status":{"name":"current"},"series":"ruby193","category":"ruby","name":"ruby193"},"framework":"rack","prod":false,"sha1":"3887e80424051723165fec9d5b0f32d168da043e","executableFile":"/var/vcap/shared/droplets/droplet_2","executableUri":"/staged_droplets/2/3887e80424051723165fec9d5b0f32d168da043e","version":"3887e80424051723165fec9d5b0f32d168da043e-168","services":[],"limits":{"mem":64,"disk":2048,"fds":256},"env":[],"users":["nkavian@us.ibm.com"],"cc_partition":"default"}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up14" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger15" style="text-decoration: none;">+</a>)
+      <div id="pop-up15" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/ss", :method=>"PUT", :headers=>{"Content-Length"=>239, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Content-Type"=>"application/json"}, :body=>"{\"name\":\"ss\",\"instances\":1,\"state\":\"STARTED\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"env\":[],\"uris\":[\"ss.vcap.me\",\"ss2.vcap.me\",\"ss2.vcap.me\"],\"services\":[],\"console\":null,\"debug\":null}"}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:22:39 GMT", "content-type"=>"text/html; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "vary"=>"Accept-Encoding", "cache-control"=>"no-cache", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>" "}]
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger16" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up2" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <div id="pop-up16" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
       <br/>
 Channel: <a href="nats-messages.html#router.register">router.register</a>
       <br/>
-MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
-      <div id="pop-up3" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":45583,"uris":[],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"a60f91c6c09534d5756a020e8610814a7fc2617f7b36ed2d9fc5a98564be67fe"}
+MSG: (<a href="#" id="trigger17" style="text-decoration: none;">+</a>)
+      <div id="pop-up17" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"35a1932c997acef0dd42c9d55873e813","app":"2","host":"9.2.227.67","port":50587,"uris":[],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"bbd9edd9c108c4b9bc8d2a549575671488c102dbe5b98313764fcc3401c7e5d7"}
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up4" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <div id="pop-up18" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
       <br/>
 Channel: <a href="nats-messages.html#router.unregister">router.unregister</a>
       <br/>
-MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
-      <div id="pop-up5" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":45583,"uris":[]}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up6" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
-      <br/>
-Channel: <a href="nats-messages.html#router.register">router.register</a>
-      <br/>
-MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
-      <div id="pop-up7" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":49328,"uris":[],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"059bb28b6f56fbc3b45f53b713d83d192d2f2a4ba84bc4bad5f2288e1b1a4d79"}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up8" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
-      <br/>
-Channel: <a href="nats-messages.html#router.unregister">router.unregister</a>
-      <br/>
-MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
-      <div id="pop-up9" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":49328,"uris":[]}
+MSG: (<a href="#" id="trigger19" style="text-decoration: none;">+</a>)
+      <div id="pop-up19" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"35a1932c997acef0dd42c9d55873e813","app":"2","host":"9.2.227.67","port":50587,"uris":[]}
       </div>
       <br/>
       <br/>

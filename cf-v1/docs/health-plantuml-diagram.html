@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <header>
+    <title>CloudFoundry health PlantUML Diagram -- Auto-generated.</title>
+    <script type="text/javascript" src="../assets/jquery.js">
+    </script>
+    <script type="text/javascript" src="../assets/jquery_plantuml.js">
+    </script>
+  </header>
+  <body style="font-family:courier;">
+    <div style="position:fixed;background-color:black;color:white;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
+      <table style="color:white;width:100%;padding:0px 50px 0px 0px;text-decoration:none">
+        <tr>
+          <td> &gt; vmc health ss</td>
+          <td align="right" color="#FFFFCE">
+            <a href="health-sequence-diagram.html" target="" style="color:#FFFFCE;text-decoration:none;">
+HTML  Sequence Diagram            </a>
+|            <a href="index.html" target="" style="color:#FFFFCE;text-decoration:none;">
+Home            </a>
+|            <a href="https://github.com/nkaviani/cloudfoundry-bluedocs" target="_blank" style="color:#FFFFCE;text-decoration:none;">
+IBM BlueDocs v-0.2              <img src="../assets/link_ext.gif"/>
+            </a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="svg_canvas" style="top:0;left:0;padding:0px 0px 0px 0px;width:100%;overflow:hidden;">
+      <img uml="participant VMC
+participant Cloud_Controller
+participant Health_Manager
+participant DEA
+participant Router
+participant Stager
+participant UAA
+VMC -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/health-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
+Cloud_Controller -[#blue]> VMC : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/health-sequence-diagram.html#trigger7]] (REST-resp)">
+      </img>
+    </div>
+  </body>
+</html>

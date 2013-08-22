@@ -1,17 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-  <head>
-    <title>CloudFoundry "info" Command Documentation -- Auto-generated.</title>
+  <header>
+    <title>CloudFoundry info Command Documentation -- Auto-generated.</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
     </script>
-    <script type="text/javascript" src="../scripts/hover.js">
+    <script type="text/javascript" src="../assets/hover.js">
     </script>
-  </head>
+  </header>
   <body style="font-family:courier;">
     <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
-"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+      <div style="float:right;color:black;padding:0 50 0 0">
+<a href="#" id="expand" style="color:black">expand</a>
+ | 
+<a href="#" id="collapse" style="color:black">collapse</a>
+ | 
+<a href="javascript:window.history.back()" id="back" style="color:black">back</a>
+      </div>
+"VMC"&nbsp;&nbsp;"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"DEA"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"UAA"
     </div>
     <div style="margin-top:50px;">
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up0" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "info", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up4" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+      <div id="pop-up5" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/info", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3NDEyNzcsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiZGZhZjY2NTQtZWMxMC00MDI1LTkxZmMtMjljM2JkNDllYzU1IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.hQ5m5iWVrqp9KABUcxPyOpP85zj5ci3RzMM6dKnmHmI", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:20:38 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"4ee711dbc8a1eb0d453495f836a62a68\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"vcap\",\"build\":2222,\"support\":\"http://support.cloudfoundry.com\",\"version\":\"0.999\",\"description\":\"VMware's Cloud Application Platform\",\"allow_debug\":true,\"frameworks\":{\"sinatra\":{\"name\":\"sinatra\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"*.rb\":\"\\\\s*require[\\\\s\\\\(]*['\\\"]sinatra(/base)?['\\\"]\"},{\"config/environment.rb\":false}]},\"lift\":{\"name\":\"lift\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"rack\":{\"name\":\"rack\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config.ru\":true},{\"config/environment.rb\":false}]},\"spring\":{\"name\":\"spring\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"django\":{\"name\":\"django\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"wsgi\":{\"name\":\"wsgi\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"java_web\":{\"name\":\"java_web\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"node\":{\"name\":\"node\",\"runtimes\":[{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"}],\"detection\":[{\"*.js\":\".\"}]},\"php\":{\"name\":\"php\",\"runtimes\":[{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"}],\"detection\":[{\"*.php\":true}]},\"standalone\":{\"name\":\"standalone\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"},{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"},{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"},{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"},{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"},{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[]},\"grails\":{\"name\":\"grails\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"play\":{\"name\":\"play\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"lib/play.*.jar\":true}]},\"otp_rebar\":{\"name\":\"otp_rebar\",\"runtimes\":[{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"}],\"detection\":[{\"releases/*/*.rel\":\".\"}]},\"rails3\":{\"name\":\"rails3\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config/application.rb\":true},{\"config/environment.rb\":true}]}},\"authorization_endpoint\":\"http://uaa.vcap.me\",\"user\":\"nkavian@us.ibm.com\",\"limits\":{\"memory\":2048,\"app_uris\":4,\"services\":16,\"apps\":20},\"usage\":{\"memory\":192,\"apps\":3,\"services\":0}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up0" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "info", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up10" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
+      <div id="pop-up11" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/info", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3NDEyNzcsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiZGZhZjY2NTQtZWMxMC00MDI1LTkxZmMtMjljM2JkNDllYzU1IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.hQ5m5iWVrqp9KABUcxPyOpP85zj5ci3RzMM6dKnmHmI", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:20:39 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"4ee711dbc8a1eb0d453495f836a62a68\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"vcap\",\"build\":2222,\"support\":\"http://support.cloudfoundry.com\",\"version\":\"0.999\",\"description\":\"VMware's Cloud Application Platform\",\"allow_debug\":true,\"frameworks\":{\"sinatra\":{\"name\":\"sinatra\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"*.rb\":\"\\\\s*require[\\\\s\\\\(]*['\\\"]sinatra(/base)?['\\\"]\"},{\"config/environment.rb\":false}]},\"lift\":{\"name\":\"lift\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"rack\":{\"name\":\"rack\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config.ru\":true},{\"config/environment.rb\":false}]},\"spring\":{\"name\":\"spring\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"django\":{\"name\":\"django\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"wsgi\":{\"name\":\"wsgi\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"java_web\":{\"name\":\"java_web\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"node\":{\"name\":\"node\",\"runtimes\":[{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"}],\"detection\":[{\"*.js\":\".\"}]},\"php\":{\"name\":\"php\",\"runtimes\":[{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"}],\"detection\":[{\"*.php\":true}]},\"standalone\":{\"name\":\"standalone\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"},{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"},{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"},{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"},{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"},{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[]},\"grails\":{\"name\":\"grails\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"play\":{\"name\":\"play\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"lib/play.*.jar\":true}]},\"otp_rebar\":{\"name\":\"otp_rebar\",\"runtimes\":[{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"}],\"detection\":[{\"releases/*/*.rel\":\".\"}]},\"rails3\":{\"name\":\"rails3\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config/application.rb\":true},{\"config/environment.rb\":true}]}},\"authorization_endpoint\":\"http://uaa.vcap.me\",\"user\":\"nkavian@us.ibm.com\",\"limits\":{\"memory\":2048,\"app_uris\":4,\"services\":16,\"apps\":20},\"usage\":{\"memory\":192,\"apps\":3,\"services\":0}}"}]
+      </div>
+      <br/>
+      <br/>
     </div>
   </body>
 </html>

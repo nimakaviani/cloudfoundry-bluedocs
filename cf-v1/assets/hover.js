@@ -43,4 +43,16 @@ $(function() {
         }
       }
     });
+    
+    $('a#collapse').click(function(e) {
+      $('a[id^=trigger]').html("+");
+      $('div[id^=pop-up]').hide();
+      $('div[id^=pop-up]').data('is_clicked', 'false')
+    });
+
+    $('a#expand').click(function(e) {
+      $('a[id^=trigger]').html("-");
+      $('div[id^=pop-up]').show();
+      $('div[id^=pop-up]').data('is_clicked', 'true');
+    });
 });

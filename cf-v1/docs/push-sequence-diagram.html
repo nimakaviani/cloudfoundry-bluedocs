@@ -1,182 +1,561 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-  <head>
-    <title>CloudFoundry "push" Command Documentation -- Auto-generated.</title>
+  <header>
+    <title>CloudFoundry push Command Documentation -- Auto-generated.</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
     </script>
-    <script type="text/javascript" src="../scripts/hover.js">
+    <script type="text/javascript" src="../assets/hover.js">
     </script>
-  </head>
+  </header>
   <body style="font-family:courier;">
     <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
-"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+      <div style="float:right;color:black;padding:0 50 0 0">
+<a href="#" id="expand" style="color:black">expand</a>
+ | 
+<a href="#" id="collapse" style="color:black">collapse</a>
+ | 
+<a href="javascript:window.history.back()" id="back" style="color:black">back</a>
+      </div>
+"VMC"&nbsp;&nbsp;"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"DEA"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"UAA"
     </div>
     <div style="margin-top:50px;">
-      <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up0" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
-      <br/>
-Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <div id="pop-up0" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
       <br/>
 MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
-      <div id="pop-up1" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","app":"3","host":"9.2.227.42","port":42339,"uris":["shw.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"5dbcc07f9e1a8a3a6ace3f41ebe437f857f86f04bba2f05693784a78be998a15"}
+      <div id="pop-up1" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "apps/helloworld", {:accept=>:json}]
       </div>
       <br/>
       <br/>
-      <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up2" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
-      <br/>
-Channel: <a href="nats-messages.html#router.register">router.register</a>
-      <br/>
-MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
-      <div id="pop-up3" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":49027,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"14909bd4b7a2cf5abdf74838fbe4e68de27f29c5032fc75b72f26558bf2e912d"}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up4" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
-      <br/>
-Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <div id="pop-up4" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
       <br/>
 MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
-      <div id="pop-up5" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","app":"2","host":"9.2.227.42","port":39915,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"6178bb60ca697f1c993aa89352429cf0fb02213c521074137e9367b8915eaae0"}
+      <div id="pop-up5" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/helloworld", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:20 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "cache-control"=>"no-cache", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"404", :body=>"{\"code\":301,\"description\":\"Application not found\"}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "info", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up10" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
+      <div id="pop-up11" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/info", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:22 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"8613881c5e0e90bda29b4bc244edf4e9\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"vcap\",\"build\":2222,\"support\":\"http://support.cloudfoundry.com\",\"version\":\"0.999\",\"description\":\"VMware's Cloud Application Platform\",\"allow_debug\":true,\"frameworks\":{\"sinatra\":{\"name\":\"sinatra\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"*.rb\":\"\\\\s*require[\\\\s\\\\(]*['\\\"]sinatra(/base)?['\\\"]\"},{\"config/environment.rb\":false}]},\"lift\":{\"name\":\"lift\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"rack\":{\"name\":\"rack\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config.ru\":true},{\"config/environment.rb\":false}]},\"spring\":{\"name\":\"spring\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"django\":{\"name\":\"django\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"wsgi\":{\"name\":\"wsgi\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"java_web\":{\"name\":\"java_web\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"node\":{\"name\":\"node\",\"runtimes\":[{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"}],\"detection\":[{\"*.js\":\".\"}]},\"php\":{\"name\":\"php\",\"runtimes\":[{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"}],\"detection\":[{\"*.php\":true}]},\"standalone\":{\"name\":\"standalone\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"},{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"},{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"},{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"},{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"},{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[]},\"grails\":{\"name\":\"grails\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"play\":{\"name\":\"play\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"lib/play.*.jar\":true}]},\"otp_rebar\":{\"name\":\"otp_rebar\",\"runtimes\":[{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"}],\"detection\":[{\"releases/*/*.rel\":\".\"}]},\"rails3\":{\"name\":\"rails3\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config/application.rb\":true},{\"config/environment.rb\":true}]}},\"authorization_endpoint\":\"http://uaa.vcap.me\",\"user\":\"nkavian@us.ibm.com\",\"limits\":{\"memory\":2048,\"app_uris\":4,\"services\":16,\"apps\":20},\"usage\":{\"memory\":192,\"apps\":2,\"services\":0}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "info", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up10" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
+      <div id="pop-up11" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/info", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:22 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"8613881c5e0e90bda29b4bc244edf4e9\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"vcap\",\"build\":2222,\"support\":\"http://support.cloudfoundry.com\",\"version\":\"0.999\",\"description\":\"VMware's Cloud Application Platform\",\"allow_debug\":true,\"frameworks\":{\"sinatra\":{\"name\":\"sinatra\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"*.rb\":\"\\\\s*require[\\\\s\\\\(]*['\\\"]sinatra(/base)?['\\\"]\"},{\"config/environment.rb\":false}]},\"lift\":{\"name\":\"lift\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"rack\":{\"name\":\"rack\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config.ru\":true},{\"config/environment.rb\":false}]},\"spring\":{\"name\":\"spring\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"django\":{\"name\":\"django\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"wsgi\":{\"name\":\"wsgi\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"java_web\":{\"name\":\"java_web\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"node\":{\"name\":\"node\",\"runtimes\":[{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"}],\"detection\":[{\"*.js\":\".\"}]},\"php\":{\"name\":\"php\",\"runtimes\":[{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"}],\"detection\":[{\"*.php\":true}]},\"standalone\":{\"name\":\"standalone\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"},{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"},{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"},{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"},{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"},{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[]},\"grails\":{\"name\":\"grails\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"play\":{\"name\":\"play\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"lib/play.*.jar\":true}]},\"otp_rebar\":{\"name\":\"otp_rebar\",\"runtimes\":[{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"}],\"detection\":[{\"releases/*/*.rel\":\".\"}]},\"rails3\":{\"name\":\"rails3\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config/application.rb\":true},{\"config/environment.rb\":true}]}},\"authorization_endpoint\":\"http://uaa.vcap.me\",\"user\":\"nkavian@us.ibm.com\",\"limits\":{\"memory\":2048,\"app_uris\":4,\"services\":16,\"apps\":20},\"usage\":{\"memory\":192,\"apps\":2,\"services\":0}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger20" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up20" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger21" style="text-decoration: none;">+</a>)
+      <div id="pop-up21" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "info/runtimes", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger24" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up24" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger25" style="text-decoration: none;">+</a>)
+      <div id="pop-up25" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/info/runtimes", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:23 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"b74a213e922afa6cfc4accb662bd3840\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"python2\":{\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\",\"debug_modes\":null},\"java\":{\"version\":\"1.6\",\"description\":\"Java 6\",\"debug_modes\":[\"run\",\"suspend\"]},\"java7\":{\"version\":\"1.7\",\"description\":\"Java 7\",\"debug_modes\":[\"run\",\"suspend\"]},\"node\":{\"version\":\"0.4.12\",\"description\":\"Node.js\",\"debug_modes\":[\"run\",\"suspend\"]},\"node06\":{\"version\":\"0.6.8\",\"description\":\"Node.js\",\"debug_modes\":[\"run\",\"suspend\"]},\"node08\":{\"version\":\"0.8.2\",\"description\":\"Node.js\",\"debug_modes\":[\"run\",\"suspend\"]},\"erlangR14B02\":{\"version\":\"R14B02\",\"description\":\"Erlang R14B02\",\"debug_modes\":null},\"php\":{\"version\":\"5.3\",\"description\":\"PHP 5\",\"debug_modes\":null},\"ruby18\":{\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\",\"debug_modes\":null},\"ruby19\":{\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\",\"debug_modes\":null},\"ruby193\":{\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\",\"debug_modes\":null}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger20" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up20" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger21" style="text-decoration: none;">+</a>)
+      <div id="pop-up21" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "info/runtimes", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger24" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up24" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger25" style="text-decoration: none;">+</a>)
+      <div id="pop-up25" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/info/runtimes", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:23 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"b74a213e922afa6cfc4accb662bd3840\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"python2\":{\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\",\"debug_modes\":null},\"java\":{\"version\":\"1.6\",\"description\":\"Java 6\",\"debug_modes\":[\"run\",\"suspend\"]},\"java7\":{\"version\":\"1.7\",\"description\":\"Java 7\",\"debug_modes\":[\"run\",\"suspend\"]},\"node\":{\"version\":\"0.4.12\",\"description\":\"Node.js\",\"debug_modes\":[\"run\",\"suspend\"]},\"node06\":{\"version\":\"0.6.8\",\"description\":\"Node.js\",\"debug_modes\":[\"run\",\"suspend\"]},\"node08\":{\"version\":\"0.8.2\",\"description\":\"Node.js\",\"debug_modes\":[\"run\",\"suspend\"]},\"erlangR14B02\":{\"version\":\"R14B02\",\"description\":\"Erlang R14B02\",\"debug_modes\":null},\"php\":{\"version\":\"5.3\",\"description\":\"PHP 5\",\"debug_modes\":null},\"ruby18\":{\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\",\"debug_modes\":null},\"ruby19\":{\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\",\"debug_modes\":null},\"ruby193\":{\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\",\"debug_modes\":null}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "info", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger36" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up36" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger37" style="text-decoration: none;">+</a>)
+      <div id="pop-up37" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/info", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:24 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"8613881c5e0e90bda29b4bc244edf4e9\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"vcap\",\"build\":2222,\"support\":\"http://support.cloudfoundry.com\",\"version\":\"0.999\",\"description\":\"VMware's Cloud Application Platform\",\"allow_debug\":true,\"frameworks\":{\"sinatra\":{\"name\":\"sinatra\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"*.rb\":\"\\\\s*require[\\\\s\\\\(]*['\\\"]sinatra(/base)?['\\\"]\"},{\"config/environment.rb\":false}]},\"lift\":{\"name\":\"lift\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"rack\":{\"name\":\"rack\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config.ru\":true},{\"config/environment.rb\":false}]},\"spring\":{\"name\":\"spring\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"django\":{\"name\":\"django\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"wsgi\":{\"name\":\"wsgi\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"java_web\":{\"name\":\"java_web\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"node\":{\"name\":\"node\",\"runtimes\":[{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"}],\"detection\":[{\"*.js\":\".\"}]},\"php\":{\"name\":\"php\",\"runtimes\":[{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"}],\"detection\":[{\"*.php\":true}]},\"standalone\":{\"name\":\"standalone\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"},{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"},{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"},{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"},{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"},{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[]},\"grails\":{\"name\":\"grails\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"play\":{\"name\":\"play\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"lib/play.*.jar\":true}]},\"otp_rebar\":{\"name\":\"otp_rebar\",\"runtimes\":[{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"}],\"detection\":[{\"releases/*/*.rel\":\".\"}]},\"rails3\":{\"name\":\"rails3\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config/application.rb\":true},{\"config/environment.rb\":true}]}},\"authorization_endpoint\":\"http://uaa.vcap.me\",\"user\":\"nkavian@us.ibm.com\",\"limits\":{\"memory\":2048,\"app_uris\":4,\"services\":16,\"apps\":20},\"usage\":{\"memory\":192,\"apps\":2,\"services\":0}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger40" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up40" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger41" style="text-decoration: none;">+</a>)
+      <div id="pop-up41" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["POST", "apps", {:content=>:json, :accept=>:json, :payload=>{:name=>"helloworld", :instances=>1, :staging=>{:model=>"rack", :stack=>"ruby193"}, :resources=>{:memory=>64}}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger46" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up46" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger47" style="text-decoration: none;">+</a>)
+      <div id="pop-up47" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/helloworld", :method=>"GET", :headers=>{"Content-Length"=>106, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json", "Content-Type"=>"application/json"}, :body=>"{\"name\":\"helloworld\",\"instances\":1,\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"resources\":{\"memory\":64}}"}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:26 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"d34fbc16d8c29aeee7685dbdb1f72c10\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"helloworld\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"uris\":[],\"instances\":1,\"runningInstances\":0,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STOPPED\",\"services\":[],\"version\":\"df49270dd0b8268a186fbcc603c7e517-0\",\"env\":[],\"meta\":{\"debug\":null,\"console\":null,\"version\":1,\"created\":1377181406}}"}]
       </div>
       <br/>
       <br/>
       <font color="green">
-|--------------------------------------------->(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--------------------------------------------->(<a href="#" id="trigger48" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up6" style="background-color:#CEFFCE;">
- Cloud_Controller to Router      </div>
+      <div id="pop-up48" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to Router      </div>
       <br/>
 Channel: <a href="nats-messages.html#router.register">router.register</a>
       <br/>
-MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
-      <div id="pop-up7" style="background-color:#CEFFCE;">
-{"host":"9.2.227.42","port":9022,"uris":["api.vcap.me"],"tags":{"component":"CloudController"}}
+MSG: (<a href="#" id="trigger49" style="text-decoration: none;">+</a>)
+      <div id="pop-up49" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"host":"9.2.227.67","port":9022,"uris":["api.vcap.me"],"tags":{"component":"CloudController"}}
       </div>
       <br/>
       <br/>
       <font color="green">
-|----------------------------------------------------->(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger50" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up8" style="background-color:#CEFFCE;">
- Cloud_Controller to Stager      </div>
+      <div id="pop-up50" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+MSG: (<a href="#" id="trigger51" style="text-decoration: none;">+</a>)
+      <div id="pop-up51" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"35a1932c997acef0dd42c9d55873e813","app":"3","host":"9.2.227.67","port":60823,"uris":["shw.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"e5b4031c8166a4ccd88c24f7410cc89e0971aaa199951cabecc8d74998b22dfc"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger52" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up52" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+MSG: (<a href="#" id="trigger53" style="text-decoration: none;">+</a>)
+      <div id="pop-up53" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"35a1932c997acef0dd42c9d55873e813","app":"2","host":"9.2.227.67","port":50587,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"bbd9edd9c108c4b9bc8d2a549575671488c102dbe5b98313764fcc3401c7e5d7"}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger54" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up54" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+MSG: (<a href="#" id="trigger55" style="text-decoration: none;">+</a>)
+      <div id="pop-up55" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"35a1932c997acef0dd42c9d55873e813","app":"2","host":"9.2.227.67","port":50862,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"bc6628b1073c19a1793911f834516110746870df41a66430a431b73a457afa2c"}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger56" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up56" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger57" style="text-decoration: none;">+</a>)
+      <div id="pop-up57" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["PUT", "apps/helloworld", {:content=>:json, :payload=>{:name=>"helloworld", :instances=>1, :state=>"STOPPED", :staging=>{:model=>"rack", :stack=>"ruby193"}, :resources=>{:memory=>64, :disk=>2048, :fds=>256}, :env=>[], :uris=>["helloworld.vcap.me"], :services=>[], :console=>nil, :debug=>nil}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger60" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up60" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger61" style="text-decoration: none;">+</a>)
+      <div id="pop-up61" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/helloworld", :method=>"PUT", :headers=>{"Content-Length"=>227, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Content-Type"=>"application/json"}, :body=>"{\"name\":\"helloworld\",\"instances\":1,\"state\":\"STOPPED\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"env\":[],\"uris\":[\"helloworld.vcap.me\"],\"services\":[],\"console\":null,\"debug\":null}"}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:27 GMT", "content-type"=>"text/html; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "vary"=>"Accept-Encoding", "cache-control"=>"no-cache", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>" "}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger62" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up62" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger63" style="text-decoration: none;">+</a>)
+      <div id="pop-up63" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "services", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger66" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up66" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger67" style="text-decoration: none;">+</a>)
+      <div id="pop-up67" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/services", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:30 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"d751713988987e9331980363e24189ce\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"[]"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger68" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up68" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger69" style="text-decoration: none;">+</a>)
+      <div id="pop-up69" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["POST", "apps/helloworld/application", {:payload=>{:_method=>"put", :resources=>"[]", :application=>""}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger72" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up72" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger73" style="text-decoration: none;">+</a>)
+      <div id="pop-up73" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/helloworld/application", :method=>"POST", :headers=>{"Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU"}, :body=>{:_method=>"put", :resources=>"[]", :application=>""}}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:30 GMT", "content-type"=>"text/html; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "vary"=>"Accept-Encoding", "cache-control"=>"no-cache", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>" "}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger74" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up74" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger75" style="text-decoration: none;">+</a>)
+      <div id="pop-up75" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["PUT", "apps/helloworld", {:content=>:json, :payload=>{:name=>"helloworld", :instances=>1, :state=>"STARTED", :staging=>{:model=>"rack", :stack=>"ruby193"}, :resources=>{:memory=>64, :disk=>2048, :fds=>256}, :env=>[], :uris=>["helloworld.vcap.me"], :services=>[], :console=>nil, :debug=>nil}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------------------------------------------------->(<a href="#" id="trigger76" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up76" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to Stager      </div>
       <br/>
 Channel: <a href="nats-messages.html#staging">staging</a>
       <br/>
-MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
-      <div id="pop-up9" style="background-color:#CEFFCE;">
-{"app_id":22,"properties":{"services":[],"framework":"django","framework_info":{"name":"django","runtimes":[{"python2":{"default":true}}],"detection":[{"*.py":"."}]},"runtime":"python2","runtime_info":{"version":"2.6.5","description":"Python 2.6.5","executable":"python","version_output":"2.[5-7]","version_flag":"--version","environment":{"PATH":"/usr/bin:$PATH"},"status":{"name":"current"},"series":"python2","category":"python","name":"python2"},"resources":{"memory":128,"disk":2048,"fds":256},"environment":[],"meta":{"debug":null,"console":null}},"download_uri":"http://zxsfhgjg:ZNVfdase9@9.2.227.42:9022/staging/app/22","upload_uri":"http://zxsfhgjg:ZNVfdase9@9.2.227.42:9022/staging/droplet/22/be546ca68a3b54323abcfe65aaf247a6"}
+MSG: (<a href="#" id="trigger77" style="text-decoration: none;">+</a>)
+      <div id="pop-up77" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"app_id":49,"properties":{"services":[],"framework":"rack","framework_info":{"name":"rack","runtimes":[{"ruby18":{"default":true}},{"ruby19":{"default":false}},{"ruby193":{"default":false}}],"detection":[{"config.ru":true},{"config/environment.rb":false}]},"runtime":"ruby193","runtime_info":{"version":"1.9.3p194","description":"Ruby 1.9.3","executable":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin/ruby","version_flag":"-e 'puts RUBY_VERSION'","additional_checks":"-e 'puts RUBY_PATCHLEVEL == 194'","version_output":"1.9.3","environment":{"PATH":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin:/home/nima/cloudfoundry/.deployments/devbox/deploy/nodes/node-0.8.2/bin:$PATH","BUNDLE_GEMFILE":null},"status":{"name":"current"},"series":"ruby193","category":"ruby","name":"ruby193"},"resources":{"memory":64,"disk":2048,"fds":256},"environment":[],"meta":{"debug":null,"console":null}},"download_uri":"http://zxsfhgjg:ZNVfdase9@9.2.227.67:9022/staging/app/49","upload_uri":"http://zxsfhgjg:ZNVfdase9@9.2.227.67:9022/staging/droplet/49/5cf37fb06d5ada35ca55d7c63e0079f6"}
       </div>
       <br/>
       <br/>
       <font color="green">
-<-----------------------------------------------------|(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-----------------------------------------------------|(<a href="#" id="trigger82" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up10" style="background-color:#CEFFCE;">
- Stager to Cloud_Controller      </div>
+      <div id="pop-up82" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Stager to Cloud_Controller      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.0bc44a567f8138c4ce70c5c445">_INBOX.0bc4... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#_INBOX.b27395f9a09dd5e46ff52efe71">_INBOX.b273... (Direct Msg)</a>
       <br/>
-MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
-      <div id="pop-up11" style="background-color:#CEFFCE;">
-{"task_id":"8d00c8ad5634e5672ca9133ea77923c6","task_log":"[2013-08-02 09:27:06] Setting up temporary directories\n[2013-08-02 09:27:06] Downloading application\n[2013-08-02 09:27:06] Unpacking application\n[2013-08-02 09:27:06] Staging application\n[2013-08-02 09:27:07] Creating droplet\n[2013-08-02 09:27:07] Uploading droplet\n[2013-08-02 09:27:09] Done!\n"}
+MSG: (<a href="#" id="trigger83" style="text-decoration: none;">+</a>)
+      <div id="pop-up83" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"task_id":"6a39fe411a3cca2af577e75ce049d778","task_log":"[2013-08-22 10:23:31] Setting up temporary directories\n[2013-08-22 10:23:31] Downloading application\n[2013-08-22 10:23:31] Unpacking application\n[2013-08-22 10:23:31] Staging application\n[2013-08-22 10:23:32] # Logfile created on 2013-08-22 10:23:31 -0400 by logger.rb/25413\n[2013-08-22 10:23:32] Adding rack-1.5.2.gem to app...\n[2013-08-22 10:23:32] Adding rack-protection-1.5.0.gem to app...\n[2013-08-22 10:23:32] Adding tilt-1.4.1.gem to app...\n[2013-08-22 10:23:32] Adding sinatra-1.4.2.gem to app...\n[2013-08-22 10:23:32] Adding bundler-1.1.3.gem to app...\n[2013-08-22 10:23:32] Adding cf-autoconfig-0.0.4.gem to app...\n[2013-08-22 10:23:32] Adding cf-runtime-0.0.2.gem to app...\n[2013-08-22 10:23:32] Creating droplet\n[2013-08-22 10:23:32] Uploading droplet\n[2013-08-22 10:23:33] Done!\n"}
       </div>
       <br/>
       <br/>
       <font color="green">
-|-------------------------------->(<a href="#" id="trigger12" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-------------------------------->(<a href="#" id="trigger84" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up12" style="background-color:#CEFFCE;">
- Cloud_Controller to Health_Manager      </div>
+      <div id="pop-up84" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to Health_Manager      </div>
       <br/>
 Channel: <a href="nats-messages.html#droplet.updated">droplet.updated</a>
       <br/>
-MSG: (<a href="#" id="trigger13" style="text-decoration: none;">+</a>)
-      <div id="pop-up13" style="background-color:#CEFFCE;">
-{"droplet":22,"cc_partition":"default"}
+MSG: (<a href="#" id="trigger85" style="text-decoration: none;">+</a>)
+      <div id="pop-up85" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"droplet":49,"cc_partition":"default"}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger88" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up88" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger89" style="text-decoration: none;">+</a>)
+      <div id="pop-up89" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/helloworld", :method=>"PUT", :headers=>{"Content-Length"=>227, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Content-Type"=>"application/json"}, :body=>"{\"name\":\"helloworld\",\"instances\":1,\"state\":\"STARTED\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"env\":[],\"uris\":[\"helloworld.vcap.me\"],\"services\":[],\"console\":null,\"debug\":null}"}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:33 GMT", "content-type"=>"text/html; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "vary"=>"Accept-Encoding", "cache-control"=>"no-cache", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>" "}]
       </div>
       <br/>
       <br/>
       <font color="green">
-|------------------------------------->(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|------------------------------------->(<a href="#" id="trigger92" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up14" style="background-color:#CEFFCE;">
- Cloud_Controller to Dea      </div>
+      <div id="pop-up92" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to DEA      </div>
       <br/>
-Channel: <a href="nats-messages.html#dea.aa77524144cf17305e392ea8ee292604.start">dea.aa77...start</a>
+Channel: <a href="nats-messages.html#dea.35a1932c997acef0dd42c9d55873e813.start">dea.35a1...start</a>
       <br/>
-MSG: (<a href="#" id="trigger15" style="text-decoration: none;">+</a>)
-      <div id="pop-up15" style="background-color:#CEFFCE;">
-{"droplet":22,"name":"help","uris":["help.vcap.me"],"runtime":"python2","runtime_info":{"version":"2.6.5","description":"Python 2.6.5","executable":"python","version_output":"2.[5-7]","version_flag":"--version","environment":{"PATH":"/usr/bin:$PATH"},"status":{"name":"current"},"series":"python2","category":"python","name":"python2"},"framework":"django","prod":false,"sha1":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4","executableFile":"/var/vcap/shared/droplets/droplet_22","executableUri":"http://9.2.227.42:9022/staged_droplets/22/b50ffa2303a68e5f3c314bd6e0ac120e12d942c4","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","services":[],"limits":{"mem":128,"disk":2048,"fds":256},"env":[],"users":["nkavian@us.ibm.com"],"cc_partition":"default","debug":null,"console":null,"index":0}
+MSG: (<a href="#" id="trigger93" style="text-decoration: none;">+</a>)
+      <div id="pop-up93" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"droplet":49,"name":"helloworld","uris":["helloworld.vcap.me"],"runtime":"ruby193","runtime_info":{"version":"1.9.3p194","description":"Ruby 1.9.3","executable":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin/ruby","version_flag":"-e 'puts RUBY_VERSION'","additional_checks":"-e 'puts RUBY_PATCHLEVEL == 194'","version_output":"1.9.3","environment":{"PATH":"/home/nima/cloudfoundry/.deployments/devbox/deploy/rubies/ruby-1.9.3-p194/bin:/home/nima/cloudfoundry/.deployments/devbox/deploy/nodes/node-0.8.2/bin:$PATH","BUNDLE_GEMFILE":null},"status":{"name":"current"},"series":"ruby193","category":"ruby","name":"ruby193"},"framework":"rack","prod":false,"sha1":"f9a3bf8bd64cbf9c10b9c497ae8dd7221da374c9","executableFile":"/var/vcap/shared/droplets/droplet_49","executableUri":"http://9.2.227.67:9022/staged_droplets/49/f9a3bf8bd64cbf9c10b9c497ae8dd7221da374c9","version":"f9a3bf8bd64cbf9c10b9c497ae8dd7221da374c9-1","services":[],"limits":{"mem":64,"disk":2048,"fds":256},"env":[],"users":["nkavian@us.ibm.com"],"cc_partition":"default","debug":null,"console":null,"index":0}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger96" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up96" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger97" style="text-decoration: none;">+</a>)
+      <div id="pop-up97" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "apps/helloworld/instances", {:accept=>:json}]
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger16" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger100" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up16" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+      <div id="pop-up100" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.b1562c1ad1ec5d9fe3d98c1a81">_INBOX.b156... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#_INBOX.b0a46c6ec845439bdc6370621a">_INBOX.b0a4... (Direct Msg)</a>
       <br/>
-MSG: (<a href="#" id="trigger17" style="text-decoration: none;">+</a>)
-      <div id="pop-up17" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","droplet":"22","instance":"28a97c30cf6d4cdba38c901e1b9ce093","index":0,"state":"STARTING","state_timestamp":1375450029,"file_uri":"http://9.2.227.42:12345/droplets/","credentials":["d5801151771c32020a02119843e2e79c","329d1e0926b17f7ab202cf12ab62ec4c"],"staged":"help-0-28a97c30cf6d4cdba38c901e1b9ce093","debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
+MSG: (<a href="#" id="trigger101" style="text-decoration: none;">+</a>)
+      <div id="pop-up101" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"35a1932c997acef0dd42c9d55873e813","version":"f9a3bf8bd64cbf9c10b9c497ae8dd7221da374c9-1","droplet":"49","instance":"4d6622bbff0edee4803933bdd5da02bc","index":0,"state":"STARTING","state_timestamp":1377181413,"file_uri":"http://9.2.227.67:12345/droplets/","credentials":["f56eb589a8ca29329ecf1e09cefd6756","64e1d4d5695c849fb2feafef076f6e1c"],"staged":null,"debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger104" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up104" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger105" style="text-decoration: none;">+</a>)
+      <div id="pop-up105" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/helloworld/instances", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:33 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"e0e851c61b5448d9faba7f886ce04163\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"instances\":[{\"index\":0,\"state\":\"STARTING\",\"since\":1377181413,\"debug_ip\":null,\"debug_port\":null,\"console_ip\":null,\"console_port\":null}]}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger96" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up96" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger97" style="text-decoration: none;">+</a>)
+      <div id="pop-up97" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "apps/helloworld/instances", {:accept=>:json}]
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger108" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up18" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+      <div id="pop-up108" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.565f83981c76cbc7929c76494b">_INBOX.565f... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
       <br/>
-MSG: (<a href="#" id="trigger19" style="text-decoration: none;">+</a>)
-      <div id="pop-up19" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","droplet":"22","instance":"28a97c30cf6d4cdba38c901e1b9ce093","index":0,"state":"STARTING","state_timestamp":1375450029,"file_uri":"http://9.2.227.42:12345/droplets/","credentials":["d5801151771c32020a02119843e2e79c","329d1e0926b17f7ab202cf12ab62ec4c"],"staged":"help-0-28a97c30cf6d4cdba38c901e1b9ce093","debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
+MSG: (<a href="#" id="trigger109" style="text-decoration: none;">+</a>)
+      <div id="pop-up109" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"35a1932c997acef0dd42c9d55873e813","app":"49","host":"9.2.227.67","port":45688,"uris":["helloworld.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"e76d10f3726799b179f126c25c1af92214ccbe321053cb4220ded53996669989"}
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger20" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger112" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up20" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+      <div id="pop-up112" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.820383f1e8e573c1606785b7f0">_INBOX.8203... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#_INBOX.335aceb0047b7f38851ad4e0d2">_INBOX.335a... (Direct Msg)</a>
       <br/>
-MSG: (<a href="#" id="trigger21" style="text-decoration: none;">+</a>)
-      <div id="pop-up21" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","droplet":"22","instance":"28a97c30cf6d4cdba38c901e1b9ce093","index":0,"state":"STARTING","state_timestamp":1375450029,"file_uri":"http://9.2.227.42:12345/droplets/","credentials":["d5801151771c32020a02119843e2e79c","329d1e0926b17f7ab202cf12ab62ec4c"],"staged":"help-0-28a97c30cf6d4cdba38c901e1b9ce093","debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
+MSG: (<a href="#" id="trigger113" style="text-decoration: none;">+</a>)
+      <div id="pop-up113" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"35a1932c997acef0dd42c9d55873e813","version":"f9a3bf8bd64cbf9c10b9c497ae8dd7221da374c9-1","droplet":"49","instance":"4d6622bbff0edee4803933bdd5da02bc","index":0,"state":"RUNNING","state_timestamp":1377181414,"file_uri":"http://9.2.227.67:12345/droplets/","credentials":["f56eb589a8ca29329ecf1e09cefd6756","64e1d4d5695c849fb2feafef076f6e1c"],"staged":"helloworld-0-4d6622bbff0edee4803933bdd5da02bc","debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
       </div>
       <br/>
       <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger22" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger116" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up22" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+      <div id="pop-up116" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.d6050466d71a96c8f9e1067777">_INBOX.d605... (Direct Msg)</a>
-      <br/>
-MSG: (<a href="#" id="trigger23" style="text-decoration: none;">+</a>)
-      <div id="pop-up23" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","droplet":"22","instance":"28a97c30cf6d4cdba38c901e1b9ce093","index":0,"state":"STARTING","state_timestamp":1375450029,"file_uri":"http://9.2.227.42:12345/droplets/","credentials":["d5801151771c32020a02119843e2e79c","329d1e0926b17f7ab202cf12ab62ec4c"],"staged":"help-0-28a97c30cf6d4cdba38c901e1b9ce093","debug_ip":null,"debug_port":null,"console_ip":null,"console_port":null}
+MSG: (<a href="#" id="trigger117" style="text-decoration: none;">+</a>)
+      <div id="pop-up117" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/helloworld/instances", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:34 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"a16d9eb5dbd5d02ea4263b401b82a24e\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"instances\":[{\"index\":0,\"state\":\"RUNNING\",\"since\":1377181414,\"debug_ip\":null,\"debug_port\":null,\"console_ip\":null,\"console_port\":null}]}"}]
       </div>
       <br/>
       <br/>

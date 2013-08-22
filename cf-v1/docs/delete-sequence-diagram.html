@@ -1,56 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-  <head>
-    <title>CloudFoundry "delete" Command Documentation -- Auto-generated.</title>
+  <header>
+    <title>CloudFoundry delete Command Documentation -- Auto-generated.</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
     </script>
-    <script type="text/javascript" src="../scripts/hover.js">
+    <script type="text/javascript" src="../assets/hover.js">
     </script>
-  </head>
+  </header>
   <body style="font-family:courier;">
     <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
-"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+      <div style="float:right;color:black;padding:0 50 0 0">
+<a href="#" id="expand" style="color:black">expand</a>
+ | 
+<a href="#" id="collapse" style="color:black">collapse</a>
+ | 
+<a href="javascript:window.history.back()" id="back" style="color:black">back</a>
+      </div>
+"VMC"&nbsp;&nbsp;"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"DEA"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"UAA"
     </div>
     <div style="margin-top:50px;">
-      <font color="green">
-|------------------------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up0" style="background-color:#CEFFCE;">
- Cloud_Controller to Dea      </div>
+      <div id="pop-up0" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "apps", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger16" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up16" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger17" style="text-decoration: none;">+</a>)
+      <div id="pop-up17" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:42 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"ed96d2db1478401d689bf6c9153ad5b5\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"[{\"name\":\"ss\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"uris\":[\"ss.vcap.me\",\"ss2.vcap.me\"],\"instances\":2,\"runningInstances\":2,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STARTED\",\"services\":[],\"version\":\"3887e80424051723165fec9d5b0f32d168da043e-168\",\"env\":[],\"meta\":{\"debug\":null,\"console\":null,\"version\":449,\"created\":1377181422}},{\"name\":\"helloworld\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"uris\":[\"helloworld.vcap.me\"],\"instances\":1,\"runningInstances\":1,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STARTED\",\"services\":[],\"version\":\"f9a3bf8bd64cbf9c10b9c497ae8dd7221da374c9-1\",\"env\":[],\"meta\":{\"debug\":null,\"console\":null,\"version\":3,\"created\":1377181422}},{\"name\":\"shw\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"uris\":[\"shw.vcap.me\"],\"instances\":1,\"runningInstances\":1,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STARTED\",\"services\":[],\"version\":\"d10f330a80c4a9730aed72fe3484fd3f46ac3827-49\",\"env\":[],\"meta\":{\"debug\":null,\"console\":null,\"version\":99,\"created\":1377181422}}]"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up18" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger19" style="text-decoration: none;">+</a>)
+      <div id="pop-up19" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "apps/helloworld", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger24" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up24" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger25" style="text-decoration: none;">+</a>)
+      <div id="pop-up25" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/helloworld", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:42 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"693cac52ea76fdeb0835453adb5ea318\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"helloworld\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"uris\":[\"helloworld.vcap.me\"],\"instances\":1,\"runningInstances\":1,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STARTED\",\"services\":[],\"version\":\"f9a3bf8bd64cbf9c10b9c497ae8dd7221da374c9-1\",\"env\":[],\"meta\":{\"debug\":null,\"console\":null,\"version\":3,\"created\":1377181422}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger26" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up26" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger27" style="text-decoration: none;">+</a>)
+      <div id="pop-up27" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["DELETE", "apps/helloworld", {}]
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|------------------------------------->(<a href="#" id="trigger28" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up28" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to DEA      </div>
       <br/>
 Channel: <a href="nats-messages.html#dea.stop">dea.stop</a>
       <br/>
-MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
-      <div id="pop-up1" style="background-color:#CEFFCE;">
-{"droplet":22}
+MSG: (<a href="#" id="trigger29" style="text-decoration: none;">+</a>)
+      <div id="pop-up29" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"droplet":49}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger32" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up32" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger33" style="text-decoration: none;">+</a>)
+      <div id="pop-up33" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps/helloworld", :method=>"DELETE", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:23:43 GMT", "content-type"=>"text/html; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "vary"=>"Accept-Encoding", "cache-control"=>"no-cache", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>" "}]
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger34" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up2" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Router      </div>
+      <div id="pop-up34" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
       <br/>
 Channel: <a href="nats-messages.html#router.unregister">router.unregister</a>
       <br/>
-MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
-      <div id="pop-up3" style="background-color:#CEFFCE;">
-{"dea":"aa77524144cf17305e392ea8ee292604","app":"22","host":"9.2.227.42","port":47816,"uris":["help.vcap.me"]}
+MSG: (<a href="#" id="trigger35" style="text-decoration: none;">+</a>)
+      <div id="pop-up35" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"35a1932c997acef0dd42c9d55873e813","app":"49","host":"9.2.227.67","port":45688,"uris":["helloworld.vcap.me"]}
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger36" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up4" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Health_Manager      </div>
+      <div id="pop-up36" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Health_Manager      </div>
       <br/>
 Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
       <br/>
-MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
-      <div id="pop-up5" style="background-color:#CEFFCE;">
-{"droplet":"22","version":"b50ffa2303a68e5f3c314bd6e0ac120e12d942c4-1","instance":"28a97c30cf6d4cdba38c901e1b9ce093","index":0,"reason":"STOPPED","cc_partition":"default"}
+MSG: (<a href="#" id="trigger37" style="text-decoration: none;">+</a>)
+      <div id="pop-up37" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"droplet":"49","version":"f9a3bf8bd64cbf9c10b9c497ae8dd7221da374c9-1","instance":"4d6622bbff0edee4803933bdd5da02bc","index":0,"reason":"STOPPED","cc_partition":"default"}
       </div>
       <br/>
       <br/>

@@ -1,17 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-  <head>
-    <title>CloudFoundry "apps" Command Documentation -- Auto-generated.</title>
+  <header>
+    <title>CloudFoundry apps Command Documentation -- Auto-generated.</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
     </script>
-    <script type="text/javascript" src="../scripts/hover.js">
+    <script type="text/javascript" src="../assets/hover.js">
     </script>
-  </head>
+  </header>
   <body style="font-family:courier;">
     <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
-"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+      <div style="float:right;color:black;padding:0 50 0 0">
+<a href="#" id="expand" style="color:black">expand</a>
+ | 
+<a href="#" id="collapse" style="color:black">collapse</a>
+ | 
+<a href="javascript:window.history.back()" id="back" style="color:black">back</a>
+      </div>
+"VMC"&nbsp;&nbsp;"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"DEA"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"UAA"
     </div>
     <div style="margin-top:50px;">
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up0" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "apps", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger16" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up16" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+MSG: (<a href="#" id="trigger17" style="text-decoration: none;">+</a>)
+      <div id="pop-up17" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/apps", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:21:29 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"b9c4f64687eb9268d6b03ba972036bfb\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"[{\"name\":\"ss\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"uris\":[\"ss.vcap.me\",\"ss2.vcap.me\"],\"instances\":1,\"runningInstances\":1,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STARTED\",\"services\":[],\"version\":\"3887e80424051723165fec9d5b0f32d168da043e-164\",\"env\":[],\"meta\":{\"debug\":null,\"console\":null,\"version\":437,\"created\":1377181289}},{\"name\":\"hi\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"uris\":[\"hi.vcap.me\"],\"instances\":1,\"runningInstances\":1,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STARTED\",\"services\":[],\"version\":\"6d708d724d040867518a4fad208e856e8480cbd1-1\",\"env\":[],\"meta\":{\"debug\":null,\"console\":null,\"version\":3,\"created\":1377181289}},{\"name\":\"shw\",\"staging\":{\"model\":\"rack\",\"stack\":\"ruby193\"},\"uris\":[\"shw.vcap.me\"],\"instances\":1,\"runningInstances\":1,\"resources\":{\"memory\":64,\"disk\":2048,\"fds\":256},\"state\":\"STARTED\",\"services\":[],\"version\":\"d10f330a80c4a9730aed72fe3484fd3f46ac3827-49\",\"env\":[],\"meta\":{\"debug\":null,\"console\":null,\"version\":99,\"created\":1377181289}}]"}]
+      </div>
+      <br/>
+      <br/>
     </div>
   </body>
 </html>
