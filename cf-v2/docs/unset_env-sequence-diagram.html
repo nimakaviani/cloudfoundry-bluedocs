@@ -1,382 +1,783 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
-  <head>
-    <title>CloudFoundry "unset_env" Command Documentation -- Auto-generated.</title>
+  <header>
+    <title>CloudFoundry unset_env Command Documentation -- Auto-generated.</title>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
     </script>
-    <script type="text/javascript" src="../scripts/hover.js">
+    <script type="text/javascript" src="../assets/hover.js">
     </script>
-  </head>
+  </header>
   <body style="font-family:courier;">
     <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
-"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"Dea"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Stager"&nbsp;&nbsp;"Uaa"
+      <div style="float:right;color:black;padding:0 50 0 0">
+<a href="#" id="expand" style="color:black">expand</a>
+ | 
+<a href="#" id="collapse" style="color:black">collapse</a>
+ | 
+<a href="javascript:window.history.back()" id="back" style="color:black">back</a>
+      </div>
+"CF"&nbsp;&nbsp;"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"DEA"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Warden"&nbsp;&nbsp;"UAA"
     </div>
     <div style="margin-top:50px;">
-      <font color="green">
-|------------------------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up0" style="background-color:#CEFFCE;">
- Cloud_Controller to Dea      </div>
+      <div id="pop-up0" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps", {:accept=>:json, :params=>{:q=>"name:hello", :"inline-relations-depth"=>1}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up2" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
+      <div id="pop-up3" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps?q=name%3Ahello&inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"ea8ca6b9-0087-4266-a1a6-11d084855060", "content-length"=>"3803", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n        \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n        \"created_at\": \"2013-08-22 15:13:45 +0000\",\n        \"updated_at\": \"2013-08-22 15:18:53 +0000\"\n      },\n      \"entity\": {\n        \"name\": \"hello\",\n        \"production\": false,\n        \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"buildpack\": null,\n        \"detected_buildpack\": \"Ruby/Rack\",\n        \"environment_json\": {\n          \"time\": \"13771847281\"\n        },\n        \"memory\": 256,\n        \"instances\": 1,\n        \"disk_quota\": 1024,\n        \"state\": \"STARTED\",\n        \"version\": \"c337e85c-4617-499c-a3c2-b652ed1a3991\",\n        \"command\": null,\n        \"console\": true,\n        \"debug\": null,\n        \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n        \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n        \"service_bindings\": [\n\n        ],\n        \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n        \"routes\": [\n          {\n            \"metadata\": {\n              \"guid\": \"d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"created_at\": \"2013-07-24 21:12:17 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"host\": \"hello\",\n              \"domain_guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"apps_url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105/apps\",\n              \"domain_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\"\n            }\n          }\n        ],\n        \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n        \"app_events\": [\n\n        ],\n        \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"space\": {\n          \"metadata\": {\n            \"guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"created_at\": \"2013-07-24 21:11:38 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"myspace\",\n            \"organization_guid\": \"35515897-d470-4029-b838-399ca31b850a\",\n            \"developers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/developers\",\n            \"managers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/managers\",\n            \"auditors_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/auditors\",\n            \"apps_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps\",\n            \"domains_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/domains\",\n            \"service_instances_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/service_instances\",\n            \"app_events_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/app_events\",\n            \"organization_url\": \"/v2/organizations/35515897-d470-4029-b838-399ca31b850a\"\n          }\n        },\n        \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"stack\": {\n          \"metadata\": {\n            \"guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"created_at\": \"2013-07-24 18:25:48 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"lucid64\",\n            \"description\": \"Ubuntu 10.04 on x86-64\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up4" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+      <div id="pop-up5" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["PUT", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", {:content=>:json, :payload=>{:environment_json=>{}}, :return_response=>true}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", :method=>"PUT", :headers=>{"Content-Length"=>23, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Content-Type"=>"application/json"}, :body=>"{\"environment_json\":{}}"}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"20a64970-71cd-47c2-ac11-099bef5193b6", "content-length"=>"1152", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"201", :body=>"{\n  \"metadata\": {\n    \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"created_at\": \"2013-08-22 15:13:45 +0000\",\n    \"updated_at\": \"2013-08-22 15:19:09 +0000\"\n  },\n  \"entity\": {\n    \"name\": \"hello\",\n    \"production\": false,\n    \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n    \"buildpack\": null,\n    \"detected_buildpack\": \"Ruby/Rack\",\n    \"environment_json\": {\n\n    },\n    \"memory\": 256,\n    \"instances\": 1,\n    \"disk_quota\": 1024,\n    \"state\": \"STARTED\",\n    \"version\": \"c337e85c-4617-499c-a3c2-b652ed1a3991\",\n    \"command\": null,\n    \"console\": true,\n    \"debug\": null,\n    \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n    \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n    \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n    \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n    \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n  }\n}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up8" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
+      <div id="pop-up9" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["PUT", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", {:content=>:json, :payload=>{:state=>"STOPPED"}, :return_response=>true}]
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|------------------------------------->(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up10" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to DEA      </div>
       <br/>
 Channel: <a href="nats-messages.html#dea.stop">dea.stop</a>
       <br/>
-MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
-      <div id="pop-up1" style="background-color:#CEFFCE;">
-{"droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec"}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-|-------------------------------->(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up2" style="background-color:#CEFFCE;">
- Cloud_Controller to Health_Manager      </div>
-      <br/>
-Channel: <a href="nats-messages.html#droplet.updated">droplet.updated</a>
-      <br/>
-MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
-      <div id="pop-up3" style="background-color:#CEFFCE;">
-{"droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","cc_partition":"ng"}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up4" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Health_Manager      </div>
-      <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up4" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
-      <br/>
-MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
-      <div id="pop-up5" style="background-color:#CEFFCE;">
-{"cc_partition":"ng","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"26e25a40-194e-4e55-9d5b-ea8e56d5c08d","instance":"45e58236af8cc60b63f23165fab0ac71","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up6" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Health_Manager      </div>
-      <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up6" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
-      <br/>
-MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
-      <div id="pop-up7" style="background-color:#CEFFCE;">
-{"cc_partition":"ng","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"26e25a40-194e-4e55-9d5b-ea8e56d5c08d","instance":"45e58236af8cc60b63f23165fab0ac71","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up8" style="background-color:#CEFFCE;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dea to Health_Manager      </div>
-      <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up8" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
-      <br/>
-MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
-      <div id="pop-up9" style="background-color:#CEFFCE;">
-{"cc_partition":"ng","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"26e25a40-194e-4e55-9d5b-ea8e56d5c08d","instance":"45e58236af8cc60b63f23165fab0ac71","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-|------------------------------------->(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up10" style="background-color:#CEFFCE;">
- Cloud_Controller to Dea      </div>
-      <br/>
-Channel: <a href="nats-messages.html#dea.0-ab5b081c9b53496c0c9792a27db7786f.start">dea.0-ab...start</a>
-      <br/>
 MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
-      <div id="pop-up11" style="background-color:#CEFFCE;">
-{"droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","name":"hello","uris":["hello.vcap.me"],"prod":false,"sha1":"926a686539e5a4b9e75fdd81b10006a1622faf72","executableFile":"deprecated","executableUri":"http://zxsfhgjg:ZNVfdase9@127.0.0.1:8181/staging/droplets/125c27a1-60dd-498f-83bd-9ea95949cdec/download","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","services":[],"limits":{"mem":256,"disk":1024,"fds":16384},"cc_partition":"ng","env":[],"console":true,"debug":null,"index":0}
+      <div id="pop-up11" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3"}
       </div>
       <br/>
       <br/>
       <font color="green">
-|-------------------------------->(<a href="#" id="trigger12" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-------------------------------->(<a href="#" id="trigger12" style="text-decoration: none;">+</a>)
       </font>
       <div id="pop-up12" style="background-color:#CEFFCE;">
- Cloud_Controller to Health_Manager      </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to Health_Manager      </div>
       <br/>
 Channel: <a href="nats-messages.html#droplet.updated">droplet.updated</a>
       <br/>
 MSG: (<a href="#" id="trigger13" style="text-decoration: none;">+</a>)
-      <div id="pop-up13" style="background-color:#CEFFCE;">
-{"droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","cc_partition":"ng"}
+      <div id="pop-up13" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","cc_partition":"ng"}
       </div>
       <br/>
       <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up14" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.01a228bf811eea9b346448b8c1">_INBOX.01a2... (Direct Msg)</a>
+      <div id="pop-up14" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
       <br/>
 MSG: (<a href="#" id="trigger15" style="text-decoration: none;">+</a>)
-      <div id="pop-up15" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":null}
+      <div id="pop-up15" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", :method=>"PUT", :headers=>{"Content-Length"=>19, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Content-Type"=>"application/json"}, :body=>"{\"state\":\"STOPPED\"}"}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"efbc7867-6317-4e70-b94f-ff36611fffd4", "content-length"=>"1152", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"201", :body=>"{\n  \"metadata\": {\n    \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"created_at\": \"2013-08-22 15:13:45 +0000\",\n    \"updated_at\": \"2013-08-22 15:19:09 +0000\"\n  },\n  \"entity\": {\n    \"name\": \"hello\",\n    \"production\": false,\n    \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n    \"buildpack\": null,\n    \"detected_buildpack\": \"Ruby/Rack\",\n    \"environment_json\": {\n\n    },\n    \"memory\": 256,\n    \"instances\": 1,\n    \"disk_quota\": 1024,\n    \"state\": \"STOPPED\",\n    \"version\": \"c337e85c-4617-499c-a3c2-b652ed1a3991\",\n    \"command\": null,\n    \"console\": true,\n    \"debug\": null,\n    \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n    \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n    \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n    \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n    \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n  }\n}"}]
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger16" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up16" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.01a228bf811eea9b346448b8c1">_INBOX.01a2... (Direct Msg)</a>
-      <br/>
-MSG: (<a href="#" id="trigger17" style="text-decoration: none;">+</a>)
-      <div id="pop-up17" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":null}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
       </font>
       <div id="pop-up18" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Health_Manager      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.01a228bf811eea9b346448b8c1">_INBOX.01a2... (Direct Msg)</a>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up18" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
       <br/>
 MSG: (<a href="#" id="trigger19" style="text-decoration: none;">+</a>)
-      <div id="pop-up19" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":null}
+      <div id="pop-up19" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"cc_partition":"ng","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"c337e85c-4617-499c-a3c2-b652ed1a3991","instance":"352641e21ca4e00104f6831e4a6ebd0d","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger20" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up20" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+      <div id="pop-up18" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Health_Manager      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.25f70ce4a0b14991b58feb6efd">_INBOX.25f7... (Direct Msg)</a>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up18" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-MSG: (<a href="#" id="trigger21" style="text-decoration: none;">+</a>)
-      <div id="pop-up21" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61022}
+Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
+      <br/>
+MSG: (<a href="#" id="trigger19" style="text-decoration: none;">+</a>)
+      <div id="pop-up19" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"cc_partition":"ng","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"c337e85c-4617-499c-a3c2-b652ed1a3991","instance":"352641e21ca4e00104f6831e4a6ebd0d","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger22" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up22" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+      <div id="pop-up18" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Health_Manager      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.25f70ce4a0b14991b58feb6efd">_INBOX.25f7... (Direct Msg)</a>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up18" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-MSG: (<a href="#" id="trigger23" style="text-decoration: none;">+</a>)
-      <div id="pop-up23" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61022}
+Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
+      <br/>
+MSG: (<a href="#" id="trigger19" style="text-decoration: none;">+</a>)
+      <div id="pop-up19" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"cc_partition":"ng","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"c337e85c-4617-499c-a3c2-b652ed1a3991","instance":"352641e21ca4e00104f6831e4a6ebd0d","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
       </div>
       <br/>
       <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger24" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger28" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up24" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.25f70ce4a0b14991b58feb6efd">_INBOX.25f7... (Direct Msg)</a>
-      <br/>
-MSG: (<a href="#" id="trigger25" style="text-decoration: none;">+</a>)
-      <div id="pop-up25" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61022}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger26" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up26" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.008ade13b910ea0f406b384ebf">_INBOX.008a... (Direct Msg)</a>
-      <br/>
-MSG: (<a href="#" id="trigger27" style="text-decoration: none;">+</a>)
-      <div id="pop-up27" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger28" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up28" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.008ade13b910ea0f406b384ebf">_INBOX.008a... (Direct Msg)</a>
+      <div id="pop-up28" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
       <br/>
 MSG: (<a href="#" id="trigger29" style="text-decoration: none;">+</a>)
-      <div id="pop-up29" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+      <div id="pop-up29" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["PUT", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", {:content=>:json, :payload=>{}, :return_response=>true}]
       </div>
       <br/>
       <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger30" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger30" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up30" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.008ade13b910ea0f406b384ebf">_INBOX.008a... (Direct Msg)</a>
+      <div id="pop-up30" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
       <br/>
 MSG: (<a href="#" id="trigger31" style="text-decoration: none;">+</a>)
-      <div id="pop-up31" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+      <div id="pop-up31" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", :method=>"PUT", :headers=>{"Content-Length"=>2, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Content-Type"=>"application/json"}, :body=>"{}"}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"2172f116-c776-4ccc-9aed-3e7320d080da", "content-length"=>"1152", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"201", :body=>"{\n  \"metadata\": {\n    \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"created_at\": \"2013-08-22 15:13:45 +0000\",\n    \"updated_at\": \"2013-08-22 15:19:10 +0000\"\n  },\n  \"entity\": {\n    \"name\": \"hello\",\n    \"production\": false,\n    \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n    \"buildpack\": null,\n    \"detected_buildpack\": \"Ruby/Rack\",\n    \"environment_json\": {\n\n    },\n    \"memory\": 256,\n    \"instances\": 1,\n    \"disk_quota\": 1024,\n    \"state\": \"STOPPED\",\n    \"version\": \"c337e85c-4617-499c-a3c2-b652ed1a3991\",\n    \"command\": null,\n    \"console\": true,\n    \"debug\": null,\n    \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n    \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n    \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n    \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n    \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n  }\n}"}]
       </div>
       <br/>
       <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger32" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger32" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up32" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.da9753b3c897a967f8a96418e0">_INBOX.da97... (Direct Msg)</a>
+      <div id="pop-up32" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
       <br/>
 MSG: (<a href="#" id="trigger33" style="text-decoration: none;">+</a>)
-      <div id="pop-up33" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+      <div id="pop-up33" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["PUT", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", {:content=>:json, :payload=>{:console=>true, :state=>"STARTED"}, :return_response=>true}]
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger34" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|------------------------------------->(<a href="#" id="trigger34" style="text-decoration: none;">+</a>)
       </font>
       <div id="pop-up34" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to DEA      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.da9753b3c897a967f8a96418e0">_INBOX.da97... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#dea.0-148aa19ed399f2bd83d6e6512a63f5c6.start">dea.0-14...start</a>
       <br/>
 MSG: (<a href="#" id="trigger35" style="text-decoration: none;">+</a>)
-      <div id="pop-up35" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+      <div id="pop-up35" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","name":"hello","uris":["hello.vcap.me"],"prod":false,"sha1":"319524a69d22848187954b47f67f1f0686cf1141","executableFile":"deprecated","executableUri":"http://zxsfhgjg:ZNVfdase9@127.0.0.1:8181/staging/droplets/b8348596-f3cb-42fa-8886-cb7713897ad3/download","version":"954c1713-cc4f-46eb-846f-0626ec770abc","services":[],"limits":{"mem":256,"disk":1024,"fds":16384},"cc_partition":"ng","env":[],"console":true,"debug":null,"index":0}
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger36" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-------------------------------->(<a href="#" id="trigger12" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up36" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+      <div id="pop-up12" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to Health_Manager      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.da9753b3c897a967f8a96418e0">_INBOX.da97... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#droplet.updated">droplet.updated</a>
       <br/>
-MSG: (<a href="#" id="trigger37" style="text-decoration: none;">+</a>)
-      <div id="pop-up37" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+MSG: (<a href="#" id="trigger13" style="text-decoration: none;">+</a>)
+      <div id="pop-up13" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","cc_partition":"ng"}
       </div>
       <br/>
       <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger38" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger38" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up38" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.0392773160f30a5e5b91081050">_INBOX.0392... (Direct Msg)</a>
+      <div id="pop-up38" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
       <br/>
 MSG: (<a href="#" id="trigger39" style="text-decoration: none;">+</a>)
-      <div id="pop-up39" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+      <div id="pop-up39" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", :method=>"PUT", :headers=>{"Content-Length"=>34, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Content-Type"=>"application/json"}, :body=>"{\"console\":true,\"state\":\"STARTED\"}"}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"3e9aec78-05fa-469a-a25a-ec378d0e772a", "content-length"=>"1152", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"201", :body=>"{\n  \"metadata\": {\n    \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"created_at\": \"2013-08-22 15:13:45 +0000\",\n    \"updated_at\": \"2013-08-22 15:19:11 +0000\"\n  },\n  \"entity\": {\n    \"name\": \"hello\",\n    \"production\": false,\n    \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n    \"buildpack\": null,\n    \"detected_buildpack\": \"Ruby/Rack\",\n    \"environment_json\": {\n\n    },\n    \"memory\": 256,\n    \"instances\": 1,\n    \"disk_quota\": 1024,\n    \"state\": \"STARTED\",\n    \"version\": \"954c1713-cc4f-46eb-846f-0626ec770abc\",\n    \"command\": null,\n    \"console\": true,\n    \"debug\": null,\n    \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n    \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n    \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n    \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n    \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n  }\n}"}]
       </div>
       <br/>
       <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger40" style="text-decoration: none;">+</a>)
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger40" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up40" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.0392773160f30a5e5b91081050">_INBOX.0392... (Direct Msg)</a>
+      <div id="pop-up40" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
       <br/>
 MSG: (<a href="#" id="trigger41" style="text-decoration: none;">+</a>)
-      <div id="pop-up41" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+      <div id="pop-up41" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", {:accept=>:json}]
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger42" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up42" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
-      <br/>
-Channel: <a href="nats-messages.html#_INBOX.0392773160f30a5e5b91081050">_INBOX.0392... (Direct Msg)</a>
-      <br/>
-MSG: (<a href="#" id="trigger43" style="text-decoration: none;">+</a>)
-      <div id="pop-up43" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"STARTING","state_timestamp":1375454502.4482768,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
-      </div>
-      <br/>
-      <br/>
-      <font color="green">
-<-------------------------------------|(<a href="#" id="trigger44" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger44" style="text-decoration: none;">+</a>)
       </font>
       <div id="pop-up44" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.14fbdf909bad00c1ff443ac78a">_INBOX.14fb... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#_INBOX.c3a57b176de23f143beee59201">_INBOX.c3a5... (Direct Msg)</a>
       <br/>
 MSG: (<a href="#" id="trigger45" style="text-decoration: none;">+</a>)
-      <div id="pop-up45" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"RUNNING","state_timestamp":1375454509.1121016,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+      <div id="pop-up45" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":null}
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger46" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger44" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up46" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+      <div id="pop-up44" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.14fbdf909bad00c1ff443ac78a">_INBOX.14fb... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#_INBOX.c3a57b176de23f143beee59201">_INBOX.c3a5... (Direct Msg)</a>
       <br/>
-MSG: (<a href="#" id="trigger47" style="text-decoration: none;">+</a>)
-      <div id="pop-up47" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"RUNNING","state_timestamp":1375454509.1121016,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+MSG: (<a href="#" id="trigger45" style="text-decoration: none;">+</a>)
+      <div id="pop-up45" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":null}
       </div>
       <br/>
       <br/>
       <font color="green">
-<-------------------------------------|(<a href="#" id="trigger48" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger44" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up48" style="background-color:#CEFFCE;">
- Dea to Cloud_Controller      </div>
+      <div id="pop-up44" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.14fbdf909bad00c1ff443ac78a">_INBOX.14fb... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#_INBOX.c3a57b176de23f143beee59201">_INBOX.c3a5... (Direct Msg)</a>
       <br/>
-MSG: (<a href="#" id="trigger49" style="text-decoration: none;">+</a>)
-      <div id="pop-up49" style="background-color:#CEFFCE;">
-{"dea":"0-ab5b081c9b53496c0c9792a27db7786f","droplet":"125c27a1-60dd-498f-83bd-9ea95949cdec","version":"8d2bbc3f-f248-46f0-b4bb-6a69b0ead5f8","instance":"f6bc5785d92e882859a91d3a6b8cfc2f","index":0,"state":"RUNNING","state_timestamp":1375454509.1121016,"file_uri":"http://10.0.2.15:4385/instances","credentials":["73aba6ea97f88925f7c97f4f8a7df838","43e377647fda7b40bc86fb6491b41845"],"staged":"/f6bc5785d92e882859a91d3a6b8cfc2f","console_ip":"10.0.2.15","console_port":61024}
+MSG: (<a href="#" id="trigger45" style="text-decoration: none;">+</a>)
+      <div id="pop-up45" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":null}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger50" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up50" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger51" style="text-decoration: none;">+</a>)
+      <div id="pop-up51" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"a38370ec-8402-46a1-9213-2de2af37aaa6", "content-length"=>"131", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\"0\":{\"state\":\"STARTING\",\"since\":1377184751.112757,\"debug_ip\":null,\"debug_port\":null,\"console_ip\":\"10.0.2.15\",\"console_port\":null}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger40" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up40" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger41" style="text-decoration: none;">+</a>)
+      <div id="pop-up41" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger56" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up56" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.648bb5d99704687038d0dbf673">_INBOX.648b... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger57" style="text-decoration: none;">+</a>)
+      <div id="pop-up57" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61022}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger56" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up56" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.648bb5d99704687038d0dbf673">_INBOX.648b... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger57" style="text-decoration: none;">+</a>)
+      <div id="pop-up57" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61022}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger56" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up56" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.648bb5d99704687038d0dbf673">_INBOX.648b... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger57" style="text-decoration: none;">+</a>)
+      <div id="pop-up57" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61022}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger62" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up62" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger63" style="text-decoration: none;">+</a>)
+      <div id="pop-up63" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"d6b91fc4-4a74-4d1f-8745-38343649db44", "content-length"=>"132", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\"0\":{\"state\":\"STARTING\",\"since\":1377184751.112757,\"debug_ip\":null,\"debug_port\":null,\"console_ip\":\"10.0.2.15\",\"console_port\":61022}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger40" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up40" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger41" style="text-decoration: none;">+</a>)
+      <div id="pop-up41" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger68" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up68" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.1c35868bf9d8f7972eefc8d915">_INBOX.1c35... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger69" style="text-decoration: none;">+</a>)
+      <div id="pop-up69" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger68" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up68" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.1c35868bf9d8f7972eefc8d915">_INBOX.1c35... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger69" style="text-decoration: none;">+</a>)
+      <div id="pop-up69" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger68" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up68" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.1c35868bf9d8f7972eefc8d915">_INBOX.1c35... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger69" style="text-decoration: none;">+</a>)
+      <div id="pop-up69" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger74" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up74" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger75" style="text-decoration: none;">+</a>)
+      <div id="pop-up75" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"a2a96a8e-1e02-4369-af16-4e19b568644e", "content-length"=>"132", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\"0\":{\"state\":\"STARTING\",\"since\":1377184751.112757,\"debug_ip\":null,\"debug_port\":null,\"console_ip\":\"10.0.2.15\",\"console_port\":61024}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger40" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up40" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger41" style="text-decoration: none;">+</a>)
+      <div id="pop-up41" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger80" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up80" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.847fcd336a25ad866987af3b4f">_INBOX.847f... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger81" style="text-decoration: none;">+</a>)
+      <div id="pop-up81" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger80" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up80" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.847fcd336a25ad866987af3b4f">_INBOX.847f... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger81" style="text-decoration: none;">+</a>)
+      <div id="pop-up81" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger80" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up80" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.847fcd336a25ad866987af3b4f">_INBOX.847f... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger81" style="text-decoration: none;">+</a>)
+      <div id="pop-up81" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"STARTING","state_timestamp":1377184751.112757,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger86" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up86" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger87" style="text-decoration: none;">+</a>)
+      <div id="pop-up87" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"6be78026-4f20-4eef-9f65-ce49989a9cca", "content-length"=>"132", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\"0\":{\"state\":\"STARTING\",\"since\":1377184751.112757,\"debug_ip\":null,\"debug_port\":null,\"console_ip\":\"10.0.2.15\",\"console_port\":61024}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger40" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up40" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger41" style="text-decoration: none;">+</a>)
+      <div id="pop-up41" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", {:accept=>:json}]
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger98" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up98" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.69f744a52f2ffca5567dca16cc">_INBOX.69f7... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger99" style="text-decoration: none;">+</a>)
+      <div id="pop-up99" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"RUNNING","state_timestamp":1377184757.479758,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger98" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up98" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.69f744a52f2ffca5567dca16cc">_INBOX.69f7... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger99" style="text-decoration: none;">+</a>)
+      <div id="pop-up99" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"RUNNING","state_timestamp":1377184757.479758,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger98" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up98" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
+      <br/>
+Channel: <a href="nats-messages.html#_INBOX.69f744a52f2ffca5567dca16cc">_INBOX.69f7... (Direct Msg)</a>
+      <br/>
+MSG: (<a href="#" id="trigger99" style="text-decoration: none;">+</a>)
+      <div id="pop-up99" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"RUNNING","state_timestamp":1377184757.479758,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger104" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up104" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger105" style="text-decoration: none;">+</a>)
+      <div id="pop-up105" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"dbe7769a-b448-43f2-8b87-e02db12b62da", "content-length"=>"131", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\"0\":{\"state\":\"RUNNING\",\"since\":1377184757.479758,\"debug_ip\":null,\"debug_port\":null,\"console_ip\":\"10.0.2.15\",\"console_port\":61024}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger106" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up106" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger107" style="text-decoration: none;">+</a>)
+      <div id="pop-up107" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes", {:accept=>:json, :params=>{:"inline-relations-depth"=>1}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger108" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up108" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger109" style="text-decoration: none;">+</a>)
+      <div id="pop-up109" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes?inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"f913fe70-cf1d-4fae-a97d-765cffe82f78", "content-length"=>"3898", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"d9dace64-1b6b-417a-bca2-83cf9099b105\",\n        \"url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105\",\n        \"created_at\": \"2013-07-24 21:12:17 +0000\",\n        \"updated_at\": null\n      },\n      \"entity\": {\n        \"host\": \"hello\",\n        \"domain_guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n        \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"apps_url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105/apps\",\n        \"apps\": [\n          {\n            \"metadata\": {\n              \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n              \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n              \"created_at\": \"2013-08-22 15:13:45 +0000\",\n              \"updated_at\": \"2013-08-22 15:19:11 +0000\"\n            },\n            \"entity\": {\n              \"name\": \"hello\",\n              \"production\": false,\n              \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n              \"buildpack\": null,\n              \"detected_buildpack\": \"Ruby/Rack\",\n              \"environment_json\": {\n\n              },\n              \"memory\": 256,\n              \"instances\": 1,\n              \"disk_quota\": 1024,\n              \"state\": \"STARTED\",\n              \"version\": \"954c1713-cc4f-46eb-846f-0626ec770abc\",\n              \"command\": null,\n              \"console\": true,\n              \"debug\": null,\n              \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n              \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n              \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n              \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n              \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n            }\n          }\n        ],\n        \"domain_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n        \"domain\": {\n          \"metadata\": {\n            \"guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n            \"url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n            \"created_at\": \"2013-07-24 18:26:10 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"vcap.me\",\n            \"owning_organization_guid\": null,\n            \"wildcard\": true,\n            \"spaces_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c/spaces\"\n          }\n        },\n        \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"space\": {\n          \"metadata\": {\n            \"guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"created_at\": \"2013-07-24 21:11:38 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"myspace\",\n            \"organization_guid\": \"35515897-d470-4029-b838-399ca31b850a\",\n            \"developers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/developers\",\n            \"managers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/managers\",\n            \"auditors_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/auditors\",\n            \"apps_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps\",\n            \"domains_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/domains\",\n            \"service_instances_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/service_instances\",\n            \"app_events_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/app_events\",\n            \"organization_url\": \"/v2/organizations/35515897-d470-4029-b838-399ca31b850a\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger106" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up106" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger107" style="text-decoration: none;">+</a>)
+      <div id="pop-up107" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes", {:accept=>:json, :params=>{:"inline-relations-depth"=>1}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger112" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up112" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger113" style="text-decoration: none;">+</a>)
+      <div id="pop-up113" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes?inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"09a87627-f51b-4710-b86d-c1f35fb589b8", "content-length"=>"3898", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"d9dace64-1b6b-417a-bca2-83cf9099b105\",\n        \"url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105\",\n        \"created_at\": \"2013-07-24 21:12:17 +0000\",\n        \"updated_at\": null\n      },\n      \"entity\": {\n        \"host\": \"hello\",\n        \"domain_guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n        \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"apps_url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105/apps\",\n        \"apps\": [\n          {\n            \"metadata\": {\n              \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n              \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n              \"created_at\": \"2013-08-22 15:13:45 +0000\",\n              \"updated_at\": \"2013-08-22 15:19:11 +0000\"\n            },\n            \"entity\": {\n              \"name\": \"hello\",\n              \"production\": false,\n              \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n              \"buildpack\": null,\n              \"detected_buildpack\": \"Ruby/Rack\",\n              \"environment_json\": {\n\n              },\n              \"memory\": 256,\n              \"instances\": 1,\n              \"disk_quota\": 1024,\n              \"state\": \"STARTED\",\n              \"version\": \"954c1713-cc4f-46eb-846f-0626ec770abc\",\n              \"command\": null,\n              \"console\": true,\n              \"debug\": null,\n              \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n              \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n              \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n              \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n              \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n            }\n          }\n        ],\n        \"domain_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n        \"domain\": {\n          \"metadata\": {\n            \"guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n            \"url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n            \"created_at\": \"2013-07-24 18:26:10 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"vcap.me\",\n            \"owning_organization_guid\": null,\n            \"wildcard\": true,\n            \"spaces_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c/spaces\"\n          }\n        },\n        \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"space\": {\n          \"metadata\": {\n            \"guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"created_at\": \"2013-07-24 21:11:38 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"myspace\",\n            \"organization_guid\": \"35515897-d470-4029-b838-399ca31b850a\",\n            \"developers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/developers\",\n            \"managers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/managers\",\n            \"auditors_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/auditors\",\n            \"apps_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps\",\n            \"domains_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/domains\",\n            \"service_instances_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/service_instances\",\n            \"app_events_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/app_events\",\n            \"organization_url\": \"/v2/organizations/35515897-d470-4029-b838-399ca31b850a\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger106" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up106" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger107" style="text-decoration: none;">+</a>)
+      <div id="pop-up107" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes", {:accept=>:json, :params=>{:"inline-relations-depth"=>1}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger116" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up116" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger117" style="text-decoration: none;">+</a>)
+      <div id="pop-up117" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes?inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"0e009306-7868-4bf5-9880-3d852ce5a868", "content-length"=>"3898", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"d9dace64-1b6b-417a-bca2-83cf9099b105\",\n        \"url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105\",\n        \"created_at\": \"2013-07-24 21:12:17 +0000\",\n        \"updated_at\": null\n      },\n      \"entity\": {\n        \"host\": \"hello\",\n        \"domain_guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n        \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"apps_url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105/apps\",\n        \"apps\": [\n          {\n            \"metadata\": {\n              \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n              \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n              \"created_at\": \"2013-08-22 15:13:45 +0000\",\n              \"updated_at\": \"2013-08-22 15:19:11 +0000\"\n            },\n            \"entity\": {\n              \"name\": \"hello\",\n              \"production\": false,\n              \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n              \"buildpack\": null,\n              \"detected_buildpack\": \"Ruby/Rack\",\n              \"environment_json\": {\n\n              },\n              \"memory\": 256,\n              \"instances\": 1,\n              \"disk_quota\": 1024,\n              \"state\": \"STARTED\",\n              \"version\": \"954c1713-cc4f-46eb-846f-0626ec770abc\",\n              \"command\": null,\n              \"console\": true,\n              \"debug\": null,\n              \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n              \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n              \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n              \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n              \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n            }\n          }\n        ],\n        \"domain_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n        \"domain\": {\n          \"metadata\": {\n            \"guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n            \"url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n            \"created_at\": \"2013-07-24 18:26:10 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"vcap.me\",\n            \"owning_organization_guid\": null,\n            \"wildcard\": true,\n            \"spaces_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c/spaces\"\n          }\n        },\n        \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"space\": {\n          \"metadata\": {\n            \"guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"created_at\": \"2013-07-24 21:11:38 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"myspace\",\n            \"organization_guid\": \"35515897-d470-4029-b838-399ca31b850a\",\n            \"developers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/developers\",\n            \"managers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/managers\",\n            \"auditors_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/auditors\",\n            \"apps_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps\",\n            \"domains_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/domains\",\n            \"service_instances_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/service_instances\",\n            \"app_events_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/app_events\",\n            \"organization_url\": \"/v2/organizations/35515897-d470-4029-b838-399ca31b850a\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger106" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up106" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger107" style="text-decoration: none;">+</a>)
+      <div id="pop-up107" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes", {:accept=>:json, :params=>{:"inline-relations-depth"=>1}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger120" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up120" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger121" style="text-decoration: none;">+</a>)
+      <div id="pop-up121" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes?inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"b23d576c-0077-4932-83b3-171f9d34c864", "content-length"=>"3898", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"d9dace64-1b6b-417a-bca2-83cf9099b105\",\n        \"url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105\",\n        \"created_at\": \"2013-07-24 21:12:17 +0000\",\n        \"updated_at\": null\n      },\n      \"entity\": {\n        \"host\": \"hello\",\n        \"domain_guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n        \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"apps_url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105/apps\",\n        \"apps\": [\n          {\n            \"metadata\": {\n              \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n              \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n              \"created_at\": \"2013-08-22 15:13:45 +0000\",\n              \"updated_at\": \"2013-08-22 15:19:11 +0000\"\n            },\n            \"entity\": {\n              \"name\": \"hello\",\n              \"production\": false,\n              \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n              \"buildpack\": null,\n              \"detected_buildpack\": \"Ruby/Rack\",\n              \"environment_json\": {\n\n              },\n              \"memory\": 256,\n              \"instances\": 1,\n              \"disk_quota\": 1024,\n              \"state\": \"STARTED\",\n              \"version\": \"954c1713-cc4f-46eb-846f-0626ec770abc\",\n              \"command\": null,\n              \"console\": true,\n              \"debug\": null,\n              \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n              \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n              \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n              \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n              \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n            }\n          }\n        ],\n        \"domain_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n        \"domain\": {\n          \"metadata\": {\n            \"guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n            \"url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n            \"created_at\": \"2013-07-24 18:26:10 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"vcap.me\",\n            \"owning_organization_guid\": null,\n            \"wildcard\": true,\n            \"spaces_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c/spaces\"\n          }\n        },\n        \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"space\": {\n          \"metadata\": {\n            \"guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"created_at\": \"2013-07-24 21:11:38 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"myspace\",\n            \"organization_guid\": \"35515897-d470-4029-b838-399ca31b850a\",\n            \"developers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/developers\",\n            \"managers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/managers\",\n            \"auditors_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/auditors\",\n            \"apps_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps\",\n            \"domains_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/domains\",\n            \"service_instances_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/service_instances\",\n            \"app_events_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/app_events\",\n            \"organization_url\": \"/v2/organizations/35515897-d470-4029-b838-399ca31b850a\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
       </div>
       <br/>
       <br/>

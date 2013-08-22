@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+  <header>
+    <title>CloudFoundry delete_space Command Documentation -- Auto-generated.</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="../assets/hover.js">
+    </script>
+  </header>
+  <body style="font-family:courier;">
+    <div style="position:fixed;background-color:#FFFFCE;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
+      <div style="float:right;color:black;padding:0 50 0 0">
+<a href="#" id="expand" style="color:black">expand</a>
+ | 
+<a href="#" id="collapse" style="color:black">collapse</a>
+ | 
+<a href="javascript:window.history.back()" id="back" style="color:black">back</a>
+      </div>
+"CF"&nbsp;&nbsp;"Cloud_Controller"&nbsp;&nbsp;"Health_Manager"&nbsp;&nbsp;"DEA"&nbsp;&nbsp;"Router"&nbsp;&nbsp;"Warden"&nbsp;&nbsp;"UAA"
+    </div>
+    <div style="margin-top:50px;">
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up0" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+      <div id="pop-up1" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/users", {:accept=>:json, :params=>{:"inline-relations-depth"=>1}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger2" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up2" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
+      <div id="pop-up3" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/users?inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxZTlkNzc0Zi05NTNkLTQ1YTktYTc2MC1hMzViZmVjYWM2NzciLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDc2OSwiZXhwIjoxMzc3MjI3OTY5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.Py0VrEnvO8RYNJnewZNoUYJ5_YdhI85sb1xith3sTXo", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"435493a1-295a-4e13-b69f-53631ec4763a", "content-length"=>"5103", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"c3134c72-a5e0-4fbf-b30e-9d5b06362645\",\n        \"url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645\",\n        \"created_at\": \"2013-08-22 15:13:39 +0000\",\n        \"updated_at\": null\n      },\n      \"entity\": {\n        \"admin\": true,\n        \"active\": true,\n        \"default_space_guid\": null,\n        \"spaces_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/spaces\",\n        \"spaces\": [\n          {\n            \"metadata\": {\n              \"guid\": \"dba607d6-07c3-446a-8ab4-346d1b94c45b\",\n              \"url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b\",\n              \"created_at\": \"2013-08-22 15:23:10 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"name\": \"space-tmp\",\n              \"organization_guid\": \"68aeeec6-cfd2-4228-b684-ae076a13eb8a\",\n              \"developers_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/developers\",\n              \"managers_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/managers\",\n              \"auditors_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/auditors\",\n              \"apps_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/apps\",\n              \"domains_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/domains\",\n              \"service_instances_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/service_instances\",\n              \"app_events_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/app_events\",\n              \"organization_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a\"\n            }\n          }\n        ],\n        \"organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/organizations\",\n        \"organizations\": [\n          {\n            \"metadata\": {\n              \"guid\": \"68aeeec6-cfd2-4228-b684-ae076a13eb8a\",\n              \"url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a\",\n              \"created_at\": \"2013-08-22 15:23:03 +0000\",\n              \"updated_at\": \"2013-08-22 15:23:18 +0000\"\n            },\n            \"entity\": {\n              \"name\": \"new-tmp-org\",\n              \"billing_enabled\": false,\n              \"quota_definition_guid\": \"20694537-7476-4716-b1b8-38a1a6c1941b\",\n              \"spaces_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/spaces\",\n              \"domains_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/domains\",\n              \"users_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/users\",\n              \"managers_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/managers\",\n              \"billing_managers_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/billing_managers\",\n              \"auditors_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/auditors\",\n              \"app_events_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/app_events\",\n              \"quota_definition_url\": \"/v2/quota_definitions/20694537-7476-4716-b1b8-38a1a6c1941b\"\n            }\n          }\n        ],\n        \"managed_organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/managed_organizations\",\n        \"managed_organizations\": [\n\n        ],\n        \"billing_managed_organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/billing_managed_organizations\",\n        \"billing_managed_organizations\": [\n\n        ],\n        \"audited_organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/audited_organizations\",\n        \"audited_organizations\": [\n\n        ],\n        \"managed_spaces_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/managed_spaces\",\n        \"managed_spaces\": [\n          {\n            \"metadata\": {\n              \"guid\": \"dba607d6-07c3-446a-8ab4-346d1b94c45b\",\n              \"url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b\",\n              \"created_at\": \"2013-08-22 15:23:10 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"name\": \"space-tmp\",\n              \"organization_guid\": \"68aeeec6-cfd2-4228-b684-ae076a13eb8a\",\n              \"developers_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/developers\",\n              \"managers_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/managers\",\n              \"auditors_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/auditors\",\n              \"apps_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/apps\",\n              \"domains_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/domains\",\n              \"service_instances_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/service_instances\",\n              \"app_events_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/app_events\",\n              \"organization_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a\"\n            }\n          }\n        ],\n        \"audited_spaces_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/audited_spaces\",\n        \"audited_spaces\": [\n\n        ]\n      }\n    }\n  ]\n}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger4" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up4" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+      <div id="pop-up5" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["GET", "/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/spaces", {:accept=>:json, :params=>{:q=>"name:space-tmp", :"inline-relations-depth"=>1}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up6" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+      <div id="pop-up7" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/spaces?q=name%3Aspace-tmp&inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxZTlkNzc0Zi05NTNkLTQ1YTktYTc2MC1hMzViZmVjYWM2NzciLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDc2OSwiZXhwIjoxMzc3MjI3OTY5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.Py0VrEnvO8RYNJnewZNoUYJ5_YdhI85sb1xith3sTXo", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"2b8f64d2-eb4a-4f88-9ddd-1d28416bc361", "content-length"=>"5550", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"dba607d6-07c3-446a-8ab4-346d1b94c45b\",\n        \"url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b\",\n        \"created_at\": \"2013-08-22 15:23:10 +0000\",\n        \"updated_at\": null\n      },\n      \"entity\": {\n        \"name\": \"space-tmp\",\n        \"organization_guid\": \"68aeeec6-cfd2-4228-b684-ae076a13eb8a\",\n        \"developers_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/developers\",\n        \"developers\": [\n          {\n            \"metadata\": {\n              \"guid\": \"c3134c72-a5e0-4fbf-b30e-9d5b06362645\",\n              \"url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645\",\n              \"created_at\": \"2013-08-22 15:13:39 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"admin\": true,\n              \"active\": true,\n              \"default_space_guid\": null,\n              \"spaces_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/spaces\",\n              \"organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/organizations\",\n              \"managed_organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/managed_organizations\",\n              \"billing_managed_organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/billing_managed_organizations\",\n              \"audited_organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/audited_organizations\",\n              \"managed_spaces_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/managed_spaces\",\n              \"audited_spaces_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/audited_spaces\"\n            }\n          }\n        ],\n        \"managers_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/managers\",\n        \"managers\": [\n          {\n            \"metadata\": {\n              \"guid\": \"c3134c72-a5e0-4fbf-b30e-9d5b06362645\",\n              \"url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645\",\n              \"created_at\": \"2013-08-22 15:13:39 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"admin\": true,\n              \"active\": true,\n              \"default_space_guid\": null,\n              \"spaces_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/spaces\",\n              \"organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/organizations\",\n              \"managed_organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/managed_organizations\",\n              \"billing_managed_organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/billing_managed_organizations\",\n              \"audited_organizations_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/audited_organizations\",\n              \"managed_spaces_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/managed_spaces\",\n              \"audited_spaces_url\": \"/v2/users/c3134c72-a5e0-4fbf-b30e-9d5b06362645/audited_spaces\"\n            }\n          }\n        ],\n        \"auditors_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/auditors\",\n        \"auditors\": [\n\n        ],\n        \"apps_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/apps\",\n        \"apps\": [\n\n        ],\n        \"domains_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/domains\",\n        \"domains\": [\n          {\n            \"metadata\": {\n              \"guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"created_at\": \"2013-07-24 18:26:10 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"name\": \"vcap.me\",\n              \"owning_organization_guid\": null,\n              \"wildcard\": true,\n              \"spaces_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c/spaces\"\n            }\n          }\n        ],\n        \"service_instances_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/service_instances\",\n        \"service_instances\": [\n\n        ],\n        \"app_events_url\": \"/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/app_events\",\n        \"app_events\": [\n\n        ],\n        \"organization_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a\",\n        \"organization\": {\n          \"metadata\": {\n            \"guid\": \"68aeeec6-cfd2-4228-b684-ae076a13eb8a\",\n            \"url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a\",\n            \"created_at\": \"2013-08-22 15:23:03 +0000\",\n            \"updated_at\": \"2013-08-22 15:23:18 +0000\"\n          },\n          \"entity\": {\n            \"name\": \"new-tmp-org\",\n            \"billing_enabled\": false,\n            \"quota_definition_guid\": \"20694537-7476-4716-b1b8-38a1a6c1941b\",\n            \"spaces_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/spaces\",\n            \"domains_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/domains\",\n            \"users_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/users\",\n            \"managers_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/managers\",\n            \"billing_managers_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/billing_managers\",\n            \"auditors_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/auditors\",\n            \"app_events_url\": \"/v2/organizations/68aeeec6-cfd2-4228-b684-ae076a13eb8a/app_events\",\n            \"quota_definition_url\": \"/v2/quota_definitions/20694537-7476-4716-b1b8-38a1a6c1941b\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|-------------------->(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up8" style="background-color:#CEFFFF;">
+ CF to Cloud_Controller      </div>
+      <br/>
+MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
+      <div id="pop-up9" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["DELETE", "v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b", {:params=>{}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up10" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
+      <div id="pop-up11" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b", :method=>"DELETE", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxZTlkNzc0Zi05NTNkLTQ1YTktYTc2MC1hMzViZmVjYWM2NzciLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDc2OSwiZXhwIjoxMzc3MjI3OTY5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.Py0VrEnvO8RYNJnewZNoUYJ5_YdhI85sb1xith3sTXo"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "x-vcap-request-id"=>"0da365c5-2d85-4f2b-916c-d991cf7181e4", "connection"=>"close", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"204", :body=>nil}]
+      </div>
+      <br/>
+      <br/>
+    </div>
+  </body>
+</html>
