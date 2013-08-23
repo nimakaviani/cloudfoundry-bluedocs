@@ -17,7 +17,7 @@
 HTML  Sequence Diagram            </a>
 |            <a href="index.html" target="" style="color:#FFFFCE;text-decoration:none;">
 Home            </a>
-|            <a href="https://github.com/nkaviani/cloudfoundry-bluedocs" target="_blank" style="color:#FFFFCE;text-decoration:none;">
+|            <a href="http://github.com/nkaviani/cloudfoundry-bluedocs" target="_blank" style="color:#FFFFCE;text-decoration:none;">
 IBM BlueDocs v-0.2              <img src="../assets/link_ext.gif"/>
             </a>
           </td>
@@ -32,13 +32,13 @@ participant DEA
 participant Router
 participant Stager
 participant UAA
-VMC -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
-Cloud_Controller -[#blue]> VMC : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger7]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger9]] (REST-req): PUT apps/ss
-Cloud_Controller -[#green]> DEA : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger11]] (NATS) : dea.update
-Cloud_Controller -[#blue]> VMC : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger15]] (REST-resp)
-DEA -[#green]> Router : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger17]] (NATS) : router.register
-DEA -[#green]> Router : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger19]] (NATS) : router.unregister">
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger7]] (REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger9]] (REST-req): PUT apps/ss
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger11]] (NATS) : dea.update
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger15]] (REST-resp)
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger17]] (NATS) : router.register
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/map-sequence-diagram.html#trigger19]] (NATS) : router.unregister">
       </img>
     </div>
   </body>

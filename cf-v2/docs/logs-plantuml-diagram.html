@@ -17,7 +17,7 @@
 HTML  Sequence Diagram            </a>
 |            <a href="index.html" target="" style="color:#FFFFCE;text-decoration:none;">
 Home            </a>
-|            <a href="https://github.com/nkaviani/cloudfoundry-bluedocs" target="_blank" style="color:#FFFFCE;text-decoration:none;">
+|            <a href="http://github.com/nkaviani/cloudfoundry-bluedocs" target="_blank" style="color:#FFFFCE;text-decoration:none;">
 IBM BlueDocs v-0.2              <img src="../assets/link_ext.gif"/>
             </a>
           </td>
@@ -32,38 +32,38 @@ participant DEA
 participant Router
 participant Warden
 participant UAA
-CF -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger1]] (REST-req): GET /v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps
-Cloud_Controller -[#blue]> CF : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger3]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger5]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger9]] (NATS) : _INBOX.f709... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger9]] (NATS) : _INBOX.f709... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger9]] (NATS) : _INBOX.f709... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger15]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger17]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger19]] (NATS) : _INBOX.1876... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger19]] (NATS) : _INBOX.1876... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger19]] (NATS) : _INBOX.1876... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger25]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger27]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs/env.log
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger29]] (NATS) : _INBOX.ad08... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger29]] (NATS) : _INBOX.ad08... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger29]] (NATS) : _INBOX.ad08... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger35]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger37]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs/staging_task.log
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger39]] (NATS) : _INBOX.5644... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger39]] (NATS) : _INBOX.5644... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger39]] (NATS) : _INBOX.5644... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger45]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger47]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs/stderr.log
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger49]] (NATS) : _INBOX.e266... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger49]] (NATS) : _INBOX.e266... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger49]] (NATS) : _INBOX.e266... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger55]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger57]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs/stdout.log
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger59]] (NATS) : _INBOX.8e04... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger59]] (NATS) : _INBOX.8e04... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger59]] (NATS) : _INBOX.8e04... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger65]] (REST-resp)">
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger1]] (REST-req): GET /v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger3]] (REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger5]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger9]] (NATS) : _INBOX.f709... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger9]] (NATS) : _INBOX.f709... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger9]] (NATS) : _INBOX.f709... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger15]] (REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger17]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger19]] (NATS) : _INBOX.1876... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger19]] (NATS) : _INBOX.1876... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger19]] (NATS) : _INBOX.1876... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger25]] (REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger27]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs/env.log
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger29]] (NATS) : _INBOX.ad08... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger29]] (NATS) : _INBOX.ad08... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger29]] (NATS) : _INBOX.ad08... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger35]] (REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger37]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs/staging_task.log
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger39]] (NATS) : _INBOX.5644... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger39]] (NATS) : _INBOX.5644... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger39]] (NATS) : _INBOX.5644... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger45]] (REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger47]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs/stderr.log
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger49]] (NATS) : _INBOX.e266... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger49]] (NATS) : _INBOX.e266... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger49]] (NATS) : _INBOX.e266... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger55]] (REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger57]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances/0/files/logs/stdout.log
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger59]] (NATS) : _INBOX.8e04... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger59]] (NATS) : _INBOX.8e04... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger59]] (NATS) : _INBOX.8e04... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/logs-sequence-diagram.html#trigger65]] (REST-resp)">
       </img>
     </div>
   </body>

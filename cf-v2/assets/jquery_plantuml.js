@@ -2,7 +2,7 @@ $(document).ready(function(){
    plantuml_runonce();
 });
 
-<!--  taken from https://github.com/johan/js-deflate -->
+<!--  taken from http://github.com/johan/js-deflate -->
 
 function encode64(data) {
  r = "";

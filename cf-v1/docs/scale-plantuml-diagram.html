@@ -17,7 +17,7 @@
 HTML  Sequence Diagram            </a>
 |            <a href="index.html" target="" style="color:#FFFFCE;text-decoration:none;">
 Home            </a>
-|            <a href="https://github.com/nkaviani/cloudfoundry-bluedocs" target="_blank" style="color:#FFFFCE;text-decoration:none;">
+|            <a href="http://github.com/nkaviani/cloudfoundry-bluedocs" target="_blank" style="color:#FFFFCE;text-decoration:none;">
 IBM BlueDocs v-0.2              <img src="../assets/link_ext.gif"/>
             </a>
           </td>
@@ -32,14 +32,14 @@ participant DEA
 participant Router
 participant Stager
 participant UAA
-VMC -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
-Cloud_Controller -[#blue]> VMC : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger7]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger9]] (REST-req): GET info
-Cloud_Controller -[#blue]> VMC : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger13]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger15]] (REST-req): PUT apps/ss
-Cloud_Controller -[#green]> Health_Manager : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger17]] (NATS) : droplet.updated
-Cloud_Controller -[#blue]> VMC : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger23]] (REST-resp)
-Cloud_Controller -[#green]> DEA : [[https://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger27]] (NATS) : dea.35a1...start">
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger7]] (REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger9]] (REST-req): GET info
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger13]] (REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger15]] (REST-req): PUT apps/ss
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger17]] (NATS) : droplet.updated
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger23]] (REST-resp)
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger27]] (NATS) : dea.35a1...start">
       </img>
     </div>
   </body>
