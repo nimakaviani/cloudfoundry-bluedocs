@@ -2,7 +2,7 @@
 <html>
   <header>
     <title>CloudFoundry stop Command Documentation -- Auto-generated.</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
     </script>
     <script type="text/javascript" src="../assets/hover.js">
     </script>
@@ -25,7 +25,7 @@
       <div id="pop-up0" style="background-color:#CEFFFF;">
  CF to Cloud_Controller      </div>
       <br/>
-MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+0. MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
       <div id="pop-up1" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
@@ -39,11 +39,11 @@ REST        </div>
       <div id="pop-up2" style="background-color:#CEFFFF;">
  Cloud_Controller to CF      </div>
       <br/>
-MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
+1. MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
       <div id="pop-up3" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
-[{:url=>"http://127.0.0.1:8181/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps?q=name%3Ahello&inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"55733ae6-08f6-4579-9944-1d1372abeae9", "content-length"=>"3772", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n        \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n        \"created_at\": \"2013-08-22 15:13:45 +0000\",\n        \"updated_at\": \"2013-08-22 15:16:06 +0000\"\n      },\n      \"entity\": {\n        \"name\": \"hello\",\n        \"production\": false,\n        \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"buildpack\": null,\n        \"detected_buildpack\": \"Ruby/Rack\",\n        \"environment_json\": {\n\n        },\n        \"memory\": 256,\n        \"instances\": 1,\n        \"disk_quota\": 1024,\n        \"state\": \"STARTED\",\n        \"version\": \"116bdf43-09bd-4b0a-ac63-57cd8d9ebf5c\",\n        \"command\": null,\n        \"console\": true,\n        \"debug\": null,\n        \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n        \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n        \"service_bindings\": [\n\n        ],\n        \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n        \"routes\": [\n          {\n            \"metadata\": {\n              \"guid\": \"d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"created_at\": \"2013-07-24 21:12:17 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"host\": \"hello\",\n              \"domain_guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"apps_url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105/apps\",\n              \"domain_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\"\n            }\n          }\n        ],\n        \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n        \"app_events\": [\n\n        ],\n        \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"space\": {\n          \"metadata\": {\n            \"guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"created_at\": \"2013-07-24 21:11:38 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"myspace\",\n            \"organization_guid\": \"35515897-d470-4029-b838-399ca31b850a\",\n            \"developers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/developers\",\n            \"managers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/managers\",\n            \"auditors_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/auditors\",\n            \"apps_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps\",\n            \"domains_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/domains\",\n            \"service_instances_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/service_instances\",\n            \"app_events_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/app_events\",\n            \"organization_url\": \"/v2/organizations/35515897-d470-4029-b838-399ca31b850a\"\n          }\n        },\n        \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"stack\": {\n          \"metadata\": {\n            \"guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"created_at\": \"2013-07-24 18:25:48 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"lucid64\",\n            \"description\": \"Ubuntu 10.04 on x86-64\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
+[{:url=>"http://127.0.0.1:8181/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps?q=name%3Ahello&inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiZGI0NDRlMi0zOTIzLTRjNjItYjViZC0wOGVmNjhjZDAyNzQiLCJzdWIiOiI4NGU5NzZhMi1iNWVjLTRlZjAtOGU5Zi1iOTYwMDZjMzVhZjAiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6Ijg0ZTk3NmEyLWI1ZWMtNGVmMC04ZTlmLWI5NjAwNmMzNWFmMCIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3Nzc5MTM1NywiZXhwIjoxMzc3ODM0NTU3LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.vRMBf9_IWw2o2hi6ZyFitzzY_yOWT_CJ73KasxRCsbo", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"cb73e6b0-1629-44d7-8da3-d4e196313f87", "content-length"=>"3772", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5\",\n        \"url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5\",\n        \"created_at\": \"2013-08-29 15:49:24 +0000\",\n        \"updated_at\": \"2013-08-29 15:51:41 +0000\"\n      },\n      \"entity\": {\n        \"name\": \"hello\",\n        \"production\": false,\n        \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"buildpack\": null,\n        \"detected_buildpack\": \"Ruby/Rack\",\n        \"environment_json\": {\n\n        },\n        \"memory\": 256,\n        \"instances\": 1,\n        \"disk_quota\": 1024,\n        \"state\": \"STARTED\",\n        \"version\": \"d62f5c89-8d97-473b-82f8-ada96c29af9b\",\n        \"command\": null,\n        \"console\": true,\n        \"debug\": null,\n        \"staging_task_id\": \"112a1229ae51d069ef187e989c737004\",\n        \"service_bindings_url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/service_bindings\",\n        \"service_bindings\": [\n\n        ],\n        \"routes_url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/routes\",\n        \"routes\": [\n          {\n            \"metadata\": {\n              \"guid\": \"d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"created_at\": \"2013-07-24 21:12:17 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"host\": \"hello\",\n              \"domain_guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"apps_url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105/apps\",\n              \"domain_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\"\n            }\n          }\n        ],\n        \"app_events_url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/app_events\",\n        \"app_events\": [\n\n        ],\n        \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"space\": {\n          \"metadata\": {\n            \"guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"created_at\": \"2013-07-24 21:11:38 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"myspace\",\n            \"organization_guid\": \"35515897-d470-4029-b838-399ca31b850a\",\n            \"developers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/developers\",\n            \"managers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/managers\",\n            \"auditors_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/auditors\",\n            \"apps_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps\",\n            \"domains_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/domains\",\n            \"service_instances_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/service_instances\",\n            \"app_events_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/app_events\",\n            \"organization_url\": \"/v2/organizations/35515897-d470-4029-b838-399ca31b850a\"\n          }\n        },\n        \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"stack\": {\n          \"metadata\": {\n            \"guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"created_at\": \"2013-07-24 18:25:48 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"lucid64\",\n            \"description\": \"Ubuntu 10.04 on x86-64\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
       </div>
       <br/>
       <br/>
@@ -53,11 +53,11 @@ REST        </div>
       <div id="pop-up4" style="background-color:#CEFFFF;">
  CF to Cloud_Controller      </div>
       <br/>
-MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+2. MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
       <div id="pop-up5" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
-["PUT", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", {:content=>:json, :payload=>{:state=>"STOPPED"}, :return_response=>true}]
+["PUT", "v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5", {:content=>:json, :payload=>{:state=>"STOPPED"}, :return_response=>true}]
       </div>
       <br/>
       <br/>
@@ -69,41 +69,41 @@ REST        </div>
       <br/>
 Channel: <a href="nats-messages.html#dea.stop">dea.stop</a>
       <br/>
-MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+3. MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
       <div id="pop-up7" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3"}
-      </div>
-      <br/>
-      <br/>
-      <font color="#000090">
-<--------------------|(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up8" style="background-color:#CEFFFF;">
- Cloud_Controller to CF      </div>
-      <br/>
-MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
-      <div id="pop-up9" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3", :method=>"PUT", :headers=>{"Content-Length"=>19, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzMWM0MjNlYS02YzNmLTQ4YWMtYWVkMy01MDRmNTlhYzVhMjkiLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDQxOSwiZXhwIjoxMzc3MjI3NjE5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.7pq1Q-m2rYQVn4gT56n9Gm_pfm8i_39h_esH3KcGf-k", "Content-Type"=>"application/json"}, :body=>"{\"state\":\"STOPPED\"}"}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"ef02a6f8-4ca3-4ca1-ad03-f5172abff267", "content-length"=>"1152", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"201", :body=>"{\n  \"metadata\": {\n    \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n    \"created_at\": \"2013-08-22 15:13:45 +0000\",\n    \"updated_at\": \"2013-08-22 15:16:17 +0000\"\n  },\n  \"entity\": {\n    \"name\": \"hello\",\n    \"production\": false,\n    \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n    \"buildpack\": null,\n    \"detected_buildpack\": \"Ruby/Rack\",\n    \"environment_json\": {\n\n    },\n    \"memory\": 256,\n    \"instances\": 1,\n    \"disk_quota\": 1024,\n    \"state\": \"STOPPED\",\n    \"version\": \"116bdf43-09bd-4b0a-ac63-57cd8d9ebf5c\",\n    \"command\": null,\n    \"console\": true,\n    \"debug\": null,\n    \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n    \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n    \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n    \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n    \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n  }\n}"}]
+{"droplet":"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5"}
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-------------------------------->(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|-------------------------------->(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up10" style="background-color:#CEFFCE;">
+      <div id="pop-up8" style="background-color:#CEFFCE;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to Health_Manager      </div>
       <br/>
 Channel: <a href="nats-messages.html#droplet.updated">droplet.updated</a>
       <br/>
-MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
-      <div id="pop-up11" style="background-color:#CEFFCE">
+4. MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
+      <div id="pop-up9" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","cc_partition":"ng"}
+{"droplet":"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5","cc_partition":"ng"}
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<--------------------|(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up10" style="background-color:#CEFFFF;">
+ Cloud_Controller to CF      </div>
+      <br/>
+5. MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
+      <div id="pop-up11" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://127.0.0.1:8181/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5", :method=>"PUT", :headers=>{"Content-Length"=>19, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJiZGI0NDRlMi0zOTIzLTRjNjItYjViZC0wOGVmNjhjZDAyNzQiLCJzdWIiOiI4NGU5NzZhMi1iNWVjLTRlZjAtOGU5Zi1iOTYwMDZjMzVhZjAiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6Ijg0ZTk3NmEyLWI1ZWMtNGVmMC04ZTlmLWI5NjAwNmMzNWFmMCIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3Nzc5MTM1NywiZXhwIjoxMzc3ODM0NTU3LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.vRMBf9_IWw2o2hi6ZyFitzzY_yOWT_CJ73KasxRCsbo", "Content-Type"=>"application/json"}, :body=>"{\"state\":\"STOPPED\"}"}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"d7d79003-9679-4acb-b31c-7519d3208d2e", "content-length"=>"1152", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"201", :body=>"{\n  \"metadata\": {\n    \"guid\": \"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5\",\n    \"url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5\",\n    \"created_at\": \"2013-08-29 15:49:24 +0000\",\n    \"updated_at\": \"2013-08-29 15:51:52 +0000\"\n  },\n  \"entity\": {\n    \"name\": \"hello\",\n    \"production\": false,\n    \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n    \"buildpack\": null,\n    \"detected_buildpack\": \"Ruby/Rack\",\n    \"environment_json\": {\n\n    },\n    \"memory\": 256,\n    \"instances\": 1,\n    \"disk_quota\": 1024,\n    \"state\": \"STOPPED\",\n    \"version\": \"d62f5c89-8d97-473b-82f8-ada96c29af9b\",\n    \"command\": null,\n    \"console\": true,\n    \"debug\": null,\n    \"staging_task_id\": \"112a1229ae51d069ef187e989c737004\",\n    \"service_bindings_url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/service_bindings\",\n    \"routes_url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/routes\",\n    \"app_events_url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/app_events\",\n    \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n    \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\"\n  }\n}"}]
       </div>
       <br/>
       <br/>
@@ -121,55 +121,55 @@ NATS        </div>
       <br/>
 Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
       <br/>
-MSG: (<a href="#" id="trigger15" style="text-decoration: none;">+</a>)
+7. MSG: (<a href="#" id="trigger15" style="text-decoration: none;">+</a>)
       <div id="pop-up15" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"cc_partition":"ng","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"116bdf43-09bd-4b0a-ac63-57cd8d9ebf5c","instance":"0f63387102b07d8c6dd17d994ef90269","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
+{"cc_partition":"ng","droplet":"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5","version":"d62f5c89-8d97-473b-82f8-ada96c29af9b","instance":"1faac1d87d585d9c6cb3d19ba1649db7","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up14" style="background-color:#CEFFCE;">
+      <div id="pop-up18" style="background-color:#CEFFCE;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Health_Manager      </div>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger18" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up14" style="background-color:#CEFFCE;">
+      <div id="pop-up18" style="background-color:#CEFFCE;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
 Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
       <br/>
-MSG: (<a href="#" id="trigger15" style="text-decoration: none;">+</a>)
-      <div id="pop-up15" style="background-color:#CEFFCE">
+9. MSG: (<a href="#" id="trigger19" style="text-decoration: none;">+</a>)
+      <div id="pop-up19" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"cc_partition":"ng","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"116bdf43-09bd-4b0a-ac63-57cd8d9ebf5c","instance":"0f63387102b07d8c6dd17d994ef90269","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
+{"cc_partition":"ng","droplet":"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5","version":"d62f5c89-8d97-473b-82f8-ada96c29af9b","instance":"1faac1d87d585d9c6cb3d19ba1649db7","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------|(<a href="#" id="trigger22" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up14" style="background-color:#CEFFCE;">
+      <div id="pop-up22" style="background-color:#CEFFCE;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Health_Manager      </div>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger22" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up14" style="background-color:#CEFFCE;">
+      <div id="pop-up22" style="background-color:#CEFFCE;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
 Channel: <a href="nats-messages.html#droplet.exited">droplet.exited</a>
       <br/>
-MSG: (<a href="#" id="trigger15" style="text-decoration: none;">+</a>)
-      <div id="pop-up15" style="background-color:#CEFFCE">
+11. MSG: (<a href="#" id="trigger23" style="text-decoration: none;">+</a>)
+      <div id="pop-up23" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"cc_partition":"ng","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"116bdf43-09bd-4b0a-ac63-57cd8d9ebf5c","instance":"0f63387102b07d8c6dd17d994ef90269","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
+{"cc_partition":"ng","droplet":"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5","version":"d62f5c89-8d97-473b-82f8-ada96c29af9b","instance":"1faac1d87d585d9c6cb3d19ba1649db7","index":0,"reason":"STOPPED","exit_status":-1,"exit_description":""}
       </div>
       <br/>
       <br/>

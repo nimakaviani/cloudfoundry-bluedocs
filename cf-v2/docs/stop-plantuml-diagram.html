@@ -32,18 +32,18 @@ participant DEA
 participant Router
 participant Warden
 participant UAA
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger1]] (REST-req): GET /v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger3]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger5]] (REST-req): PUT v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger7]] (NATS) : dea.stop
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger9]] (REST-resp)
-Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger11]] (NATS) : droplet.updated
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger15]] (NATS) : droplet.exited">
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger1]] (0. REST-req): GET /v2/spaces/c22e.../apps
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger3]] (1. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger5]] (2. REST-req): PUT v2/apps/87f5...
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger7]] (3. NATS) : dea.stop
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger9]] (4. NATS) : droplet.updated
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger11]] (5. REST-resp)
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger15]] (7. NATS) : droplet.exited
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger15]] (7. NATS) : droplet.exited
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger19]] (9. NATS) : droplet.exited
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger19]] (9. NATS) : droplet.exited
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger23]] (11. NATS) : droplet.exited
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/stop-sequence-diagram.html#trigger23]] (11. NATS) : droplet.exited">
       </img>
     </div>
   </body>

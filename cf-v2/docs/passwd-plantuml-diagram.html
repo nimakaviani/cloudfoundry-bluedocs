@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <html>
   <header>
-    <title>CloudFoundry crashlogs PlantUML Diagram -- Auto-generated.</title>
+    <title>CloudFoundry passwd PlantUML Diagram -- Auto-generated.</title>
     <script type="text/javascript" src="../assets/jquery.js">
     </script>
     <script type="text/javascript" src="../assets/jquery_plantuml.js">
@@ -11,9 +11,9 @@
     <div style="position:fixed;background-color:black;color:white;top:0;left:0;padding:10px 10px 10px 10px;width:100%;">
       <table style="color:white;width:100%;padding:0px 50px 0px 0px;text-decoration:none">
         <tr>
-          <td> &gt; cf crashlogs hello</td>
+          <td> &gt; cf passwd</td>
           <td align="right" color="#FFFFCE">
-            <a href="crashlogs-sequence-diagram.html" target="" style="color:#FFFFCE;text-decoration:none;">
+            <a href="passwd-sequence-diagram.html" target="" style="color:#FFFFCE;text-decoration:none;">
 HTML  Sequence Diagram            </a>
 |            <a href="index.html" target="" style="color:#FFFFCE;text-decoration:none;">
 Home            </a>
@@ -32,10 +32,11 @@ participant DEA
 participant Router
 participant Warden
 participant UAA
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/crashlogs-sequence-diagram.html#trigger1]] (0. REST-req): GET /v2/spaces/c22e.../apps
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/crashlogs-sequence-diagram.html#trigger3]] (1. REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/crashlogs-sequence-diagram.html#trigger5]] (2. REST-req): GET v2/apps/87f5.../crashes
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/crashlogs-sequence-diagram.html#trigger9]] (4. REST-resp)">
+Health_Manager -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/passwd-sequence-diagram.html#trigger9]] (4. NATS) : cloudcontrollers.hm.requests.ng
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/passwd-sequence-diagram.html#trigger11]] (5. NATS) : dea.stop
+Health_Manager -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/passwd-sequence-diagram.html#trigger13]] (6. NATS) : cloudcontrollers.hm.requests.ng
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/passwd-sequence-diagram.html#trigger15]] (7. REST-req): GET info
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/passwd-sequence-diagram.html#trigger17]] (8. REST-resp)">
       </img>
     </div>
   </body>

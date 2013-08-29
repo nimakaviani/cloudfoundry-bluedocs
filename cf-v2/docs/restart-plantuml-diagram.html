@@ -32,57 +32,57 @@ participant DEA
 participant Router
 participant Warden
 participant UAA
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger1]] (REST-req): GET /v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger3]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger5]] (REST-req): PUT v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger7]] (NATS) : dea.stop
-Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger9]] (NATS) : droplet.updated
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger11]] (REST-resp)
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger15]] (NATS) : droplet.exited
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger25]] (REST-req): PUT v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger35]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger37]] (REST-req): PUT v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger39]] (NATS) : dea.0-14...start
-Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger9]] (NATS) : droplet.updated
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger43]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger45]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger49]] (NATS) : _INBOX.aa2e... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger49]] (NATS) : _INBOX.aa2e... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger49]] (NATS) : _INBOX.aa2e... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger55]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger45]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger61]] (NATS) : _INBOX.f734... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger61]] (NATS) : _INBOX.f734... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger61]] (NATS) : _INBOX.f734... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger67]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger45]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger73]] (NATS) : _INBOX.8c0c... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger73]] (NATS) : _INBOX.8c0c... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger73]] (NATS) : _INBOX.8c0c... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger79]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger45]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger85]] (NATS) : _INBOX.c5ca... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger85]] (NATS) : _INBOX.c5ca... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger85]] (NATS) : _INBOX.c5ca... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger91]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger45]] (REST-req): GET v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger103]] (NATS) : _INBOX.95b4... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger103]] (NATS) : _INBOX.95b4... (Direct Msg)
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger103]] (NATS) : _INBOX.95b4... (Direct Msg)
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger109]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger111]] (REST-req): GET /v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger113]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger111]] (REST-req): GET /v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger117]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger111]] (REST-req): GET /v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger121]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger111]] (REST-req): GET /v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger125]] (REST-resp)">
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger1]] (0. REST-req): GET /v2/spaces/c22e.../apps
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger3]] (1. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger5]] (2. REST-req): PUT v2/apps/87f5...
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger7]] (3. NATS) : dea.stop
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger9]] (4. NATS) : droplet.updated
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger11]] (5. REST-resp)
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger15]] (7. NATS) : droplet.exited
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger15]] (7. NATS) : droplet.exited
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger19]] (9. NATS) : droplet.exited
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger19]] (9. NATS) : droplet.exited
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger23]] (11. NATS) : droplet.exited
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger23]] (11. NATS) : droplet.exited
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger25]] (12. REST-req): PUT v2/apps/87f5...
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger27]] (13. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger29]] (14. REST-req): PUT v2/apps/87f5...
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger31]] (15. NATS) : dea.0-86...start
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger33]] (16. NATS) : droplet.updated
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger35]] (17. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger37]] (18. REST-req): GET v2/apps/87f5.../instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger41]] (20. NATS) : _INBOX.8db7... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger43]] (21. NATS) : _INBOX.8db7... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger45]] (22. NATS) : _INBOX.8db7... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger47]] (23. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger49]] (24. REST-req): GET v2/apps/87f5.../instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger53]] (26. NATS) : _INBOX.ccdb... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger55]] (27. NATS) : _INBOX.ccdb... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger57]] (28. NATS) : _INBOX.ccdb... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger59]] (29. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger61]] (30. REST-req): GET v2/apps/87f5.../instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger65]] (32. NATS) : _INBOX.94e9... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger67]] (33. NATS) : _INBOX.94e9... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger69]] (34. NATS) : _INBOX.94e9... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger71]] (35. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger81]] (40. REST-req): GET v2/apps/87f5.../instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger85]] (42. NATS) : _INBOX.0bee... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger87]] (43. NATS) : _INBOX.0bee... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger89]] (44. NATS) : _INBOX.0bee... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger91]] (45. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger99]] (49. REST-req): GET v2/apps/87f5.../instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger103]] (51. NATS) : _INBOX.5aca... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger105]] (52. NATS) : _INBOX.5aca... (Direct Msg)
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger107]] (53. NATS) : _INBOX.5aca... (Direct Msg)
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger109]] (54. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger111]] (55. REST-req): GET /v2/apps/87f5.../routes
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger113]] (56. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger115]] (57. REST-req): GET /v2/apps/87f5.../routes
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger117]] (58. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger119]] (59. REST-req): GET /v2/apps/87f5.../routes
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger121]] (60. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger123]] (61. REST-req): GET /v2/apps/87f5.../routes
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/restart-sequence-diagram.html#trigger125]] (62. REST-resp)">
       </img>
     </div>
   </body>

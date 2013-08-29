@@ -2,7 +2,7 @@
 <html>
   <header>
     <title>CloudFoundry stats Command Documentation -- Auto-generated.</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
     </script>
     <script type="text/javascript" src="../assets/hover.js">
     </script>
@@ -25,7 +25,7 @@
       <div id="pop-up0" style="background-color:#CEFFFF;">
  CF to Cloud_Controller      </div>
       <br/>
-MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+0. MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
       <div id="pop-up1" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
@@ -39,11 +39,11 @@ REST        </div>
       <div id="pop-up2" style="background-color:#CEFFFF;">
  Cloud_Controller to CF      </div>
       <br/>
-MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
+1. MSG: (<a href="#" id="trigger3" style="text-decoration: none;">+</a>)
       <div id="pop-up3" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
-[{:url=>"http://127.0.0.1:8181/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps?q=name%3Ahello&inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxZTlkNzc0Zi05NTNkLTQ1YTktYTc2MC1hMzViZmVjYWM2NzciLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDc2OSwiZXhwIjoxMzc3MjI3OTY5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.Py0VrEnvO8RYNJnewZNoUYJ5_YdhI85sb1xith3sTXo", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"ca34bf34-b2b9-40b1-9190-f481c7631804", "content-length"=>"3772", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"b8348596-f3cb-42fa-8886-cb7713897ad3\",\n        \"url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3\",\n        \"created_at\": \"2013-08-22 15:13:45 +0000\",\n        \"updated_at\": \"2013-08-22 15:19:11 +0000\"\n      },\n      \"entity\": {\n        \"name\": \"hello\",\n        \"production\": false,\n        \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"buildpack\": null,\n        \"detected_buildpack\": \"Ruby/Rack\",\n        \"environment_json\": {\n\n        },\n        \"memory\": 256,\n        \"instances\": 1,\n        \"disk_quota\": 1024,\n        \"state\": \"STARTED\",\n        \"version\": \"954c1713-cc4f-46eb-846f-0626ec770abc\",\n        \"command\": null,\n        \"console\": true,\n        \"debug\": null,\n        \"staging_task_id\": \"b3c8c59bbf0a084473044734a008d0b4\",\n        \"service_bindings_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/service_bindings\",\n        \"service_bindings\": [\n\n        ],\n        \"routes_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/routes\",\n        \"routes\": [\n          {\n            \"metadata\": {\n              \"guid\": \"d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"created_at\": \"2013-07-24 21:12:17 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"host\": \"hello\",\n              \"domain_guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"apps_url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105/apps\",\n              \"domain_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\"\n            }\n          }\n        ],\n        \"app_events_url\": \"/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/app_events\",\n        \"app_events\": [\n\n        ],\n        \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"space\": {\n          \"metadata\": {\n            \"guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"created_at\": \"2013-07-24 21:11:38 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"myspace\",\n            \"organization_guid\": \"35515897-d470-4029-b838-399ca31b850a\",\n            \"developers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/developers\",\n            \"managers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/managers\",\n            \"auditors_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/auditors\",\n            \"apps_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps\",\n            \"domains_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/domains\",\n            \"service_instances_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/service_instances\",\n            \"app_events_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/app_events\",\n            \"organization_url\": \"/v2/organizations/35515897-d470-4029-b838-399ca31b850a\"\n          }\n        },\n        \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"stack\": {\n          \"metadata\": {\n            \"guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"created_at\": \"2013-07-24 18:25:48 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"lucid64\",\n            \"description\": \"Ubuntu 10.04 on x86-64\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
+[{:url=>"http://127.0.0.1:8181/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps?q=name%3Ahello&inline-relations-depth=1", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzOTJlOWFlYS1iY2ZiLTQxZTItOGVjMi00OWYyZjQ3YjAzYjciLCJzdWIiOiI4NGU5NzZhMi1iNWVjLTRlZjAtOGU5Zi1iOTYwMDZjMzVhZjAiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6Ijg0ZTk3NmEyLWI1ZWMtNGVmMC04ZTlmLWI5NjAwNmMzNWFmMCIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3Nzc5MTcxMywiZXhwIjoxMzc3ODM0OTEzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.V1E63TIjCoF-7_L9k95W4_4w4kr3e77G-1GeL3RXibw", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"407d3af6-2924-42ce-ae4b-cf477f2a4183", "content-length"=>"3772", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\n  \"total_results\": 1,\n  \"total_pages\": 1,\n  \"prev_url\": null,\n  \"next_url\": null,\n  \"resources\": [\n    {\n      \"metadata\": {\n        \"guid\": \"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5\",\n        \"url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5\",\n        \"created_at\": \"2013-08-29 15:49:24 +0000\",\n        \"updated_at\": \"2013-08-29 15:54:54 +0000\"\n      },\n      \"entity\": {\n        \"name\": \"hello\",\n        \"production\": false,\n        \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"stack_guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"buildpack\": null,\n        \"detected_buildpack\": \"Ruby/Rack\",\n        \"environment_json\": {\n\n        },\n        \"memory\": 256,\n        \"instances\": 1,\n        \"disk_quota\": 1024,\n        \"state\": \"STARTED\",\n        \"version\": \"15b774e4-ae3e-4ab1-86fd-b52c23fc73dc\",\n        \"command\": null,\n        \"console\": true,\n        \"debug\": null,\n        \"staging_task_id\": \"112a1229ae51d069ef187e989c737004\",\n        \"service_bindings_url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/service_bindings\",\n        \"service_bindings\": [\n\n        ],\n        \"routes_url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/routes\",\n        \"routes\": [\n          {\n            \"metadata\": {\n              \"guid\": \"d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105\",\n              \"created_at\": \"2013-07-24 21:12:17 +0000\",\n              \"updated_at\": null\n            },\n            \"entity\": {\n              \"host\": \"hello\",\n              \"domain_guid\": \"26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n              \"apps_url\": \"/v2/routes/d9dace64-1b6b-417a-bca2-83cf9099b105/apps\",\n              \"domain_url\": \"/v2/domains/26aad25d-51a1-4c12-99a8-090bdc0baa4c\",\n              \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\"\n            }\n          }\n        ],\n        \"app_events_url\": \"/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/app_events\",\n        \"app_events\": [\n\n        ],\n        \"space_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n        \"space\": {\n          \"metadata\": {\n            \"guid\": \"c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d\",\n            \"created_at\": \"2013-07-24 21:11:38 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"myspace\",\n            \"organization_guid\": \"35515897-d470-4029-b838-399ca31b850a\",\n            \"developers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/developers\",\n            \"managers_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/managers\",\n            \"auditors_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/auditors\",\n            \"apps_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/apps\",\n            \"domains_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/domains\",\n            \"service_instances_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/service_instances\",\n            \"app_events_url\": \"/v2/spaces/c22e4da6-74c2-459b-80b5-0ffcb8d7e64d/app_events\",\n            \"organization_url\": \"/v2/organizations/35515897-d470-4029-b838-399ca31b850a\"\n          }\n        },\n        \"stack_url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n        \"stack\": {\n          \"metadata\": {\n            \"guid\": \"afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"url\": \"/v2/stacks/afab9723-1981-4162-adf4-f5cffa9fa2ca\",\n            \"created_at\": \"2013-07-24 18:25:48 +0000\",\n            \"updated_at\": null\n          },\n          \"entity\": {\n            \"name\": \"lucid64\",\n            \"description\": \"Ubuntu 10.04 on x86-64\"\n          }\n        }\n      }\n    }\n  ]\n}"}]
       </div>
       <br/>
       <br/>
@@ -53,11 +53,11 @@ REST        </div>
       <div id="pop-up4" style="background-color:#CEFFFF;">
  CF to Cloud_Controller      </div>
       <br/>
-MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+2. MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
       <div id="pop-up5" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
-["GET", "v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/stats", {:accept=>:json}]
+["GET", "v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/stats", {:accept=>:json}]
       </div>
       <br/>
       <br/>
@@ -67,45 +67,45 @@ REST        </div>
       <div id="pop-up6" style="background-color:#CEFFCE;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.1caa42219d268cdcd41351e6ad">_INBOX.1caa... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#_INBOX.9f0f32a2afb6fd15161a92cc00">_INBOX.9f0f... (Direct Msg)</a>
       <br/>
-MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
+3. MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
       <div id="pop-up7" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"RUNNING","state_timestamp":1377184757.479758,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024,"stats":{"name":"hello","uris":["hello.vcap.me"],"host":"10.0.2.15","port":61023,"uptime":228,"mem_quota":268435456,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2013-08-22 15:23:00 +0000","cpu":0.00838712124448978,"mem":21659648,"disk":50810880}}}
+{"dea":"0-8664799376a4d303506306577f3cd1de","droplet":"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5","version":"15b774e4-ae3e-4ab1-86fd-b52c23fc73dc","instance":"e5eeb1a586f60210fa8d00c1327390a2","index":0,"state":"RUNNING","state_timestamp":1377791701.190888,"file_uri":"http://10.0.2.15:4385/instances","credentials":["4f29b85b337a516643773403fd1882d1","0b1e605f31f82c07d60101ae84a6c318"],"staged":"/e5eeb1a586f60210fa8d00c1327390a2","console_ip":"10.0.2.15","console_port":61024,"stats":{"name":"hello","uris":["hello.vcap.me"],"host":"10.0.2.15","port":61023,"uptime":208,"mem_quota":268435456,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2013-08-29 15:58:22 +0000","cpu":0.009038759889030157,"mem":21655552,"disk":50810880}}}
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger8" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up6" style="background-color:#CEFFCE;">
+      <div id="pop-up8" style="background-color:#CEFFCE;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.1caa42219d268cdcd41351e6ad">_INBOX.1caa... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#_INBOX.9f0f32a2afb6fd15161a92cc00">_INBOX.9f0f... (Direct Msg)</a>
       <br/>
-MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
-      <div id="pop-up7" style="background-color:#CEFFCE">
+4. MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
+      <div id="pop-up9" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"RUNNING","state_timestamp":1377184757.479758,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024,"stats":{"name":"hello","uris":["hello.vcap.me"],"host":"10.0.2.15","port":61023,"uptime":228,"mem_quota":268435456,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2013-08-22 15:23:00 +0000","cpu":0.00838712124448978,"mem":21659648,"disk":50810880}}}
+{"dea":"0-8664799376a4d303506306577f3cd1de","droplet":"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5","version":"15b774e4-ae3e-4ab1-86fd-b52c23fc73dc","instance":"e5eeb1a586f60210fa8d00c1327390a2","index":0,"state":"RUNNING","state_timestamp":1377791701.190888,"file_uri":"http://10.0.2.15:4385/instances","credentials":["4f29b85b337a516643773403fd1882d1","0b1e605f31f82c07d60101ae84a6c318"],"staged":"/e5eeb1a586f60210fa8d00c1327390a2","console_ip":"10.0.2.15","console_port":61024,"stats":{"name":"hello","uris":["hello.vcap.me"],"host":"10.0.2.15","port":61023,"uptime":208,"mem_quota":268435456,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2013-08-29 15:58:22 +0000","cpu":0.009038759889030157,"mem":21655552,"disk":50810880}}}
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger6" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<-------------------------------------|(<a href="#" id="trigger10" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up6" style="background-color:#CEFFCE;">
+      <div id="pop-up10" style="background-color:#CEFFCE;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Cloud_Controller      </div>
       <br/>
-Channel: <a href="nats-messages.html#_INBOX.1caa42219d268cdcd41351e6ad">_INBOX.1caa... (Direct Msg)</a>
+Channel: <a href="nats-messages.html#_INBOX.9f0f32a2afb6fd15161a92cc00">_INBOX.9f0f... (Direct Msg)</a>
       <br/>
-MSG: (<a href="#" id="trigger7" style="text-decoration: none;">+</a>)
-      <div id="pop-up7" style="background-color:#CEFFCE">
+5. MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
+      <div id="pop-up11" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"dea":"0-148aa19ed399f2bd83d6e6512a63f5c6","droplet":"b8348596-f3cb-42fa-8886-cb7713897ad3","version":"954c1713-cc4f-46eb-846f-0626ec770abc","instance":"35193e36cc887b2cd5db7cc72438e822","index":0,"state":"RUNNING","state_timestamp":1377184757.479758,"file_uri":"http://10.0.2.15:4385/instances","credentials":["7e5b48d0add16dbee4367fe1d3a89ac7","38251325f7e7517a890a071faef6e4c3"],"staged":"/35193e36cc887b2cd5db7cc72438e822","console_ip":"10.0.2.15","console_port":61024,"stats":{"name":"hello","uris":["hello.vcap.me"],"host":"10.0.2.15","port":61023,"uptime":228,"mem_quota":268435456,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2013-08-22 15:23:00 +0000","cpu":0.00838712124448978,"mem":21659648,"disk":50810880}}}
+{"dea":"0-8664799376a4d303506306577f3cd1de","droplet":"87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5","version":"15b774e4-ae3e-4ab1-86fd-b52c23fc73dc","instance":"e5eeb1a586f60210fa8d00c1327390a2","index":0,"state":"RUNNING","state_timestamp":1377791701.190888,"file_uri":"http://10.0.2.15:4385/instances","credentials":["4f29b85b337a516643773403fd1882d1","0b1e605f31f82c07d60101ae84a6c318"],"staged":"/e5eeb1a586f60210fa8d00c1327390a2","console_ip":"10.0.2.15","console_port":61024,"stats":{"name":"hello","uris":["hello.vcap.me"],"host":"10.0.2.15","port":61023,"uptime":208,"mem_quota":268435456,"disk_quota":1073741824,"fds_quota":16384,"usage":{"time":"2013-08-29 15:58:22 +0000","cpu":0.009038759889030157,"mem":21655552,"disk":50810880}}}
       </div>
       <br/>
       <br/>
@@ -115,11 +115,11 @@ NATS        </div>
       <div id="pop-up12" style="background-color:#CEFFFF;">
  Cloud_Controller to CF      </div>
       <br/>
-MSG: (<a href="#" id="trigger13" style="text-decoration: none;">+</a>)
+6. MSG: (<a href="#" id="trigger13" style="text-decoration: none;">+</a>)
       <div id="pop-up13" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
-[{:url=>"http://127.0.0.1:8181/v2/apps/b8348596-f3cb-42fa-8886-cb7713897ad3/stats", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxZTlkNzc0Zi05NTNkLTQ1YTktYTc2MC1hMzViZmVjYWM2NzciLCJzdWIiOiJjMzEzNGM3Mi1hNWUwLTRmYmYtYjMwZS05ZDViMDYzNjI2NDUiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6ImMzMTM0YzcyLWE1ZTAtNGZiZi1iMzBlLTlkNWIwNjM2MjY0NSIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3NzE4NDc2OSwiZXhwIjoxMzc3MjI3OTY5LCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.Py0VrEnvO8RYNJnewZNoUYJ5_YdhI85sb1xith3sTXo", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"afb3fea7-dbb8-4b92-aa5d-90203479ab05", "content-length"=>"286", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\"0\":{\"state\":\"RUNNING\",\"stats\":{\"name\":\"hello\",\"uris\":[\"hello.vcap.me\"],\"host\":\"10.0.2.15\",\"port\":61023,\"uptime\":228,\"mem_quota\":268435456,\"disk_quota\":1073741824,\"fds_quota\":16384,\"usage\":{\"time\":\"2013-08-22 15:23:00 +0000\",\"cpu\":0.00838712124448978,\"mem\":21659648,\"disk\":50810880}}}}"}]
+[{:url=>"http://127.0.0.1:8181/v2/apps/87f5740d-d0d3-431c-b6e4-e6bf41ea4dd5/stats", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIzOTJlOWFlYS1iY2ZiLTQxZTItOGVjMi00OWYyZjQ3YjAzYjciLCJzdWIiOiI4NGU5NzZhMi1iNWVjLTRlZjAtOGU5Zi1iOTYwMDZjMzVhZjAiLCJzY29wZSI6WyJjbG91ZF9jb250cm9sbGVyLmFkbWluIiwiY2xvdWRfY29udHJvbGxlci5yZWFkIiwiY2xvdWRfY29udHJvbGxlci53cml0ZSIsIm9wZW5pZCIsInBhc3N3b3JkLndyaXRlIiwic2NpbS5yZWFkIiwic2NpbS51c2VyaWRzIiwic2NpbS53cml0ZSJdLCJjbGllbnRfaWQiOiJjZiIsImNpZCI6ImNmIiwiZ3JhbnRfdHlwZSI6InBhc3N3b3JkIiwidXNlcl9pZCI6Ijg0ZTk3NmEyLWI1ZWMtNGVmMC04ZTlmLWI5NjAwNmMzNWFmMCIsInVzZXJfbmFtZSI6ImFkbWluIiwiZW1haWwiOiJhZG1pbiIsImlhdCI6MTM3Nzc5MTcxMywiZXhwIjoxMzc3ODM0OTEzLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjgwODAvdWFhL29hdXRoL3Rva2VuIiwiYXVkIjpbInNjaW0iLCJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXX0.V1E63TIjCoF-7_L9k95W4_4w4kr3e77G-1GeL3RXibw", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"x-frame-options"=>"sameorigin", "x-xss-protection"=>"1; mode=block", "content-type"=>"application/json;charset=utf-8", "x-vcap-request-id"=>"014441d2-56c9-4529-937a-142c104dda24", "content-length"=>"287", "connection"=>"keep-alive", "server"=>"thin 1.5.1 codename Straight Razor"}, :status=>"200", :body=>"{\"0\":{\"state\":\"RUNNING\",\"stats\":{\"name\":\"hello\",\"uris\":[\"hello.vcap.me\"],\"host\":\"10.0.2.15\",\"port\":61023,\"uptime\":208,\"mem_quota\":268435456,\"disk_quota\":1073741824,\"fds_quota\":16384,\"usage\":{\"time\":\"2013-08-29 15:58:22 +0000\",\"cpu\":0.009038759889030157,\"mem\":21655552,\"disk\":50810880}}}}"}]
       </div>
       <br/>
       <br/>

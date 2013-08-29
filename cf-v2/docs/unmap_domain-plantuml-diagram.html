@@ -32,12 +32,15 @@ participant DEA
 participant Router
 participant Warden
 participant UAA
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger1]] (REST-req): GET v2/domains
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger3]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger5]] (REST-req): GET v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger7]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger9]] (REST-req): DELETE v2/spaces/dba607d6-07c3-446a-8ab4-346d1b94c45b/domains/e0fec02a-5822-4786-a00e-f1699a3ee66b
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger11]] (REST-resp)">
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger1]] (0. REST-req): GET v2/domains
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger3]] (1. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger5]] (2. REST-req): GET v2/spaces/da64...
+Health_Manager -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger7]] (3. NATS) : cloudcontrollers.hm.requests.ng
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger9]] (4. NATS) : dea.stop
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger11]] (5. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger13]] (6. REST-req): DELETE v2/spaces/da64.../domains
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger15]] (7. REST-resp)
+Health_Manager -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/unmap_domain-sequence-diagram.html#trigger17]] (8. NATS) : cloudcontrollers.hm.requests.ng">
       </img>
     </div>
   </body>

@@ -32,12 +32,14 @@ participant DEA
 participant Router
 participant Warden
 participant UAA
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger1]] (REST-req): GET info
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger3]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger5]] (REST-req): GET v2/organizations
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger7]] (REST-resp)
-CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger9]] (REST-req): GET /v2/organizations/35515897-d470-4029-b838-399ca31b850a/spaces
-Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger11]] (REST-resp)">
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger1]] (0. REST-req): GET info
+Health_Manager -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger3]] (1. NATS) : cloudcontrollers.hm.requests.ng
+Health_Manager -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger5]] (2. NATS) : cloudcontrollers.hm.requests.ng
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger7]] (3. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger9]] (4. REST-req): GET v2/organizations
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger11]] (5. REST-resp)
+CF -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger13]] (6. REST-req): GET /v2/organizations/3551.../spaces
+Cloud_Controller -[#blue]> CF : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v2/docs/login-sequence-diagram.html#trigger15]] (7. REST-resp)">
       </img>
     </div>
   </body>
