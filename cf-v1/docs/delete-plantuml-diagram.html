@@ -32,15 +32,15 @@ participant DEA
 participant Router
 participant Stager
 participant UAA
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger1]] (REST-req): GET apps
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger17]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger19]] (REST-req): GET apps/helloworld
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger25]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger27]] (REST-req): DELETE apps/helloworld
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger29]] (NATS) : dea.stop
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger33]] (REST-resp)
-DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger35]] (NATS) : router.unregister
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger37]] (NATS) : droplet.exited">
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger1]] (0. REST-req): GET apps
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger17]] (8. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger19]] (9. REST-req): GET apps/helloworld
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger25]] (12. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger27]] (13. REST-req): DELETE apps/helloworld
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger29]] (14. NATS) : dea.stop
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger33]] (16. REST-resp)
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger35]] (17. NATS) : router.unregister
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/delete-sequence-diagram.html#trigger37]] (18. NATS) : droplet.exited">
       </img>
     </div>
   </body>

@@ -32,11 +32,11 @@ participant DEA
 participant Router
 participant Stager
 participant UAA
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger7]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger9]] (REST-req): GET apps/ss/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger13]] (NATS) : _INBOX.a703... (Direct Msg)
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger17]] (REST-resp)">
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger1]] (0. REST-req): GET apps/ss
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger7]] (3. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger9]] (4. REST-req): GET apps/ss/instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger13]] (6. NATS) : _INBOX.3de2... (Direct Msg)
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/instances-sequence-diagram.html#trigger17]] (8. REST-resp)">
       </img>
     </div>
   </body>

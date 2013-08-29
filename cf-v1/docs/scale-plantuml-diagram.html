@@ -32,14 +32,17 @@ participant DEA
 participant Router
 participant Stager
 participant UAA
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger7]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger9]] (REST-req): GET info
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger13]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger15]] (REST-req): PUT apps/ss
-Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger17]] (NATS) : droplet.updated
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger23]] (REST-resp)
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger27]] (NATS) : dea.35a1...start">
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger1]] (0. REST-req): GET apps/ss
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger7]] (3. REST-resp)
+Cloud_Controller -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger11]] (5. NATS) : router.register
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger13]] (6. NATS) : router.register
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger15]] (7. NATS) : router.register
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger19]] (9. REST-req): GET info
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger23]] (11. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger25]] (12. REST-req): PUT apps/ss
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger27]] (13. NATS) : droplet.updated
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger33]] (16. REST-resp)
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/scale-sequence-diagram.html#trigger37]] (18. NATS) : dea.a611...start">
       </img>
     </div>
   </body>

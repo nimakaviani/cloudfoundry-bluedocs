@@ -2,7 +2,7 @@
 <html>
   <header>
     <title>CloudFoundry passwd Command Documentation -- Auto-generated.</title>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js">
     </script>
     <script type="text/javascript" src="../assets/hover.js">
     </script>
@@ -25,7 +25,7 @@
       <div id="pop-up0" style="background-color:#CEFFFF;">
  VMC to Cloud_Controller      </div>
       <br/>
-MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
+0. MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
       <div id="pop-up1" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
@@ -39,11 +39,11 @@ REST        </div>
       <div id="pop-up4" style="background-color:#CEFFFF;">
  Cloud_Controller to VMC      </div>
       <br/>
-MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
+2. MSG: (<a href="#" id="trigger5" style="text-decoration: none;">+</a>)
       <div id="pop-up5" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
-[{:url=>"http://api.vcap.me/info", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:20:47 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"4ee711dbc8a1eb0d453495f836a62a68\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"vcap\",\"build\":2222,\"support\":\"http://support.cloudfoundry.com\",\"version\":\"0.999\",\"description\":\"VMware's Cloud Application Platform\",\"allow_debug\":true,\"frameworks\":{\"sinatra\":{\"name\":\"sinatra\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"*.rb\":\"\\\\s*require[\\\\s\\\\(]*['\\\"]sinatra(/base)?['\\\"]\"},{\"config/environment.rb\":false}]},\"lift\":{\"name\":\"lift\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"rack\":{\"name\":\"rack\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config.ru\":true},{\"config/environment.rb\":false}]},\"spring\":{\"name\":\"spring\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"django\":{\"name\":\"django\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"wsgi\":{\"name\":\"wsgi\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"java_web\":{\"name\":\"java_web\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"node\":{\"name\":\"node\",\"runtimes\":[{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"}],\"detection\":[{\"*.js\":\".\"}]},\"php\":{\"name\":\"php\",\"runtimes\":[{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"}],\"detection\":[{\"*.php\":true}]},\"standalone\":{\"name\":\"standalone\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"},{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"},{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"},{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"},{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"},{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[]},\"grails\":{\"name\":\"grails\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"play\":{\"name\":\"play\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"lib/play.*.jar\":true}]},\"otp_rebar\":{\"name\":\"otp_rebar\",\"runtimes\":[{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"}],\"detection\":[{\"releases/*/*.rel\":\".\"}]},\"rails3\":{\"name\":\"rails3\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config/application.rb\":true},{\"config/environment.rb\":true}]}},\"authorization_endpoint\":\"http://uaa.vcap.me\",\"user\":\"nkavian@us.ibm.com\",\"limits\":{\"memory\":2048,\"app_uris\":4,\"services\":16,\"apps\":20},\"usage\":{\"memory\":192,\"apps\":3,\"services\":0}}"}]
+[{:url=>"http://api.vcap.me/info", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzgzOTU0NTksInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNDRmZTcwZWQtNmRmZS00NDkxLTllMzYtMDA3ODZmZDZlMGE0IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Ba3WqStbesfaZFIv_ryEgig7pxGOakvmqlSLFKChCzI", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 29 Aug 2013 15:37:41 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"164cd9109a69ddea909e71b5531b72b0\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"vcap\",\"build\":2222,\"support\":\"http://support.cloudfoundry.com\",\"version\":\"0.999\",\"description\":\"VMware's Cloud Application Platform\",\"allow_debug\":true,\"frameworks\":{\"sinatra\":{\"name\":\"sinatra\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"*.rb\":\"\\\\s*require[\\\\s\\\\(]*['\\\"]sinatra(/base)?['\\\"]\"},{\"config/environment.rb\":false}]},\"lift\":{\"name\":\"lift\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"rack\":{\"name\":\"rack\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config.ru\":true},{\"config/environment.rb\":false}]},\"spring\":{\"name\":\"spring\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"django\":{\"name\":\"django\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"wsgi\":{\"name\":\"wsgi\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"java_web\":{\"name\":\"java_web\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"node\":{\"name\":\"node\",\"runtimes\":[{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"}],\"detection\":[{\"*.js\":\".\"}]},\"php\":{\"name\":\"php\",\"runtimes\":[{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"}],\"detection\":[{\"*.php\":true}]},\"standalone\":{\"name\":\"standalone\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"},{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"},{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"},{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"},{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"},{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[]},\"grails\":{\"name\":\"grails\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"play\":{\"name\":\"play\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"lib/play.*.jar\":true}]},\"otp_rebar\":{\"name\":\"otp_rebar\",\"runtimes\":[{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"}],\"detection\":[{\"releases/*/*.rel\":\".\"}]},\"rails3\":{\"name\":\"rails3\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config/application.rb\":true},{\"config/environment.rb\":true}]}},\"authorization_endpoint\":\"http://uaa.vcap.me\",\"user\":\"nkavian@us.ibm.com\",\"limits\":{\"memory\":2048,\"app_uris\":4,\"services\":16,\"apps\":20},\"usage\":{\"memory\":128,\"apps\":2,\"services\":0}}"}]
       </div>
       <br/>
       <br/>
@@ -55,11 +55,11 @@ REST        </div>
       <br/>
 Channel: <a href="nats-messages.html#router.register">router.register</a>
       <br/>
-MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
+4. MSG: (<a href="#" id="trigger9" style="text-decoration: none;">+</a>)
       <div id="pop-up9" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"host":"9.2.227.67","port":9022,"uris":["api.vcap.me"],"tags":{"component":"CloudController"}}
+{"host":"9.2.226.67","port":9022,"uris":["api.vcap.me"],"tags":{"component":"CloudController"}}
       </div>
       <br/>
       <br/>
@@ -71,11 +71,11 @@ NATS        </div>
       <br/>
 Channel: <a href="nats-messages.html#router.register">router.register</a>
       <br/>
-MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
+5. MSG: (<a href="#" id="trigger11" style="text-decoration: none;">+</a>)
       <div id="pop-up11" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"dea":"35a1932c997acef0dd42c9d55873e813","app":"3","host":"9.2.227.67","port":60823,"uris":["shw.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"e5b4031c8166a4ccd88c24f7410cc89e0971aaa199951cabecc8d74998b22dfc"}
+{"dea":"a61177994727007d498af3ce508c2d07","app":"3","host":"9.2.226.67","port":51191,"uris":["shw.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"a9c52ab403315eef57406f21bc6d038f53fe6e978264fe7e8bc25416ae7c5fb4"}
       </div>
       <br/>
       <br/>
@@ -87,181 +87,121 @@ NATS        </div>
       <br/>
 Channel: <a href="nats-messages.html#router.register">router.register</a>
       <br/>
-MSG: (<a href="#" id="trigger13" style="text-decoration: none;">+</a>)
+6. MSG: (<a href="#" id="trigger13" style="text-decoration: none;">+</a>)
       <div id="pop-up13" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"dea":"35a1932c997acef0dd42c9d55873e813","app":"46","host":"9.2.227.67","port":53373,"uris":["hi.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"a2ab010cf8eaa45763053afc439ba871161874c566d7cd0d0dd321135e4dcb93"}
+{"dea":"a61177994727007d498af3ce508c2d07","app":"2","host":"9.2.226.67","port":39258,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"9e30fa1cf3059322cbd2e0fa4dca12b271c43fca3367f8e66acb63b33216b641"}
       </div>
       <br/>
       <br/>
       <font color="green">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger14" style="text-decoration: none;">+</a>)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--------------------------------------------->(<a href="#" id="trigger24" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up14" style="background-color:#CEFFCE;">
+      <div id="pop-up24" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to Router      </div>
+      <br/>
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+12. MSG: (<a href="#" id="trigger25" style="text-decoration: none;">+</a>)
+      <div id="pop-up25" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"host":"9.2.226.67","port":9022,"uris":["api.vcap.me"],"tags":{"component":"CloudController"}}
+      </div>
+      <br/>
+      <br/>
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger26" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up26" style="background-color:#CEFFCE;">
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
       <br/>
 Channel: <a href="nats-messages.html#router.register">router.register</a>
       <br/>
-MSG: (<a href="#" id="trigger15" style="text-decoration: none;">+</a>)
-      <div id="pop-up15" style="background-color:#CEFFCE">
+13. MSG: (<a href="#" id="trigger27" style="text-decoration: none;">+</a>)
+      <div id="pop-up27" style="background-color:#CEFFCE">
         <div style="float:right;background-color:green;border-radius:5px;color:white;">
 NATS        </div>
-{"dea":"35a1932c997acef0dd42c9d55873e813","app":"2","host":"9.2.227.67","port":43032,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"90e10ca17a61a6e8fc39c1f63e83e07708a5117dbb0e6b179bdbf52c324e92ee"}
+{"dea":"a61177994727007d498af3ce508c2d07","app":"3","host":"9.2.226.67","port":51191,"uris":["shw.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"a9c52ab403315eef57406f21bc6d038f53fe6e978264fe7e8bc25416ae7c5fb4"}
       </div>
       <br/>
       <br/>
-      <font color="#000090">
-|--------------------->(<a href="#" id="trigger0" style="text-decoration: none;">+</a>)
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger28" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up0" style="background-color:#CEFFFF;">
- VMC to Cloud_Controller      </div>
+      <div id="pop-up28" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
       <br/>
-MSG: (<a href="#" id="trigger1" style="text-decoration: none;">+</a>)
-      <div id="pop-up1" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-["GET", "info", {:accept=>:json}]
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+14. MSG: (<a href="#" id="trigger29" style="text-decoration: none;">+</a>)
+      <div id="pop-up29" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"a61177994727007d498af3ce508c2d07","app":"2","host":"9.2.226.67","port":39258,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"9e30fa1cf3059322cbd2e0fa4dca12b271c43fca3367f8e66acb63b33216b641"}
       </div>
       <br/>
       <br/>
-      <font color="#000090">
-<---------------------|(<a href="#" id="trigger24" style="text-decoration: none;">+</a>)
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|--------------------------------------------->(<a href="#" id="trigger32" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up24" style="background-color:#CEFFFF;">
- Cloud_Controller to VMC      </div>
+      <div id="pop-up32" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to Router      </div>
       <br/>
-MSG: (<a href="#" id="trigger25" style="text-decoration: none;">+</a>)
-      <div id="pop-up25" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-[{:url=>"http://api.vcap.me/info", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:21:06 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"4ee711dbc8a1eb0d453495f836a62a68\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"vcap\",\"build\":2222,\"support\":\"http://support.cloudfoundry.com\",\"version\":\"0.999\",\"description\":\"VMware's Cloud Application Platform\",\"allow_debug\":true,\"frameworks\":{\"sinatra\":{\"name\":\"sinatra\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"*.rb\":\"\\\\s*require[\\\\s\\\\(]*['\\\"]sinatra(/base)?['\\\"]\"},{\"config/environment.rb\":false}]},\"lift\":{\"name\":\"lift\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"rack\":{\"name\":\"rack\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config.ru\":true},{\"config/environment.rb\":false}]},\"spring\":{\"name\":\"spring\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"django\":{\"name\":\"django\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"wsgi\":{\"name\":\"wsgi\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"java_web\":{\"name\":\"java_web\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"node\":{\"name\":\"node\",\"runtimes\":[{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"}],\"detection\":[{\"*.js\":\".\"}]},\"php\":{\"name\":\"php\",\"runtimes\":[{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"}],\"detection\":[{\"*.php\":true}]},\"standalone\":{\"name\":\"standalone\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"},{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"},{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"},{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"},{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"},{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[]},\"grails\":{\"name\":\"grails\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"play\":{\"name\":\"play\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"lib/play.*.jar\":true}]},\"otp_rebar\":{\"name\":\"otp_rebar\",\"runtimes\":[{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"}],\"detection\":[{\"releases/*/*.rel\":\".\"}]},\"rails3\":{\"name\":\"rails3\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config/application.rb\":true},{\"config/environment.rb\":true}]}},\"authorization_endpoint\":\"http://uaa.vcap.me\",\"user\":\"nkavian@us.ibm.com\",\"limits\":{\"memory\":2048,\"app_uris\":4,\"services\":16,\"apps\":20},\"usage\":{\"memory\":192,\"apps\":3,\"services\":0}}"}]
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+16. MSG: (<a href="#" id="trigger33" style="text-decoration: none;">+</a>)
+      <div id="pop-up33" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"host":"9.2.226.67","port":9022,"uris":["api.vcap.me"],"tags":{"component":"CloudController"}}
       </div>
       <br/>
       <br/>
-      <font color="#000090">
-|--------------------->(<a href="#" id="trigger26" style="text-decoration: none;">+</a>)
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger34" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up26" style="background-color:#CEFFFF;">
- VMC to Cloud_Controller      </div>
+      <div id="pop-up34" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
       <br/>
-MSG: (<a href="#" id="trigger27" style="text-decoration: none;">+</a>)
-      <div id="pop-up27" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-["PUT", "users/nkavian%40us.ibm.com", {:content=>:json, :payload=>{:email=>"nkavian@us.ibm.com", :password=>"password"}}]
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+17. MSG: (<a href="#" id="trigger35" style="text-decoration: none;">+</a>)
+      <div id="pop-up35" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"a61177994727007d498af3ce508c2d07","app":"3","host":"9.2.226.67","port":51191,"uris":["shw.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"a9c52ab403315eef57406f21bc6d038f53fe6e978264fe7e8bc25416ae7c5fb4"}
       </div>
       <br/>
       <br/>
-      <font color="#000090">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---------------------------------------------------------->(<a href="#" id="trigger28" style="text-decoration: none;">+</a>)
+      <font color="green">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|----------->(<a href="#" id="trigger36" style="text-decoration: none;">+</a>)
       </font>
-      <div id="pop-up28" style="background-color:#CEFFFF;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to UAA      </div>
+      <div id="pop-up36" style="background-color:#CEFFCE;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DEA to Router      </div>
       <br/>
-MSG: (<a href="#" id="trigger29" style="text-decoration: none;">+</a>)
-      <div id="pop-up29" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-["http://uaa.vcap.me", :post, "/oauth/token", "grant_type=client_credentials", {:content_type=>"application/x-www-form-urlencoded", :accept=>"application/json", :authorization=>"Basic Y2xvdWRfY29udHJvbGxlcjpjbG91ZGNvbnRyb2xsZXJzZWNyZXQ="}]
+Channel: <a href="nats-messages.html#router.register">router.register</a>
+      <br/>
+18. MSG: (<a href="#" id="trigger37" style="text-decoration: none;">+</a>)
+      <div id="pop-up37" style="background-color:#CEFFCE">
+        <div style="float:right;background-color:green;border-radius:5px;color:white;">
+NATS        </div>
+{"dea":"a61177994727007d498af3ce508c2d07","app":"2","host":"9.2.226.67","port":39258,"uris":["ss.vcap.me","ss2.vcap.me"],"tags":{"framework":"rack","runtime":"ruby193"},"private_instance_id":"9e30fa1cf3059322cbd2e0fa4dca12b271c43fca3367f8e66acb63b33216b641"}
       </div>
       <br/>
       <br/>
       <font color="#000090">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<----------------------------------------------------------|(<a href="#" id="trigger30" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up30" style="background-color:#CEFFFF;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UAA to Cloud_Controller      </div>
-      <br/>
-MSG: (<a href="#" id="trigger31" style="text-decoration: none;">+</a>)
-      <div id="pop-up31" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-[200, "{\"access_token\":\"eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNjksInNjb3BlIjpbInBhc3N3b3JkLndyaXRlIiwic2NpbS53cml0ZSIsInNjaW0ucmVhZCIsInVhYS5yZXNvdXJjZSJdLCJhdWQiOlsic2NpbSIsInVhYSIsInBhc3N3b3JkIl0sImp0aSI6ImI4NmM5NjQxLWYwOTgtNDdhZi1iZDVjLTllZDQzNWFjNzVlMyIsImNsaWVudF9pZCI6ImNsb3VkX2NvbnRyb2xsZXIifQ.T64ttRi0t1D-cXclvjzaRoe6G7lzuMv9qXwXKwPbqrQ\",\"token_type\":\"bearer\",\"expires_in\":604799,\"scope\":\"password.write scim.write scim.read uaa.resource\",\"jti\":\"b86c9641-f098-47af-bd5c-9ed435ac75e3\"}", {:server=>"nginx", :date=>"Thu, 22 Aug 2013 14:21:09 GMT", :content_type=>"application/json", :transfer_encoding=>"chunked", :connection=>"close", :cache_control=>"no-store", :pragma=>"no-cache"}]
-      </div>
-      <br/>
-      <br/>
-      <font color="#000090">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---------------------------------------------------------->(<a href="#" id="trigger32" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up32" style="background-color:#CEFFFF;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to UAA      </div>
-      <br/>
-MSG: (<a href="#" id="trigger33" style="text-decoration: none;">+</a>)
-      <div id="pop-up33" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-["http://uaa.vcap.me", :get, "/Users?filter=username+eq+%22nkavian%40us.ibm.com%22", nil, {:accept=>"application/json", :authorization=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNjksInNjb3BlIjpbInBhc3N3b3JkLndyaXRlIiwic2NpbS53cml0ZSIsInNjaW0ucmVhZCIsInVhYS5yZXNvdXJjZSJdLCJhdWQiOlsic2NpbSIsInVhYSIsInBhc3N3b3JkIl0sImp0aSI6ImI4NmM5NjQxLWYwOTgtNDdhZi1iZDVjLTllZDQzNWFjNzVlMyIsImNsaWVudF9pZCI6ImNsb3VkX2NvbnRyb2xsZXIifQ.T64ttRi0t1D-cXclvjzaRoe6G7lzuMv9qXwXKwPbqrQ"}]
-      </div>
-      <br/>
-      <br/>
-      <font color="#000090">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<----------------------------------------------------------|(<a href="#" id="trigger34" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up34" style="background-color:#CEFFFF;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UAA to Cloud_Controller      </div>
-      <br/>
-MSG: (<a href="#" id="trigger35" style="text-decoration: none;">+</a>)
-      <div id="pop-up35" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-[200, "{\"resources\":[{\"id\":\"18c6a9f3-812e-439c-a597-f8b943a8c682\"}],\"startIndex\":1,\"itemsPerPage\":100,\"totalResults\":1,\"schemas\":[\"urn:scim:schemas:core:1.0\"]}", {:server=>"nginx", :date=>"Thu, 22 Aug 2013 14:21:09 GMT", :content_type=>"application/json", :transfer_encoding=>"chunked", :connection=>"close"}]
-      </div>
-      <br/>
-      <br/>
-      <font color="#000090">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---------------------------------------------------------->(<a href="#" id="trigger36" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up36" style="background-color:#CEFFFF;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to UAA      </div>
-      <br/>
-MSG: (<a href="#" id="trigger37" style="text-decoration: none;">+</a>)
-      <div id="pop-up37" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-["http://uaa.vcap.me", :get, "/Users/18c6a9f3-812e-439c-a597-f8b943a8c682", nil, {:accept=>"application/json", :authorization=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNjksInNjb3BlIjpbInBhc3N3b3JkLndyaXRlIiwic2NpbS53cml0ZSIsInNjaW0ucmVhZCIsInVhYS5yZXNvdXJjZSJdLCJhdWQiOlsic2NpbSIsInVhYSIsInBhc3N3b3JkIl0sImp0aSI6ImI4NmM5NjQxLWYwOTgtNDdhZi1iZDVjLTllZDQzNWFjNzVlMyIsImNsaWVudF9pZCI6ImNsb3VkX2NvbnRyb2xsZXIifQ.T64ttRi0t1D-cXclvjzaRoe6G7lzuMv9qXwXKwPbqrQ"}]
-      </div>
-      <br/>
-      <br/>
-      <font color="#000090">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<----------------------------------------------------------|(<a href="#" id="trigger38" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up38" style="background-color:#CEFFFF;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UAA to Cloud_Controller      </div>
-      <br/>
-MSG: (<a href="#" id="trigger39" style="text-decoration: none;">+</a>)
-      <div id="pop-up39" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-[200, "{\"id\":\"18c6a9f3-812e-439c-a597-f8b943a8c682\",\"userName\":\"nkavian@us.ibm.com\",\"name\":{\"familyName\":\"nkavian@us.ibm.com\",\"givenName\":\"nkavian@us.ibm.com\"},\"emails\":[{\"value\":\"nkavian@us.ibm.com\"}],\"groups\":[{\"externalId\":\"uaa.user\"}],\"userType\":\"uaa.user\",\"active\":true,\"meta\":{\"version\":0,\"created\":\"2013-07-14T22:56:54.703Z\",\"lastModified\":\"2013-08-21T21:54:21.979Z\"},\"schemas\":[\"urn:scim:schemas:core:1.0\"]}", {:server=>"nginx", :date=>"Thu, 22 Aug 2013 14:21:09 GMT", :content_type=>"application/json", :transfer_encoding=>"chunked", :connection=>"close", :etag=>"\"0\""}]
-      </div>
-      <br/>
-      <br/>
-      <font color="#000090">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---------------------------------------------------------->(<a href="#" id="trigger40" style="text-decoration: none;">+</a>)
-      </font>
-      <div id="pop-up40" style="background-color:#CEFFFF;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to UAA      </div>
-      <br/>
-MSG: (<a href="#" id="trigger41" style="text-decoration: none;">+</a>)
-      <div id="pop-up41" style="background-color:#CEFFFF">
-        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
-REST        </div>
-["http://uaa.vcap.me", :put, "/Users/18c6a9f3-812e-439c-a597-f8b943a8c682/password", "{\"password\":\"password\"}", {:content_type=>"application/json", :authorization=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNjksInNjb3BlIjpbInBhc3N3b3JkLndyaXRlIiwic2NpbS53cml0ZSIsInNjaW0ucmVhZCIsInVhYS5yZXNvdXJjZSJdLCJhdWQiOlsic2NpbSIsInVhYSIsInBhc3N3b3JkIl0sImp0aSI6ImI4NmM5NjQxLWYwOTgtNDdhZi1iZDVjLTllZDQzNWFjNzVlMyIsImNsaWVudF9pZCI6ImNsb3VkX2NvbnRyb2xsZXIifQ.T64ttRi0t1D-cXclvjzaRoe6G7lzuMv9qXwXKwPbqrQ"}]
-      </div>
-      <br/>
-      <br/>
-      <font color="#000090">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<----------------------------------------------------------|(<a href="#" id="trigger42" style="text-decoration: none;">+</a>)
+|--------------------->(<a href="#" id="trigger42" style="text-decoration: none;">+</a>)
       </font>
       <div id="pop-up42" style="background-color:#CEFFFF;">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UAA to Cloud_Controller      </div>
+ VMC to Cloud_Controller      </div>
       <br/>
-MSG: (<a href="#" id="trigger43" style="text-decoration: none;">+</a>)
+21. MSG: (<a href="#" id="trigger43" style="text-decoration: none;">+</a>)
       <div id="pop-up43" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
-[204, "", {:server=>"nginx", :date=>"Thu, 22 Aug 2013 14:21:09 GMT", :connection=>"close"}]
+["GET", "info", {:accept=>:json}]
       </div>
       <br/>
       <br/>
@@ -271,11 +211,151 @@ REST        </div>
       <div id="pop-up46" style="background-color:#CEFFFF;">
  Cloud_Controller to VMC      </div>
       <br/>
-MSG: (<a href="#" id="trigger47" style="text-decoration: none;">+</a>)
+23. MSG: (<a href="#" id="trigger47" style="text-decoration: none;">+</a>)
       <div id="pop-up47" style="background-color:#CEFFFF">
         <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
 REST        </div>
-[{:url=>"http://api.vcap.me/users/nkavian%40us.ibm.com", :method=>"PUT", :headers=>{"Content-Length"=>52, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzc3ODYwNDUsInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNzFlMmRiNzUtZWExMS00YjJlLTgyOTYtYjU5NDJlMmMwNzY5IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Nma09BS-K9JzNtePkISUr4VpXFXeCod9n04vzgBA7oU", "Content-Type"=>"application/json"}, :body=>"{\"email\":\"nkavian@us.ibm.com\",\"password\":\"password\"}"}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 22 Aug 2013 14:21:09 GMT", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "cache-control"=>"no-cache", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"204", :body=>nil}]
+[{:url=>"http://api.vcap.me/info", :method=>"GET", :headers=>{"Content-Length"=>0, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzgzOTU0NTksInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNDRmZTcwZWQtNmRmZS00NDkxLTllMzYtMDA3ODZmZDZlMGE0IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Ba3WqStbesfaZFIv_ryEgig7pxGOakvmqlSLFKChCzI", "Accept"=>"application/json"}, :body=>nil}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 29 Aug 2013 15:39:14 GMT", "content-type"=>"application/json; charset=utf-8", "transfer-encoding"=>"chunked", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "etag"=>"\"164cd9109a69ddea909e71b5531b72b0\"", "cache-control"=>"max-age=0, private, must-revalidate", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"200", :body=>"{\"name\":\"vcap\",\"build\":2222,\"support\":\"http://support.cloudfoundry.com\",\"version\":\"0.999\",\"description\":\"VMware's Cloud Application Platform\",\"allow_debug\":true,\"frameworks\":{\"sinatra\":{\"name\":\"sinatra\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"*.rb\":\"\\\\s*require[\\\\s\\\\(]*['\\\"]sinatra(/base)?['\\\"]\"},{\"config/environment.rb\":false}]},\"lift\":{\"name\":\"lift\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"rack\":{\"name\":\"rack\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config.ru\":true},{\"config/environment.rb\":false}]},\"spring\":{\"name\":\"spring\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"django\":{\"name\":\"django\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"wsgi\":{\"name\":\"wsgi\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"}],\"detection\":[{\"*.py\":\".\"}]},\"java_web\":{\"name\":\"java_web\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"node\":{\"name\":\"node\",\"runtimes\":[{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"}],\"detection\":[{\"*.js\":\".\"}]},\"php\":{\"name\":\"php\",\"runtimes\":[{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"}],\"detection\":[{\"*.php\":true}]},\"standalone\":{\"name\":\"standalone\",\"runtimes\":[{\"name\":\"python2\",\"version\":\"2.6.5\",\"description\":\"Python 2.6.5\"},{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"},{\"name\":\"node\",\"version\":\"0.4.12\",\"description\":\"Node.js\"},{\"name\":\"node06\",\"version\":\"0.6.8\",\"description\":\"Node.js\"},{\"name\":\"node08\",\"version\":\"0.8.2\",\"description\":\"Node.js\"},{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"},{\"name\":\"php\",\"version\":\"5.3\",\"description\":\"PHP 5\"},{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[]},\"grails\":{\"name\":\"grails\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"*.war\":true}]},\"play\":{\"name\":\"play\",\"runtimes\":[{\"name\":\"java\",\"version\":\"1.6\",\"description\":\"Java 6\"},{\"name\":\"java7\",\"version\":\"1.7\",\"description\":\"Java 7\"}],\"detection\":[{\"lib/play.*.jar\":true}]},\"otp_rebar\":{\"name\":\"otp_rebar\",\"runtimes\":[{\"name\":\"erlangR14B02\",\"version\":\"R14B02\",\"description\":\"Erlang R14B02\"}],\"detection\":[{\"releases/*/*.rel\":\".\"}]},\"rails3\":{\"name\":\"rails3\",\"runtimes\":[{\"name\":\"ruby18\",\"version\":\"1.8.7p357\",\"description\":\"Ruby 1.8.7\"},{\"name\":\"ruby19\",\"version\":\"1.9.2p180\",\"description\":\"Ruby 1.9.2\"},{\"name\":\"ruby193\",\"version\":\"1.9.3p194\",\"description\":\"Ruby 1.9.3\"}],\"detection\":[{\"config/application.rb\":true},{\"config/environment.rb\":true}]}},\"authorization_endpoint\":\"http://uaa.vcap.me\",\"user\":\"nkavian@us.ibm.com\",\"limits\":{\"memory\":2048,\"app_uris\":4,\"services\":16,\"apps\":20},\"usage\":{\"memory\":128,\"apps\":2,\"services\":0}}"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+|--------------------->(<a href="#" id="trigger48" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up48" style="background-color:#CEFFFF;">
+ VMC to Cloud_Controller      </div>
+      <br/>
+24. MSG: (<a href="#" id="trigger49" style="text-decoration: none;">+</a>)
+      <div id="pop-up49" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["PUT", "users/nkavian%40us.ibm.com", {:content=>:json, :payload=>{:email=>"nkavian@us.ibm.com", :password=>"password"}}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---------------------------------------------------------->(<a href="#" id="trigger50" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up50" style="background-color:#CEFFFF;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to UAA      </div>
+      <br/>
+25. MSG: (<a href="#" id="trigger51" style="text-decoration: none;">+</a>)
+      <div id="pop-up51" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["http://uaa.vcap.me", :post, "/oauth/token", "grant_type=client_credentials", {:content_type=>"application/x-www-form-urlencoded", :accept=>"application/json", :authorization=>"Basic Y2xvdWRfY29udHJvbGxlcjpjbG91ZGNvbnRyb2xsZXJzZWNyZXQ="}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<----------------------------------------------------------|(<a href="#" id="trigger52" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up52" style="background-color:#CEFFFF;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UAA to Cloud_Controller      </div>
+      <br/>
+26. MSG: (<a href="#" id="trigger53" style="text-decoration: none;">+</a>)
+      <div id="pop-up53" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[200, "{\"access_token\":\"eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzgzOTU1NTcsInNjb3BlIjpbInBhc3N3b3JkLndyaXRlIiwic2NpbS53cml0ZSIsInNjaW0ucmVhZCIsInVhYS5yZXNvdXJjZSJdLCJhdWQiOlsic2NpbSIsInVhYSIsInBhc3N3b3JkIl0sImp0aSI6IjNiYWQ0YzQ5LWUyYTQtNGU4Ni1hOGRmLTA3NjRjNzQxODVhMyIsImNsaWVudF9pZCI6ImNsb3VkX2NvbnRyb2xsZXIifQ.LU5KcwlPOBNCwPmiCMcECWTPjr-0pUVeaekHYEUtJg0\",\"token_type\":\"bearer\",\"expires_in\":604799,\"scope\":\"password.write scim.write scim.read uaa.resource\",\"jti\":\"3bad4c49-e2a4-4e86-a8df-0764c74185a3\"}", {:server=>"nginx", :date=>"Thu, 29 Aug 2013 15:39:17 GMT", :content_type=>"application/json", :transfer_encoding=>"chunked", :connection=>"close", :cache_control=>"no-store", :pragma=>"no-cache"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---------------------------------------------------------->(<a href="#" id="trigger54" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up54" style="background-color:#CEFFFF;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to UAA      </div>
+      <br/>
+27. MSG: (<a href="#" id="trigger55" style="text-decoration: none;">+</a>)
+      <div id="pop-up55" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["http://uaa.vcap.me", :get, "/Users?filter=username+eq+%22nkavian%40us.ibm.com%22", nil, {:accept=>"application/json", :authorization=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzgzOTU1NTcsInNjb3BlIjpbInBhc3N3b3JkLndyaXRlIiwic2NpbS53cml0ZSIsInNjaW0ucmVhZCIsInVhYS5yZXNvdXJjZSJdLCJhdWQiOlsic2NpbSIsInVhYSIsInBhc3N3b3JkIl0sImp0aSI6IjNiYWQ0YzQ5LWUyYTQtNGU4Ni1hOGRmLTA3NjRjNzQxODVhMyIsImNsaWVudF9pZCI6ImNsb3VkX2NvbnRyb2xsZXIifQ.LU5KcwlPOBNCwPmiCMcECWTPjr-0pUVeaekHYEUtJg0"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<----------------------------------------------------------|(<a href="#" id="trigger56" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up56" style="background-color:#CEFFFF;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UAA to Cloud_Controller      </div>
+      <br/>
+28. MSG: (<a href="#" id="trigger57" style="text-decoration: none;">+</a>)
+      <div id="pop-up57" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[200, "{\"resources\":[{\"id\":\"18c6a9f3-812e-439c-a597-f8b943a8c682\"}],\"startIndex\":1,\"itemsPerPage\":100,\"totalResults\":1,\"schemas\":[\"urn:scim:schemas:core:1.0\"]}", {:server=>"nginx", :date=>"Thu, 29 Aug 2013 15:39:17 GMT", :content_type=>"application/json", :transfer_encoding=>"chunked", :connection=>"close"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---------------------------------------------------------->(<a href="#" id="trigger58" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up58" style="background-color:#CEFFFF;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to UAA      </div>
+      <br/>
+29. MSG: (<a href="#" id="trigger59" style="text-decoration: none;">+</a>)
+      <div id="pop-up59" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["http://uaa.vcap.me", :get, "/Users/18c6a9f3-812e-439c-a597-f8b943a8c682", nil, {:accept=>"application/json", :authorization=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzgzOTU1NTcsInNjb3BlIjpbInBhc3N3b3JkLndyaXRlIiwic2NpbS53cml0ZSIsInNjaW0ucmVhZCIsInVhYS5yZXNvdXJjZSJdLCJhdWQiOlsic2NpbSIsInVhYSIsInBhc3N3b3JkIl0sImp0aSI6IjNiYWQ0YzQ5LWUyYTQtNGU4Ni1hOGRmLTA3NjRjNzQxODVhMyIsImNsaWVudF9pZCI6ImNsb3VkX2NvbnRyb2xsZXIifQ.LU5KcwlPOBNCwPmiCMcECWTPjr-0pUVeaekHYEUtJg0"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<----------------------------------------------------------|(<a href="#" id="trigger60" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up60" style="background-color:#CEFFFF;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UAA to Cloud_Controller      </div>
+      <br/>
+30. MSG: (<a href="#" id="trigger61" style="text-decoration: none;">+</a>)
+      <div id="pop-up61" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[200, "{\"id\":\"18c6a9f3-812e-439c-a597-f8b943a8c682\",\"userName\":\"nkavian@us.ibm.com\",\"name\":{\"familyName\":\"nkavian@us.ibm.com\",\"givenName\":\"nkavian@us.ibm.com\"},\"emails\":[{\"value\":\"nkavian@us.ibm.com\"}],\"groups\":[{\"externalId\":\"uaa.user\"}],\"userType\":\"uaa.user\",\"active\":true,\"meta\":{\"version\":0,\"created\":\"2013-07-14T22:56:54.703Z\",\"lastModified\":\"2013-08-29T11:30:38.907Z\"},\"schemas\":[\"urn:scim:schemas:core:1.0\"]}", {:server=>"nginx", :date=>"Thu, 29 Aug 2013 15:39:17 GMT", :content_type=>"application/json", :transfer_encoding=>"chunked", :connection=>"close", :etag=>"\"0\""}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|---------------------------------------------------------->(<a href="#" id="trigger62" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up62" style="background-color:#CEFFFF;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cloud_Controller to UAA      </div>
+      <br/>
+31. MSG: (<a href="#" id="trigger63" style="text-decoration: none;">+</a>)
+      <div id="pop-up63" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+["http://uaa.vcap.me", :put, "/Users/18c6a9f3-812e-439c-a597-f8b943a8c682/password", "{\"password\":\"password\"}", {:content_type=>"application/json", :authorization=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzgzOTU1NTcsInNjb3BlIjpbInBhc3N3b3JkLndyaXRlIiwic2NpbS53cml0ZSIsInNjaW0ucmVhZCIsInVhYS5yZXNvdXJjZSJdLCJhdWQiOlsic2NpbSIsInVhYSIsInBhc3N3b3JkIl0sImp0aSI6IjNiYWQ0YzQ5LWUyYTQtNGU4Ni1hOGRmLTA3NjRjNzQxODVhMyIsImNsaWVudF9pZCI6ImNsb3VkX2NvbnRyb2xsZXIifQ.LU5KcwlPOBNCwPmiCMcECWTPjr-0pUVeaekHYEUtJg0"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<----------------------------------------------------------|(<a href="#" id="trigger64" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up64" style="background-color:#CEFFFF;">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; UAA to Cloud_Controller      </div>
+      <br/>
+32. MSG: (<a href="#" id="trigger65" style="text-decoration: none;">+</a>)
+      <div id="pop-up65" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[204, "", {:server=>"nginx", :date=>"Thu, 29 Aug 2013 15:39:17 GMT", :connection=>"close"}]
+      </div>
+      <br/>
+      <br/>
+      <font color="#000090">
+<---------------------|(<a href="#" id="trigger68" style="text-decoration: none;">+</a>)
+      </font>
+      <div id="pop-up68" style="background-color:#CEFFFF;">
+ Cloud_Controller to VMC      </div>
+      <br/>
+34. MSG: (<a href="#" id="trigger69" style="text-decoration: none;">+</a>)
+      <div id="pop-up69" style="background-color:#CEFFFF">
+        <div style="float:right;background-color:#000090;border-radius:5px;color:white;">
+REST        </div>
+[{:url=>"http://api.vcap.me/users/nkavian%40us.ibm.com", :method=>"PUT", :headers=>{"Content-Length"=>52, "Authorization"=>"bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjEzNzgzOTU0NTksInVzZXJfbmFtZSI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsInNjb3BlIjpbImNsb3VkX2NvbnRyb2xsZXIucmVhZCIsImNsb3VkX2NvbnRyb2xsZXIud3JpdGUiLCJvcGVuaWQiLCJwYXNzd29yZC53cml0ZSJdLCJlbWFpbCI6Im5rYXZpYW5AdXMuaWJtLmNvbSIsImF1ZCI6WyJvcGVuaWQiLCJjbG91ZF9jb250cm9sbGVyIiwicGFzc3dvcmQiXSwianRpIjoiNDRmZTcwZWQtNmRmZS00NDkxLTllMzYtMDA3ODZmZDZlMGE0IiwidXNlcl9pZCI6IjE4YzZhOWYzLTgxMmUtNDM5Yy1hNTk3LWY4Yjk0M2E4YzY4MiIsImNsaWVudF9pZCI6InZtYyJ9.Ba3WqStbesfaZFIv_ryEgig7pxGOakvmqlSLFKChCzI", "Content-Type"=>"application/json"}, :body=>"{\"email\":\"nkavian@us.ibm.com\",\"password\":\"password\"}"}, {:headers=>{"server"=>"nginx", "date"=>"Thu, 29 Aug 2013 15:39:17 GMT", "connection"=>"keep-alive", "keep-alive"=>"timeout=20", "cache-control"=>"no-cache", "x-ua-compatible"=>"IE=Edge,chrome=1"}, :status=>"204", :body=>nil}]
       </div>
       <br/>
       <br/>

@@ -32,14 +32,14 @@ participant DEA
 participant Router
 participant Stager
 participant UAA
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger7]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger9]] (REST-req): PUT apps/ss
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger11]] (NATS) : dea.stop
-Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger13]] (NATS) : droplet.updated
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger17]] (REST-resp)
-DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger19]] (NATS) : router.unregister
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger21]] (NATS) : droplet.exited">
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger1]] (0. REST-req): GET apps/ss
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger7]] (3. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger9]] (4. REST-req): PUT apps/ss
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger11]] (5. NATS) : dea.stop
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger13]] (6. NATS) : droplet.updated
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger17]] (8. REST-resp)
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger19]] (9. NATS) : router.unregister
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/stop-sequence-diagram.html#trigger21]] (10. NATS) : droplet.exited">
       </img>
     </div>
   </body>

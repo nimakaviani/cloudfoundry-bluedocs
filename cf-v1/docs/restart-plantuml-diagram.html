@@ -32,28 +32,28 @@ participant DEA
 participant Router
 participant Stager
 participant UAA
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger7]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger9]] (REST-req): PUT apps/ss
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger11]] (NATS) : dea.stop
-Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger13]] (NATS) : droplet.updated
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger17]] (REST-resp)
-DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger19]] (NATS) : router.unregister
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger21]] (NATS) : droplet.exited
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger23]] (REST-req): PUT apps/ss
-Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger13]] (NATS) : droplet.updated
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger29]] (REST-resp)
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger33]] (NATS) : dea.35a1...start
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger37]] (REST-req): GET apps/ss/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger41]] (NATS) : _INBOX.8a6e... (Direct Msg)
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger45]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger37]] (REST-req): GET apps/ss/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger51]] (NATS) : _INBOX.ca79... (Direct Msg)
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger55]] (REST-resp)
-DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger57]] (NATS) : router.register
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger37]] (REST-req): GET apps/ss/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger63]] (NATS) : _INBOX.b4ea... (Direct Msg)
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger67]] (REST-resp)">
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger1]] (0. REST-req): GET apps/ss
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger7]] (3. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger9]] (4. REST-req): PUT apps/ss
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger11]] (5. NATS) : dea.stop
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger13]] (6. NATS) : droplet.updated
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger17]] (8. REST-resp)
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger19]] (9. NATS) : router.unregister
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger21]] (10. NATS) : droplet.exited
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger23]] (11. REST-req): PUT apps/ss
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger25]] (12. NATS) : droplet.updated
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger29]] (14. REST-resp)
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger33]] (16. NATS) : dea.a611...start
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger35]] (17. REST-req): GET apps/ss/instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger41]] (20. NATS) : _INBOX.e8d0... (Direct Msg)
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger45]] (22. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger47]] (23. REST-req): GET apps/ss/instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger51]] (25. NATS) : _INBOX.5d81... (Direct Msg)
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger55]] (27. REST-resp)
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger57]] (28. NATS) : router.register
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger59]] (29. REST-req): GET apps/ss/instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger63]] (31. NATS) : _INBOX.ad6f... (Direct Msg)
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/restart-sequence-diagram.html#trigger67]] (33. REST-resp)">
       </img>
     </div>
   </body>

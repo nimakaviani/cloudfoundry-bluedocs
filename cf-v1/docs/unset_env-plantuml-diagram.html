@@ -32,30 +32,30 @@ participant DEA
 participant Router
 participant Stager
 participant UAA
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger1]] (REST-req): GET apps/ss
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger7]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger9]] (REST-req): PUT apps/ss
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger13]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger15]] (REST-req): PUT apps/ss
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger17]] (NATS) : dea.stop
-Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger19]] (NATS) : droplet.updated
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger23]] (REST-resp)
-DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger25]] (NATS) : router.unregister
-DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger27]] (NATS) : droplet.exited
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger9]] (REST-req): PUT apps/ss
-Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger19]] (NATS) : droplet.updated
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger35]] (REST-resp)
-Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger39]] (NATS) : dea.35a1...start
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger43]] (REST-req): GET apps/ss/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger47]] (NATS) : _INBOX.cf0a... (Direct Msg)
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger51]] (REST-resp)
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger43]] (REST-req): GET apps/ss/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger59]] (NATS) : _INBOX.0acb... (Direct Msg)
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger63]] (REST-resp)
-DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger67]] (NATS) : router.register
-VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger43]] (REST-req): GET apps/ss/instances
-DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger73]] (NATS) : _INBOX.34f8... (Direct Msg)
-Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger77]] (REST-resp)">
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger1]] (0. REST-req): GET apps/ss
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger7]] (3. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger9]] (4. REST-req): PUT apps/ss
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger13]] (6. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger15]] (7. REST-req): PUT apps/ss
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger17]] (8. NATS) : dea.stop
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger19]] (9. NATS) : droplet.updated
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger23]] (11. REST-resp)
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger25]] (12. NATS) : router.unregister
+DEA -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger27]] (13. NATS) : droplet.exited
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger29]] (14. REST-req): PUT apps/ss
+Cloud_Controller -[#green]> Health_Manager : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger31]] (15. NATS) : droplet.updated
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger35]] (17. REST-resp)
+Cloud_Controller -[#green]> DEA : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger39]] (19. NATS) : dea.a611...start
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger43]] (21. REST-req): GET apps/ss/instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger47]] (23. NATS) : _INBOX.657c... (Direct Msg)
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger51]] (25. REST-resp)
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger53]] (26. REST-req): GET apps/ss/instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger57]] (28. NATS) : _INBOX.74a8... (Direct Msg)
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger61]] (30. REST-resp)
+DEA -[#green]> Router : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger63]] (31. NATS) : router.register
+VMC -[#blue]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger65]] (32. REST-req): GET apps/ss/instances
+DEA -[#green]> Cloud_Controller : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger69]] (34. NATS) : _INBOX.2c0f... (Direct Msg)
+Cloud_Controller -[#blue]> VMC : [[http://rawgithub.com/nkaviani/cloudfoundry-bluedocs/master/cf-v1/docs/unset_env-sequence-diagram.html#trigger73]] (36. REST-resp)">
       </img>
     </div>
   </body>
