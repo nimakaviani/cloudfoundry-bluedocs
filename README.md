@@ -6,4 +6,4 @@ CloudFoundry BlueDocs
 
 *BlueDocs are generated using an Automated Strategy to Introspect Internal Behavior of CloudFoundry for Performance Analysis and Documentation Purposes.*
 
-As a first step, we have automatically generated information on NATS message exchanges across CloudFoundry components. The plan is to extend the approach to include techniques for software resiliency testing, security analysis of components, etc. in CloudFoundry.
+As a first step, we have automatically generated information on NATS and REST message exchanges across CloudFoundry components. The plan is to extend the approach to include techniques for software resiliency testing, security analysis of components, etc. in CloudFoundry.
